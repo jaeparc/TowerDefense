@@ -253,11 +253,9 @@ MonoBehaviour:
     sellDuration: 0.5
     expToNextUpgrade: 10
     cost:
-    - 20
-    - 0
+    - 200
     sellValue:
-    - 20
-    - 0
+    - 175
     hp: 10
     sh: 0
     shRegen: 0
@@ -316,10 +314,8 @@ MonoBehaviour:
     expToNextUpgrade: 10
     cost:
     - 10
-    - 0
     sellValue:
     - 30
-    - 0
     hp: 10
     sh: 0
     shRegen: 0
@@ -614,8 +610,7 @@ MonoBehaviour:
   buildPlatform: {fileID: 0}
   nodeID: 0
   unlockUpgradeViaPerk: 0
-  upgradeTowerList:
-  - {fileID: 114541810645508154, guid: 9296eb95e6ad99c4aaa9046a333c5792, type: 3}
+  upgradeTowerList: []
 --- !u!135 &135533310359063602
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -303,11 +303,9 @@ MonoBehaviour:
     sellDuration: 0.5
     expToNextUpgrade: 10
     cost:
-    - 20
-    - 0
+    - 200
     sellValue:
-    - 20
-    - 0
+    - 175
     hp: 10
     sh: 0
     shRegen: 0.5

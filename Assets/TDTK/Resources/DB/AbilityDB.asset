@@ -25,7 +25,7 @@ MonoBehaviour:
     useLimit: -1
     useCount: 0
     currentCD: 0
-    cost: 50
+    cost: 0
     effectType: 0
     effectDelay: 0
     stats:
@@ -36,8 +36,7 @@ MonoBehaviour:
       sellDuration: 0
       expToNextUpgrade: 0
       cost:
-      - 0
-      - 0
+      - 50
       sellValue: []
       hp: 0
       sh: 0
@@ -120,8 +119,7 @@ MonoBehaviour:
       sellDuration: 0
       expToNextUpgrade: 10
       cost:
-      - 0
-      - 0
+      - 50
       sellValue: []
       hp: 1
       sh: 0
@@ -136,11 +134,11 @@ MonoBehaviour:
       dmgReduc: 0
       critReduc: 0
       hit: 1
-      damageMin: 6
-      damageMax: 10
+      damageMin: 100
+      damageMax: 100
       attackRange: 1
       aoeRange: 2
-      cooldown: 10
+      cooldown: 30
       critChance: 0
       critMultiplier: 0
       effectOnHitChance: 0
@@ -184,92 +182,6 @@ MonoBehaviour:
       duration: 1.5
     soundOnActivate: {fileID: 0}
     hideInInspector: 0
-  - prefabID: 2
-    instanceID: -1
-    icon: {fileID: 21300020, guid: d138993b3dd86764ba142a07cff82937, type: 3}
-    name: Critical Buff
-    desp: All friendly tower gain 50% critical chance on attack for 10 sec.
-    requireTargetSelection: 1
-    requireUnitAsTarget: 0
-    targetType: 1
-    useLimit: -1
-    useCount: 0
-    currentCD: 0
-    cost: 50
-    effectType: 0
-    effectDelay: 0
-    stats:
-      editTurret: 0
-      editAOE: 0
-      editMine: 0
-      buildDuration: 0
-      sellDuration: 0
-      expToNextUpgrade: 10
-      cost:
-      - 0
-      - 0
-      sellValue: []
-      hp: 1
-      sh: 0
-      shRegen: 0
-      shStagger: 0
-      hpRate: 0
-      shRate: 0
-      armorType: 0
-      damageType: 0
-      speed: 1
-      dodge: 0
-      dmgReduc: 0
-      critReduc: 0
-      hit: 1
-      damageMin: 0
-      damageMax: 0
-      attackRange: 1
-      aoeRange: 3
-      cooldown: 40
-      critChance: 0
-      critMultiplier: 0
-      effectOnHitChance: 1
-      overrideExistingEffect: 0
-      effectOnHitIDList: 02000000
-      hit_AOE: 1
-      damageMin_AOE: 2
-      damageMax_AOE: 2
-      attackRange_AOE: 2
-      cooldown_AOE: 1
-      critChance_AOE: 0
-      critMultiplier_AOE: 0
-      effectOnHitChance_AOE: 1
-      overrideExistingEffect_AOE: 0
-      effectOnHitIDList_AOE: 
-      hit_Mine: 1
-      damageMin_Mine: 2
-      damageMax_Mine: 2
-      aoeRange_Mine: 0
-      cooldown_Mine: 1
-      critChance_Mine: 0
-      critMultiplier_Mine: 0
-      effectOnHitChance_Mine: 1
-      overrideExistingEffect_Mine: 0
-      effectOnHitIDList_Mine: 
-      attackRange_Support: 2
-      overrideExistingEffect_Support: 0
-      effectOnHitIDList_Support: 
-      cooldown_Rsc: 1
-      rscGain:
-      - 0
-      - 0
-    tgtSelectIndicator: {fileID: 0}
-    effectOnActivate:
-      obj: {fileID: 1277453101507926, guid: 1caad7a84bacb004387a95147ee530b3, type: 3}
-      autoDestroy: 1
-      duration: 2
-    effectOnTarget:
-      obj: {fileID: 1461587712922754, guid: 6593236da2f573c4298337625d9a18e5, type: 3}
-      autoDestroy: 1
-      duration: 10
-    soundOnActivate: {fileID: 0}
-    hideInInspector: 0
   - prefabID: 3
     instanceID: -1
     icon: {fileID: 21300048, guid: d138993b3dd86764ba142a07cff82937, type: 3}
@@ -292,7 +204,6 @@ MonoBehaviour:
       sellDuration: 0
       expToNextUpgrade: 10
       cost:
-      - 0
       - 0
       sellValue: []
       hp: 1
@@ -378,8 +289,7 @@ MonoBehaviour:
       sellDuration: 0
       expToNextUpgrade: 10
       cost:
-      - 0
-      - 0
+      - 50
       sellValue: []
       hp: 1
       sh: 0
@@ -397,8 +307,8 @@ MonoBehaviour:
       damageMin: 0
       damageMax: 0
       attackRange: 1
-      aoeRange: 1.5
-      cooldown: 20
+      aoeRange: 2.5
+      cooldown: 30
       critChance: 0
       critMultiplier: 0
       effectOnHitChance: 1
@@ -441,5 +351,5 @@ MonoBehaviour:
       autoDestroy: 1
       duration: 5
     soundOnActivate: {fileID: 0}
-    hideInInspector: 1
+    hideInInspector: 0
   copiedFromOldDB: 0

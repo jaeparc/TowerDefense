@@ -27,7 +27,6 @@ MonoBehaviour:
     cost: 1
     costRsc:
     - 0
-    - 0
     minLevel: 0
     minWave: 0
     minPerkCount: 0
@@ -68,7 +67,6 @@ MonoBehaviour:
         sellDuration: 0
         expToNextUpgrade: 10
         cost:
-        - 0
         - 0
         sellValue: []
         hp: 0
@@ -120,7 +118,6 @@ MonoBehaviour:
         cooldown_Rsc: 0
         rscGain:
         - 0
-        - 0
       hitVisualEffect:
         obj: {fileID: 0}
         autoDestroy: 1
@@ -138,14 +135,13 @@ MonoBehaviour:
     icon: {fileID: 21300004, guid: c1bf8f531a58e5a43a7677bc162c964a, type: 3}
     name: Laser Tower Upgrade
     desp: Increase laser tower damage by 2 per sec
-    type: 4
+    type: 2
     groupID: 0
     hideInInspector: 0
     autoUnlockOnLevel: -1
     autoUnlockOnWave: -1
     cost: 1
     costRsc:
-    - 0
     - 0
     minLevel: 0
     minWave: 0
@@ -158,841 +154,7 @@ MonoBehaviour:
     replaceTowerPID: -1
     replaceAbilityPID: -1
     applyToAll: 0
-    towerPIDList: 
-    abilityPIDList: 
-    perkPIDList: 
-    effectPIDList: 0100000004000000
-    effect:
-      prefabID: -1
-      instanceID: -1
-      icon: {fileID: 0}
-      name: Item
-      desp: Item's description
-      ID: 0
-      srcType: 4
-      srcPrefabID: 0
-      fromSupport: 0
-      stack: 0
-      ignoreSource: 0
-      stackable: 0
-      duration: 0
-      durationRemain: 1
-      effType: 0
-      stun: 0
-      stats:
-        editTurret: 1
-        editAOE: 1
-        editMine: 1
-        buildDuration: 0
-        sellDuration: 0
-        expToNextUpgrade: 10
-        cost:
-        - 0
-        - 0
-        sellValue: []
-        hp: 0
-        sh: 0
-        shRegen: 0
-        shStagger: 0
-        hpRate: -2
-        shRate: 0
-        armorType: 0
-        damageType: 0
-        speed: 0
-        dodge: 0
-        dmgReduc: 0
-        critReduc: 0
-        hit: 0
-        damageMin: 0
-        damageMax: 0
-        attackRange: 0
-        aoeRange: 0
-        cooldown: 0
-        critChance: 0
-        critMultiplier: 0
-        effectOnHitChance: 0
-        overrideExistingEffect: 0
-        effectOnHitIDList: 
-        hit_AOE: 0
-        damageMin_AOE: 0
-        damageMax_AOE: 0
-        attackRange_AOE: 0
-        cooldown_AOE: 0
-        critChance_AOE: 0
-        critMultiplier_AOE: 0
-        effectOnHitChance_AOE: 0
-        overrideExistingEffect_AOE: 0
-        effectOnHitIDList_AOE: 
-        hit_Mine: 0
-        damageMin_Mine: 0
-        damageMax_Mine: 0
-        aoeRange_Mine: 0
-        cooldown_Mine: 0
-        critChance_Mine: 0
-        critMultiplier_Mine: 0
-        effectOnHitChance_Mine: 0
-        overrideExistingEffect_Mine: 0
-        effectOnHitIDList_Mine: 
-        attackRange_Support: 0
-        overrideExistingEffect_Support: 0
-        effectOnHitIDList_Support: 
-        cooldown_Rsc: 0
-        rscGain:
-        - 0
-        - 0
-      hitVisualEffect:
-        obj: {fileID: 0}
-        autoDestroy: 1
-        duration: 1.5
-      activeVisualEffect: {fileID: 0}
-    costMul: 1
-    gain: 0
-    gainList: []
-    unlockAllUpgrade: 0
-    towerUpgradeList: 
-    status: 0
-    purchasedCount: 0
-  - prefabID: 2
-    instanceID: -1
-    icon: {fileID: 21300000, guid: c1bf8f531a58e5a43a7677bc162c964a, type: 3}
-    name: Cannon Tower Upgrade
-    desp: Cannon tower has 25% to stun target for 0.5  sec
-    type: 2
-    groupID: 0
-    hideInInspector: 0
-    autoUnlockOnLevel: -1
-    autoUnlockOnWave: -1
-    cost: 1
-    costRsc:
-    - 0
-    - 0
-    minLevel: 0
-    minWave: 0
-    minPerkCount: 0
-    prereq: 
-    repeatable: 0
-    effType: 0
-    newTowerPID: -1
-    newAbilityPID: -1
-    replaceTowerPID: -1
-    replaceAbilityPID: -1
-    applyToAll: 0
-    towerPIDList: 01000000
-    abilityPIDList: 
-    perkPIDList: 
-    effectPIDList: 
-    effect:
-      prefabID: -1
-      instanceID: -1
-      icon: {fileID: 0}
-      name: Item
-      desp: Item's description
-      ID: 0
-      srcType: 4
-      srcPrefabID: 0
-      fromSupport: 0
-      stack: 0
-      ignoreSource: 0
-      stackable: 0
-      duration: 1
-      durationRemain: 1
-      effType: 0
-      stun: 0
-      stats:
-        editTurret: 1
-        editAOE: 1
-        editMine: 1
-        buildDuration: 0
-        sellDuration: 0
-        expToNextUpgrade: 10
-        cost:
-        - 0
-        - 0
-        sellValue: []
-        hp: 0
-        sh: 0
-        shRegen: 0
-        shStagger: 0
-        hpRate: 0
-        shRate: 0
-        armorType: 0
-        damageType: 0
-        speed: 0
-        dodge: 0
-        dmgReduc: 0
-        critReduc: 0
-        hit: 0
-        damageMin: 0
-        damageMax: 0
-        attackRange: 0
-        aoeRange: 0
-        cooldown: 0
-        critChance: 0
-        critMultiplier: 0
-        effectOnHitChance: 0.25
-        overrideExistingEffect: 1
-        effectOnHitIDList: 06000000
-        hit_AOE: 0
-        damageMin_AOE: 0
-        damageMax_AOE: 0
-        attackRange_AOE: 0
-        cooldown_AOE: 0
-        critChance_AOE: 0
-        critMultiplier_AOE: 0
-        effectOnHitChance_AOE: 0
-        overrideExistingEffect_AOE: 0
-        effectOnHitIDList_AOE: 
-        hit_Mine: 0
-        damageMin_Mine: 0
-        damageMax_Mine: 0
-        aoeRange_Mine: 0
-        cooldown_Mine: 0
-        critChance_Mine: 0
-        critMultiplier_Mine: 0
-        effectOnHitChance_Mine: 0
-        overrideExistingEffect_Mine: 0
-        effectOnHitIDList_Mine: 
-        attackRange_Support: 0
-        overrideExistingEffect_Support: 0
-        effectOnHitIDList_Support: 
-        cooldown_Rsc: 0
-        rscGain:
-        - 0
-        - 0
-      hitVisualEffect:
-        obj: {fileID: 0}
-        autoDestroy: 1
-        duration: 1.5
-      activeVisualEffect: {fileID: 0}
-    costMul: 1
-    gain: 0
-    gainList: []
-    unlockAllUpgrade: 0
-    towerUpgradeList: 
-    status: 0
-    purchasedCount: 0
-  - prefabID: 3
-    instanceID: -1
-    icon: {fileID: 21300006, guid: c1bf8f531a58e5a43a7677bc162c964a, type: 3}
-    name: AOE Tower Upgrade
-    desp: Increase effective range of aoe tower by 30%
-    type: 2
-    groupID: 0
-    hideInInspector: 0
-    autoUnlockOnLevel: -1
-    autoUnlockOnWave: -1
-    cost: 1
-    costRsc:
-    - 0
-    - 0
-    minLevel: 0
-    minWave: 4
-    minPerkCount: 0
-    prereq: 
-    repeatable: 0
-    effType: 1
-    newTowerPID: -1
-    newAbilityPID: -1
-    replaceTowerPID: -1
-    replaceAbilityPID: -1
-    applyToAll: 0
-    towerPIDList: 03000000
-    abilityPIDList: 
-    perkPIDList: 
-    effectPIDList: 
-    effect:
-      prefabID: -1
-      instanceID: -1
-      icon: {fileID: 0}
-      name: Item
-      desp: Item's description
-      ID: 0
-      srcType: 4
-      srcPrefabID: 0
-      fromSupport: 0
-      stack: 0
-      ignoreSource: 0
-      stackable: 0
-      duration: 1
-      durationRemain: 1
-      effType: 1
-      stun: 0
-      stats:
-        editTurret: 0
-        editAOE: 1
-        editMine: 1
-        buildDuration: 1
-        sellDuration: 1
-        expToNextUpgrade: 10
-        cost:
-        - 1
-        - 1
-        sellValue: []
-        hp: 1
-        sh: 1
-        shRegen: 1
-        shStagger: 1
-        hpRate: 1
-        shRate: 1
-        armorType: 0
-        damageType: 0
-        speed: 1
-        dodge: 1
-        dmgReduc: 1
-        critReduc: 1
-        hit: 1
-        damageMin: 1
-        damageMax: 1
-        attackRange: 1
-        aoeRange: 1
-        cooldown: 1
-        critChance: 1
-        critMultiplier: 1
-        effectOnHitChance: 1
-        overrideExistingEffect: 0
-        effectOnHitIDList: 
-        hit_AOE: 1
-        damageMin_AOE: 1
-        damageMax_AOE: 1
-        attackRange_AOE: 1.3
-        cooldown_AOE: 1
-        critChance_AOE: 1
-        critMultiplier_AOE: 1
-        effectOnHitChance_AOE: 1
-        overrideExistingEffect_AOE: 0
-        effectOnHitIDList_AOE: 
-        hit_Mine: 1
-        damageMin_Mine: 1
-        damageMax_Mine: 1
-        aoeRange_Mine: 1
-        cooldown_Mine: 1
-        critChance_Mine: 1
-        critMultiplier_Mine: 1
-        effectOnHitChance_Mine: 1
-        overrideExistingEffect_Mine: 0
-        effectOnHitIDList_Mine: 
-        attackRange_Support: 1
-        overrideExistingEffect_Support: 0
-        effectOnHitIDList_Support: 
-        cooldown_Rsc: 1
-        rscGain:
-        - 1
-        - 1
-      hitVisualEffect:
-        obj: {fileID: 0}
-        autoDestroy: 1
-        duration: 1.5
-      activeVisualEffect: {fileID: 0}
-    costMul: 1
-    gain: 0
-    gainList: []
-    unlockAllUpgrade: 0
-    towerUpgradeList: 
-    status: 0
-    purchasedCount: 0
-  - prefabID: 4
-    instanceID: -1
-    icon: {fileID: 21300012, guid: c1bf8f531a58e5a43a7677bc162c964a, type: 3}
-    name: Block Tower Upgrade
-    desp: Reduce the cost to build block by 50%
-    type: 2
-    groupID: 0
-    hideInInspector: 0
-    autoUnlockOnLevel: -1
-    autoUnlockOnWave: -1
-    cost: 1
-    costRsc:
-    - 0
-    - 0
-    minLevel: 0
-    minWave: 2
-    minPerkCount: 0
-    prereq: 
-    repeatable: 0
-    effType: 1
-    newTowerPID: -1
-    newAbilityPID: -1
-    replaceTowerPID: -1
-    replaceAbilityPID: -1
-    applyToAll: 0
-    towerPIDList: 07000000
-    abilityPIDList: 
-    perkPIDList: 
-    effectPIDList: 
-    effect:
-      prefabID: -1
-      instanceID: -1
-      icon: {fileID: 0}
-      name: Item
-      desp: Item's description
-      ID: 0
-      srcType: 4
-      srcPrefabID: 0
-      fromSupport: 0
-      stack: 0
-      ignoreSource: 0
-      stackable: 0
-      duration: 1
-      durationRemain: 1
-      effType: 1
-      stun: 0
-      stats:
-        editTurret: 0
-        editAOE: 0
-        editMine: 1
-        buildDuration: 1
-        sellDuration: 1
-        expToNextUpgrade: 10
-        cost:
-        - 0.5
-        - 0.5
-        sellValue: []
-        hp: 1
-        sh: 1
-        shRegen: 1
-        shStagger: 1
-        hpRate: 1
-        shRate: 1
-        armorType: 0
-        damageType: 0
-        speed: 1
-        dodge: 1
-        dmgReduc: 1
-        critReduc: 1
-        hit: 1
-        damageMin: 1
-        damageMax: 1
-        attackRange: 1
-        aoeRange: 1
-        cooldown: 1
-        critChance: 1
-        critMultiplier: 1
-        effectOnHitChance: 1
-        overrideExistingEffect: 0
-        effectOnHitIDList: 
-        hit_AOE: 1
-        damageMin_AOE: 1
-        damageMax_AOE: 1
-        attackRange_AOE: 1
-        cooldown_AOE: 1
-        critChance_AOE: 1
-        critMultiplier_AOE: 1
-        effectOnHitChance_AOE: 1
-        overrideExistingEffect_AOE: 0
-        effectOnHitIDList_AOE: 
-        hit_Mine: 1
-        damageMin_Mine: 1
-        damageMax_Mine: 1
-        aoeRange_Mine: 1
-        cooldown_Mine: 1
-        critChance_Mine: 1
-        critMultiplier_Mine: 1
-        effectOnHitChance_Mine: 1
-        overrideExistingEffect_Mine: 0
-        effectOnHitIDList_Mine: 
-        attackRange_Support: 1
-        overrideExistingEffect_Support: 0
-        effectOnHitIDList_Support: 
-        cooldown_Rsc: 1
-        rscGain:
-        - 1
-        - 1
-      hitVisualEffect:
-        obj: {fileID: 0}
-        autoDestroy: 1
-        duration: 1.5
-      activeVisualEffect: {fileID: 0}
-    costMul: 1
-    gain: 1
-    gainList: []
-    unlockAllUpgrade: 0
-    towerUpgradeList: 
-    status: 0
-    purchasedCount: 0
-  - prefabID: 5
-    instanceID: -1
-    icon: {fileID: 21300010, guid: c1bf8f531a58e5a43a7677bc162c964a, type: 3}
-    name: Unlock Resource Tower
-    desp: "Allow construction of 'Resource Tower' that generate resource overtime
-      \nAutomatically purchased on wave-3"
-    type: 0
-    groupID: 0
-    hideInInspector: 0
-    autoUnlockOnLevel: -1
-    autoUnlockOnWave: 3
-    cost: 0
-    costRsc:
-    - 0
-    - 0
-    minLevel: 0
-    minWave: 3
-    minPerkCount: 0
-    prereq: 
-    repeatable: 0
-    effType: 1
-    newTowerPID: 5
-    newAbilityPID: -1
-    replaceTowerPID: -1
-    replaceAbilityPID: -1
-    applyToAll: 0
-    towerPIDList: 
-    abilityPIDList: 
-    perkPIDList: 
-    effectPIDList: 
-    effect:
-      prefabID: -1
-      instanceID: -1
-      icon: {fileID: 0}
-      name: Item
-      desp: Item's description
-      ID: 0
-      srcType: 4
-      srcPrefabID: 0
-      fromSupport: 0
-      stack: 0
-      ignoreSource: 0
-      stackable: 0
-      duration: 1
-      durationRemain: 1
-      effType: 1
-      stun: 0
-      stats:
-        editTurret: 0
-        editAOE: 0
-        editMine: 0
-        buildDuration: 1
-        sellDuration: 1
-        expToNextUpgrade: 10
-        cost:
-        - 1
-        - 1
-        sellValue: []
-        hp: 1
-        sh: 1
-        shRegen: 1
-        shStagger: 1
-        hpRate: 1
-        shRate: 1
-        armorType: 0
-        damageType: 0
-        speed: 1
-        dodge: 1
-        dmgReduc: 1
-        critReduc: 1
-        hit: 1
-        damageMin: 1
-        damageMax: 1
-        attackRange: 1
-        aoeRange: 1
-        cooldown: 1
-        critChance: 1
-        critMultiplier: 1
-        effectOnHitChance: 1
-        overrideExistingEffect: 0
-        effectOnHitIDList: 
-        hit_AOE: 1
-        damageMin_AOE: 2
-        damageMax_AOE: 2
-        attackRange_AOE: 2
-        cooldown_AOE: 1
-        critChance_AOE: 0
-        critMultiplier_AOE: 0
-        effectOnHitChance_AOE: 1
-        overrideExistingEffect_AOE: 0
-        effectOnHitIDList_AOE: 
-        hit_Mine: 1
-        damageMin_Mine: 2
-        damageMax_Mine: 2
-        aoeRange_Mine: 0
-        cooldown_Mine: 1
-        critChance_Mine: 0
-        critMultiplier_Mine: 0
-        effectOnHitChance_Mine: 1
-        overrideExistingEffect_Mine: 0
-        effectOnHitIDList_Mine: 
-        attackRange_Support: 2
-        overrideExistingEffect_Support: 0
-        effectOnHitIDList_Support: 
-        cooldown_Rsc: 1
-        rscGain:
-        - 1
-        - 1
-      hitVisualEffect:
-        obj: {fileID: 0}
-        autoDestroy: 1
-        duration: 1.5
-      activeVisualEffect: {fileID: 0}
-    costMul: 1
-    gain: 0
-    gainList: []
-    unlockAllUpgrade: 0
-    towerUpgradeList: 
-    status: 0
-    purchasedCount: 0
-  - prefabID: 6
-    instanceID: -1
-    icon: {fileID: 21300014, guid: c1bf8f531a58e5a43a7677bc162c964a, type: 3}
-    name: Unlock Mine
-    desp: Allow construction of proximity mine
-    type: 0
-    groupID: 0
-    hideInInspector: 0
-    autoUnlockOnLevel: -1
-    autoUnlockOnWave: -1
-    cost: 1
-    costRsc:
-    - 0
-    - 0
-    minLevel: 0
-    minWave: 0
-    minPerkCount: 0
-    prereq: 
-    repeatable: 0
-    effType: 1
-    newTowerPID: 6
-    newAbilityPID: -1
-    replaceTowerPID: -1
-    replaceAbilityPID: -1
-    applyToAll: 0
-    towerPIDList: 
-    abilityPIDList: 
-    perkPIDList: 
-    effectPIDList: 
-    effect:
-      prefabID: -1
-      instanceID: -1
-      icon: {fileID: 0}
-      name: Item
-      desp: Item's description
-      ID: 0
-      srcType: 4
-      srcPrefabID: 0
-      fromSupport: 0
-      stack: 0
-      ignoreSource: 0
-      stackable: 0
-      duration: 1
-      durationRemain: 1
-      effType: 1
-      stun: 0
-      stats:
-        editTurret: 0
-        editAOE: 0
-        editMine: 0
-        buildDuration: 1
-        sellDuration: 1
-        expToNextUpgrade: 10
-        cost:
-        - 1
-        - 1
-        sellValue: []
-        hp: 1
-        sh: 1
-        shRegen: 1
-        shStagger: 1
-        hpRate: 1
-        shRate: 1
-        armorType: 0
-        damageType: 0
-        speed: 1
-        dodge: 1
-        dmgReduc: 1
-        critReduc: 1
-        hit: 1
-        damageMin: 1
-        damageMax: 1
-        attackRange: 1
-        aoeRange: 1
-        cooldown: 1
-        critChance: 1
-        critMultiplier: 1
-        effectOnHitChance: 1
-        overrideExistingEffect: 0
-        effectOnHitIDList: 
-        hit_AOE: 1
-        damageMin_AOE: 2
-        damageMax_AOE: 2
-        attackRange_AOE: 2
-        cooldown_AOE: 1
-        critChance_AOE: 0
-        critMultiplier_AOE: 0
-        effectOnHitChance_AOE: 1
-        overrideExistingEffect_AOE: 0
-        effectOnHitIDList_AOE: 
-        hit_Mine: 1
-        damageMin_Mine: 2
-        damageMax_Mine: 2
-        aoeRange_Mine: 0
-        cooldown_Mine: 1
-        critChance_Mine: 0
-        critMultiplier_Mine: 0
-        effectOnHitChance_Mine: 1
-        overrideExistingEffect_Mine: 0
-        effectOnHitIDList_Mine: 
-        attackRange_Support: 2
-        overrideExistingEffect_Support: 0
-        effectOnHitIDList_Support: 
-        cooldown_Rsc: 1
-        rscGain:
-        - 1
-        - 1
-      hitVisualEffect:
-        obj: {fileID: 0}
-        autoDestroy: 1
-        duration: 1.5
-      activeVisualEffect: {fileID: 0}
-    costMul: 1
-    gain: 0
-    gainList: []
-    unlockAllUpgrade: 0
-    towerUpgradeList: 
-    status: 0
-    purchasedCount: 0
-  - prefabID: 7
-    instanceID: -1
-    icon: {fileID: 21300014, guid: c1bf8f531a58e5a43a7677bc162c964a, type: 3}
-    name: Upgrade Mine
-    desp: Reduce the cost of mine by 50%
-    type: 2
-    groupID: 0
-    hideInInspector: 0
-    autoUnlockOnLevel: -1
-    autoUnlockOnWave: -1
-    cost: 1
-    costRsc:
-    - 0
-    - 0
-    minLevel: 0
-    minWave: 0
-    minPerkCount: 0
-    prereq: 06000000
-    repeatable: 0
-    effType: 1
-    newTowerPID: -1
-    newAbilityPID: -1
-    replaceTowerPID: -1
-    replaceAbilityPID: -1
-    applyToAll: 0
-    towerPIDList: 06000000
-    abilityPIDList: 
-    perkPIDList: 
-    effectPIDList: 
-    effect:
-      prefabID: -1
-      instanceID: -1
-      icon: {fileID: 0}
-      name: Item
-      desp: Item's description
-      ID: 0
-      srcType: 4
-      srcPrefabID: 0
-      fromSupport: 0
-      stack: 0
-      ignoreSource: 0
-      stackable: 0
-      duration: 1
-      durationRemain: 1
-      effType: 1
-      stun: 0
-      stats:
-        editTurret: 0
-        editAOE: 0
-        editMine: 1
-        buildDuration: 1
-        sellDuration: 1
-        expToNextUpgrade: 10
-        cost:
-        - 0.5
-        - 0.5
-        sellValue: []
-        hp: 1
-        sh: 1
-        shRegen: 1
-        shStagger: 1
-        hpRate: 1
-        shRate: 1
-        armorType: 0
-        damageType: 0
-        speed: 1
-        dodge: 1
-        dmgReduc: 1
-        critReduc: 1
-        hit: 1
-        damageMin: 1
-        damageMax: 1
-        attackRange: 1
-        aoeRange: 1
-        cooldown: 1
-        critChance: 1
-        critMultiplier: 1
-        effectOnHitChance: 1
-        overrideExistingEffect: 0
-        effectOnHitIDList: 
-        hit_AOE: 1
-        damageMin_AOE: 1
-        damageMax_AOE: 1
-        attackRange_AOE: 1
-        cooldown_AOE: 1
-        critChance_AOE: 1
-        critMultiplier_AOE: 1
-        effectOnHitChance_AOE: 1
-        overrideExistingEffect_AOE: 0
-        effectOnHitIDList_AOE: 
-        hit_Mine: 1
-        damageMin_Mine: 1
-        damageMax_Mine: 1
-        aoeRange_Mine: 1
-        cooldown_Mine: 1
-        critChance_Mine: 1
-        critMultiplier_Mine: 1
-        effectOnHitChance_Mine: 1
-        overrideExistingEffect_Mine: 0
-        effectOnHitIDList_Mine: 
-        attackRange_Support: 1
-        overrideExistingEffect_Support: 0
-        effectOnHitIDList_Support: 
-        cooldown_Rsc: 1
-        rscGain:
-        - 1
-        - 1
-      hitVisualEffect:
-        obj: {fileID: 0}
-        autoDestroy: 1
-        duration: 1.5
-      activeVisualEffect: {fileID: 0}
-    costMul: 1
-    gain: 1
-    gainList: []
-    unlockAllUpgrade: 0
-    towerUpgradeList: 
-    status: 0
-    purchasedCount: 0
-  - prefabID: 8
-    instanceID: -1
-    icon: {fileID: 21300018, guid: d138993b3dd86764ba142a07cff82937, type: 3}
-    name: Tower Damage Upgrade
-    desp: MG, Cannon and laser tower now do additional 3 damage in each attack
-    type: 2
-    groupID: 0
-    hideInInspector: 0
-    autoUnlockOnLevel: -1
-    autoUnlockOnWave: -1
-    cost: 1
-    costRsc:
-    - 0
-    - 0
-    minLevel: 0
-    minWave: 0
-    minPerkCount: 0
-    prereq: 000000000100000002000000
-    repeatable: 0
-    effType: 0
-    newTowerPID: -1
-    newAbilityPID: -1
-    replaceTowerPID: -1
-    replaceAbilityPID: -1
-    applyToAll: 0
-    towerPIDList: 000000000100000002000000
+    towerPIDList: 02000000
     abilityPIDList: 
     perkPIDList: 
     effectPIDList: 
@@ -1021,7 +183,6 @@ MonoBehaviour:
         sellDuration: 0
         expToNextUpgrade: 10
         cost:
-        - 0
         - 0
         sellValue: []
         hp: 0
@@ -1073,6 +234,121 @@ MonoBehaviour:
         cooldown_Rsc: 0
         rscGain:
         - 0
+      hitVisualEffect:
+        obj: {fileID: 0}
+        autoDestroy: 1
+        duration: 1.5
+      activeVisualEffect: {fileID: 0}
+    costMul: 1
+    gain: 0
+    gainList: []
+    unlockAllUpgrade: 0
+    towerUpgradeList: 
+    status: 0
+    purchasedCount: 0
+  - prefabID: 2
+    instanceID: -1
+    icon: {fileID: 21300000, guid: c1bf8f531a58e5a43a7677bc162c964a, type: 3}
+    name: Cannon Tower Upgrade
+    desp: Cannon tower has 25% to stun target for 0.5  sec
+    type: 2
+    groupID: 0
+    hideInInspector: 0
+    autoUnlockOnLevel: -1
+    autoUnlockOnWave: -1
+    cost: 1
+    costRsc:
+    - 0
+    minLevel: 0
+    minWave: 0
+    minPerkCount: 0
+    prereq: 
+    repeatable: 0
+    effType: 0
+    newTowerPID: -1
+    newAbilityPID: -1
+    replaceTowerPID: -1
+    replaceAbilityPID: -1
+    applyToAll: 0
+    towerPIDList: 01000000
+    abilityPIDList: 
+    perkPIDList: 
+    effectPIDList: 
+    effect:
+      prefabID: -1
+      instanceID: -1
+      icon: {fileID: 0}
+      name: Item
+      desp: Item's description
+      ID: 0
+      srcType: 4
+      srcPrefabID: 0
+      fromSupport: 0
+      stack: 0
+      ignoreSource: 0
+      stackable: 0
+      duration: 1
+      durationRemain: 1
+      effType: 0
+      stun: 0
+      stats:
+        editTurret: 1
+        editAOE: 1
+        editMine: 1
+        buildDuration: 0
+        sellDuration: 0
+        expToNextUpgrade: 10
+        cost:
+        - 0
+        sellValue: []
+        hp: 0
+        sh: 0
+        shRegen: 0
+        shStagger: 0
+        hpRate: 0
+        shRate: 0
+        armorType: 0
+        damageType: 0
+        speed: 0
+        dodge: 0
+        dmgReduc: 0
+        critReduc: 0
+        hit: 0
+        damageMin: 0
+        damageMax: 0
+        attackRange: 0
+        aoeRange: 0
+        cooldown: 0
+        critChance: 0
+        critMultiplier: 0
+        effectOnHitChance: 0.25
+        overrideExistingEffect: 1
+        effectOnHitIDList: 06000000
+        hit_AOE: 0
+        damageMin_AOE: 0
+        damageMax_AOE: 0
+        attackRange_AOE: 0
+        cooldown_AOE: 0
+        critChance_AOE: 0
+        critMultiplier_AOE: 0
+        effectOnHitChance_AOE: 0
+        overrideExistingEffect_AOE: 0
+        effectOnHitIDList_AOE: 
+        hit_Mine: 0
+        damageMin_Mine: 0
+        damageMax_Mine: 0
+        aoeRange_Mine: 0
+        cooldown_Mine: 0
+        critChance_Mine: 0
+        critMultiplier_Mine: 0
+        effectOnHitChance_Mine: 0
+        overrideExistingEffect_Mine: 0
+        effectOnHitIDList_Mine: 
+        attackRange_Support: 0
+        overrideExistingEffect_Support: 0
+        effectOnHitIDList_Support: 
+        cooldown_Rsc: 0
+        rscGain:
         - 0
       hitVisualEffect:
         obj: {fileID: 0}
@@ -1086,12 +362,12 @@ MonoBehaviour:
     towerUpgradeList: 
     status: 0
     purchasedCount: 0
-  - prefabID: 9
+  - prefabID: 3
     instanceID: -1
-    icon: {fileID: 21300012, guid: d138993b3dd86764ba142a07cff82937, type: 3}
-    name: Energy Regen I
-    desp: Increase energy regeneration rate by 25%
-    type: 17
+    icon: {fileID: 21300006, guid: c1bf8f531a58e5a43a7677bc162c964a, type: 3}
+    name: AOE Tower Upgrade
+    desp: Increase effective range of aoe tower by 30%
+    type: 2
     groupID: 0
     hideInInspector: 0
     autoUnlockOnLevel: -1
@@ -1099,9 +375,8 @@ MonoBehaviour:
     cost: 1
     costRsc:
     - 0
-    - 0
     minLevel: 0
-    minWave: 0
+    minWave: 4
     minPerkCount: 0
     prereq: 
     repeatable: 0
@@ -1111,7 +386,7 @@ MonoBehaviour:
     replaceTowerPID: -1
     replaceAbilityPID: -1
     applyToAll: 0
-    towerPIDList: 
+    towerPIDList: 03000000
     abilityPIDList: 
     perkPIDList: 
     effectPIDList: 
@@ -1134,13 +409,12 @@ MonoBehaviour:
       stun: 0
       stats:
         editTurret: 0
-        editAOE: 0
-        editMine: 0
+        editAOE: 1
+        editMine: 1
         buildDuration: 1
         sellDuration: 1
         expToNextUpgrade: 10
         cost:
-        - 1
         - 1
         sellValue: []
         hp: 1
@@ -1167,31 +441,30 @@ MonoBehaviour:
         overrideExistingEffect: 0
         effectOnHitIDList: 
         hit_AOE: 1
-        damageMin_AOE: 2
-        damageMax_AOE: 2
-        attackRange_AOE: 2
+        damageMin_AOE: 1
+        damageMax_AOE: 1
+        attackRange_AOE: 1.3
         cooldown_AOE: 1
-        critChance_AOE: 0
-        critMultiplier_AOE: 0
+        critChance_AOE: 1
+        critMultiplier_AOE: 1
         effectOnHitChance_AOE: 1
         overrideExistingEffect_AOE: 0
         effectOnHitIDList_AOE: 
         hit_Mine: 1
-        damageMin_Mine: 2
-        damageMax_Mine: 2
-        aoeRange_Mine: 0
+        damageMin_Mine: 1
+        damageMax_Mine: 1
+        aoeRange_Mine: 1
         cooldown_Mine: 1
-        critChance_Mine: 0
-        critMultiplier_Mine: 0
+        critChance_Mine: 1
+        critMultiplier_Mine: 1
         effectOnHitChance_Mine: 1
         overrideExistingEffect_Mine: 0
         effectOnHitIDList_Mine: 
-        attackRange_Support: 2
+        attackRange_Support: 1
         overrideExistingEffect_Support: 0
         effectOnHitIDList_Support: 
         cooldown_Rsc: 1
         rscGain:
-        - 1
         - 1
       hitVisualEffect:
         obj: {fileID: 0}
@@ -1199,260 +472,18 @@ MonoBehaviour:
         duration: 1.5
       activeVisualEffect: {fileID: 0}
     costMul: 1
-    gain: 1.25
-    gainList:
-    - 0
-    - 0
-    unlockAllUpgrade: 0
-    towerUpgradeList: 
-    status: 0
-    purchasedCount: 0
-  - prefabID: 10
-    instanceID: -1
-    icon: {fileID: 21300012, guid: d138993b3dd86764ba142a07cff82937, type: 3}
-    name: Energy Regen II
-    desp: Increase energy regeneration rate by 50% (stack with previous upgrade)
-    type: 17
-    groupID: 0
-    hideInInspector: 0
-    autoUnlockOnLevel: -1
-    autoUnlockOnWave: -1
-    cost: 1
-    costRsc:
-    - 0
-    - 0
-    minLevel: 0
-    minWave: 3
-    minPerkCount: 0
-    prereq: 09000000
-    repeatable: 0
-    effType: 1
-    newTowerPID: -1
-    newAbilityPID: -1
-    replaceTowerPID: -1
-    replaceAbilityPID: -1
-    applyToAll: 0
-    towerPIDList: 
-    abilityPIDList: 
-    perkPIDList: 
-    effectPIDList: 
-    effect:
-      prefabID: -1
-      instanceID: -1
-      icon: {fileID: 0}
-      name: Item
-      desp: Item's description
-      ID: 0
-      srcType: 4
-      srcPrefabID: 0
-      fromSupport: 0
-      stack: 0
-      ignoreSource: 0
-      stackable: 0
-      duration: 1
-      durationRemain: 1
-      effType: 1
-      stun: 0
-      stats:
-        editTurret: 0
-        editAOE: 0
-        editMine: 0
-        buildDuration: 1
-        sellDuration: 1
-        expToNextUpgrade: 10
-        cost:
-        - 1
-        - 1
-        sellValue: []
-        hp: 1
-        sh: 1
-        shRegen: 1
-        shStagger: 1
-        hpRate: 1
-        shRate: 1
-        armorType: 0
-        damageType: 0
-        speed: 1
-        dodge: 1
-        dmgReduc: 1
-        critReduc: 1
-        hit: 1
-        damageMin: 1
-        damageMax: 1
-        attackRange: 1
-        aoeRange: 1
-        cooldown: 1
-        critChance: 1
-        critMultiplier: 1
-        effectOnHitChance: 1
-        overrideExistingEffect: 0
-        effectOnHitIDList: 
-        hit_AOE: 1
-        damageMin_AOE: 2
-        damageMax_AOE: 2
-        attackRange_AOE: 2
-        cooldown_AOE: 1
-        critChance_AOE: 0
-        critMultiplier_AOE: 0
-        effectOnHitChance_AOE: 1
-        overrideExistingEffect_AOE: 0
-        effectOnHitIDList_AOE: 
-        hit_Mine: 1
-        damageMin_Mine: 2
-        damageMax_Mine: 2
-        aoeRange_Mine: 0
-        cooldown_Mine: 1
-        critChance_Mine: 0
-        critMultiplier_Mine: 0
-        effectOnHitChance_Mine: 1
-        overrideExistingEffect_Mine: 0
-        effectOnHitIDList_Mine: 
-        attackRange_Support: 2
-        overrideExistingEffect_Support: 0
-        effectOnHitIDList_Support: 
-        cooldown_Rsc: 1
-        rscGain:
-        - 1
-        - 1
-      hitVisualEffect:
-        obj: {fileID: 0}
-        autoDestroy: 1
-        duration: 1.5
-      activeVisualEffect: {fileID: 0}
-    costMul: 1
-    gain: 1.5
-    gainList:
-    - 0
-    - 0
-    unlockAllUpgrade: 0
-    towerUpgradeList: 
-    status: 0
-    purchasedCount: 0
-  - prefabID: 11
-    instanceID: -1
-    icon: {fileID: 21300058, guid: d138993b3dd86764ba142a07cff82937, type: 3}
-    name: Energy Capacity I
-    desp: Increase energy capacity by 25
-    type: 16
-    groupID: 0
-    hideInInspector: 0
-    autoUnlockOnLevel: -1
-    autoUnlockOnWave: -1
-    cost: 1
-    costRsc:
-    - 0
-    - 0
-    minLevel: 0
-    minWave: 0
-    minPerkCount: 0
-    prereq: 09000000
-    repeatable: 0
-    effType: 0
-    newTowerPID: -1
-    newAbilityPID: -1
-    replaceTowerPID: -1
-    replaceAbilityPID: -1
-    applyToAll: 0
-    towerPIDList: 
-    abilityPIDList: 
-    perkPIDList: 
-    effectPIDList: 
-    effect:
-      prefabID: -1
-      instanceID: -1
-      icon: {fileID: 0}
-      name: Item
-      desp: Item's description
-      ID: 0
-      srcType: 4
-      srcPrefabID: 0
-      fromSupport: 0
-      stack: 0
-      ignoreSource: 0
-      stackable: 0
-      duration: 1
-      durationRemain: 1
-      effType: 0
-      stun: 0
-      stats:
-        editTurret: 0
-        editAOE: 0
-        editMine: 0
-        buildDuration: 1
-        sellDuration: 1
-        expToNextUpgrade: 10
-        cost:
-        - 1
-        - 1
-        sellValue: []
-        hp: 1
-        sh: 1
-        shRegen: 1
-        shStagger: 1
-        hpRate: 1
-        shRate: 1
-        armorType: 0
-        damageType: 0
-        speed: 1
-        dodge: 1
-        dmgReduc: 1
-        critReduc: 1
-        hit: 1
-        damageMin: 1
-        damageMax: 1
-        attackRange: 1
-        aoeRange: 1
-        cooldown: 1
-        critChance: 1
-        critMultiplier: 1
-        effectOnHitChance: 1
-        overrideExistingEffect: 0
-        effectOnHitIDList: 
-        hit_AOE: 1
-        damageMin_AOE: 2
-        damageMax_AOE: 2
-        attackRange_AOE: 2
-        cooldown_AOE: 1
-        critChance_AOE: 0
-        critMultiplier_AOE: 0
-        effectOnHitChance_AOE: 1
-        overrideExistingEffect_AOE: 0
-        effectOnHitIDList_AOE: 
-        hit_Mine: 1
-        damageMin_Mine: 2
-        damageMax_Mine: 2
-        aoeRange_Mine: 0
-        cooldown_Mine: 1
-        critChance_Mine: 0
-        critMultiplier_Mine: 0
-        effectOnHitChance_Mine: 1
-        overrideExistingEffect_Mine: 0
-        effectOnHitIDList_Mine: 
-        attackRange_Support: 2
-        overrideExistingEffect_Support: 0
-        effectOnHitIDList_Support: 
-        cooldown_Rsc: 1
-        rscGain:
-        - 1
-        - 1
-      hitVisualEffect:
-        obj: {fileID: 0}
-        autoDestroy: 1
-        duration: 1.5
-      activeVisualEffect: {fileID: 0}
-    costMul: 1
-    gain: 25
+    gain: 0
     gainList: []
     unlockAllUpgrade: 0
     towerUpgradeList: 
     status: 0
     purchasedCount: 0
-  - prefabID: 12
+  - prefabID: 8
     instanceID: -1
-    icon: {fileID: 21300058, guid: d138993b3dd86764ba142a07cff82937, type: 3}
-    name: Energy Capacity II
-    desp: Increase energy capacity by 50 (stack with previous upgrade)
-    type: 16
+    icon: {fileID: 21300018, guid: d138993b3dd86764ba142a07cff82937, type: 3}
+    name: Tower Damage Upgrade
+    desp: MG, Cannon and laser tower now do additional 3 damage in each attack
+    type: 2
     groupID: 0
     hideInInspector: 0
     autoUnlockOnLevel: -1
@@ -1460,11 +491,10 @@ MonoBehaviour:
     cost: 1
     costRsc:
     - 0
-    - 0
     minLevel: 0
-    minWave: 5
+    minWave: 0
     minPerkCount: 0
-    prereq: 0b000000
+    prereq: 000000000100000002000000
     repeatable: 0
     effType: 0
     newTowerPID: -1
@@ -1472,7 +502,7 @@ MonoBehaviour:
     replaceTowerPID: -1
     replaceAbilityPID: -1
     applyToAll: 0
-    towerPIDList: 
+    towerPIDList: 000000000100000002000000
     abilityPIDList: 
     perkPIDList: 
     effectPIDList: 
@@ -1489,78 +519,76 @@ MonoBehaviour:
       stack: 0
       ignoreSource: 0
       stackable: 0
-      duration: 1
+      duration: 0
       durationRemain: 1
       effType: 0
       stun: 0
       stats:
-        editTurret: 0
+        editTurret: 1
         editAOE: 0
         editMine: 0
-        buildDuration: 1
-        sellDuration: 1
+        buildDuration: 0
+        sellDuration: 0
         expToNextUpgrade: 10
         cost:
-        - 1
-        - 1
+        - 0
         sellValue: []
-        hp: 1
-        sh: 1
-        shRegen: 1
-        shStagger: 1
-        hpRate: 1
-        shRate: 1
+        hp: 0
+        sh: 0
+        shRegen: 0
+        shStagger: 0
+        hpRate: 0
+        shRate: 0
         armorType: 0
         damageType: 0
-        speed: 1
-        dodge: 1
-        dmgReduc: 1
-        critReduc: 1
-        hit: 1
-        damageMin: 1
-        damageMax: 1
-        attackRange: 1
-        aoeRange: 1
-        cooldown: 1
-        critChance: 1
-        critMultiplier: 1
-        effectOnHitChance: 1
+        speed: 0
+        dodge: 0
+        dmgReduc: 0
+        critReduc: 0
+        hit: 0
+        damageMin: 3
+        damageMax: 3
+        attackRange: 0
+        aoeRange: 0
+        cooldown: 0
+        critChance: 0
+        critMultiplier: 0
+        effectOnHitChance: 0
         overrideExistingEffect: 0
         effectOnHitIDList: 
-        hit_AOE: 1
-        damageMin_AOE: 2
-        damageMax_AOE: 2
-        attackRange_AOE: 2
-        cooldown_AOE: 1
+        hit_AOE: 0
+        damageMin_AOE: 0
+        damageMax_AOE: 0
+        attackRange_AOE: 0
+        cooldown_AOE: 0
         critChance_AOE: 0
         critMultiplier_AOE: 0
-        effectOnHitChance_AOE: 1
+        effectOnHitChance_AOE: 0
         overrideExistingEffect_AOE: 0
         effectOnHitIDList_AOE: 
-        hit_Mine: 1
-        damageMin_Mine: 2
-        damageMax_Mine: 2
+        hit_Mine: 0
+        damageMin_Mine: 0
+        damageMax_Mine: 0
         aoeRange_Mine: 0
-        cooldown_Mine: 1
+        cooldown_Mine: 0
         critChance_Mine: 0
         critMultiplier_Mine: 0
-        effectOnHitChance_Mine: 1
+        effectOnHitChance_Mine: 0
         overrideExistingEffect_Mine: 0
         effectOnHitIDList_Mine: 
-        attackRange_Support: 2
+        attackRange_Support: 0
         overrideExistingEffect_Support: 0
         effectOnHitIDList_Support: 
-        cooldown_Rsc: 1
+        cooldown_Rsc: 0
         rscGain:
-        - 1
-        - 1
+        - 0
       hitVisualEffect:
         obj: {fileID: 0}
         autoDestroy: 1
         duration: 1.5
       activeVisualEffect: {fileID: 0}
     costMul: 1
-    gain: 50
+    gain: 0
     gainList: []
     unlockAllUpgrade: 0
     towerUpgradeList: 
@@ -1578,7 +606,6 @@ MonoBehaviour:
     autoUnlockOnWave: -1
     cost: 1
     costRsc:
-    - 0
     - 0
     minLevel: 0
     minWave: 2
@@ -1620,7 +647,6 @@ MonoBehaviour:
         sellDuration: 0
         expToNextUpgrade: 10
         cost:
-        - 0
         - 0
         sellValue: []
         hp: 0
@@ -2047,14 +1073,13 @@ MonoBehaviour:
     icon: {fileID: 21300060, guid: d138993b3dd86764ba142a07cff82937, type: 3}
     name: Wave Cleared Bonus I
     desp: Increaes wave cleared resource gain bonus by 25%
-    type: 14
+    type: 13
     groupID: 0
     hideInInspector: 0
     autoUnlockOnLevel: -1
     autoUnlockOnWave: -1
     cost: 1
     costRsc:
-    - 0
     - 0
     minLevel: 0
     minWave: 0
@@ -2158,7 +1183,6 @@ MonoBehaviour:
     gain: 1.25
     gainList:
     - 1
-    - 1
     unlockAllUpgrade: 0
     towerUpgradeList: 
     status: 0
@@ -2175,7 +1199,6 @@ MonoBehaviour:
     autoUnlockOnWave: -1
     cost: 1
     costRsc:
-    - 0
     - 0
     minLevel: 0
     minWave: 0
@@ -2282,19 +1305,18 @@ MonoBehaviour:
     towerUpgradeList: 
     status: 0
     purchasedCount: 0
-  - prefabID: 19
+  - prefabID: 4
     instanceID: -1
     icon: {fileID: 21300056, guid: d138993b3dd86764ba142a07cff82937, type: 3}
-    name: Unlock Upgrade Tower I
-    desp: 'Unlock the first ''next upgrade tower'' for all towers where applicable. '
+    name: Item
+    desp: Item's description
     type: 19
     groupID: 0
     hideInInspector: 0
     autoUnlockOnLevel: -1
     autoUnlockOnWave: -1
-    cost: 1
+    cost: 0
     costRsc:
-    - 0
     - 0
     minLevel: 0
     minWave: 0
@@ -2307,7 +1329,7 @@ MonoBehaviour:
     replaceTowerPID: -1
     replaceAbilityPID: -1
     applyToAll: 1
-    towerPIDList: 03000000
+    towerPIDList: 
     abilityPIDList: 
     perkPIDList: 
     effectPIDList: 
@@ -2321,7 +1343,7 @@ MonoBehaviour:
       srcType: 4
       srcPrefabID: 0
       fromSupport: 0
-      stack: 0
+      stack: 1
       ignoreSource: 0
       stackable: 0
       duration: 1
@@ -2336,7 +1358,6 @@ MonoBehaviour:
         sellDuration: 1
         expToNextUpgrade: 10
         cost:
-        - 1
         - 1
         sellValue: []
         hp: 1
@@ -2363,31 +1384,30 @@ MonoBehaviour:
         overrideExistingEffect: 0
         effectOnHitIDList: 
         hit_AOE: 1
-        damageMin_AOE: 2
-        damageMax_AOE: 2
-        attackRange_AOE: 2
+        damageMin_AOE: 1
+        damageMax_AOE: 1
+        attackRange_AOE: 1
         cooldown_AOE: 1
-        critChance_AOE: 0
-        critMultiplier_AOE: 0
+        critChance_AOE: 1
+        critMultiplier_AOE: 1
         effectOnHitChance_AOE: 1
         overrideExistingEffect_AOE: 0
         effectOnHitIDList_AOE: 
         hit_Mine: 1
-        damageMin_Mine: 2
-        damageMax_Mine: 2
-        aoeRange_Mine: 0
+        damageMin_Mine: 1
+        damageMax_Mine: 1
+        aoeRange_Mine: 1
         cooldown_Mine: 1
-        critChance_Mine: 0
-        critMultiplier_Mine: 0
+        critChance_Mine: 1
+        critMultiplier_Mine: 1
         effectOnHitChance_Mine: 1
         overrideExistingEffect_Mine: 0
         effectOnHitIDList_Mine: 
-        attackRange_Support: 2
+        attackRange_Support: 1
         overrideExistingEffect_Support: 0
         effectOnHitIDList_Support: 
         cooldown_Rsc: 1
         rscGain:
-        - 1
         - 1
       hitVisualEffect:
         obj: {fileID: 0}
@@ -2399,125 +1419,6 @@ MonoBehaviour:
     gainList: []
     unlockAllUpgrade: 0
     towerUpgradeList: 00000000
-    status: 0
-    purchasedCount: 0
-  - prefabID: 20
-    instanceID: -1
-    icon: {fileID: 21300056, guid: d138993b3dd86764ba142a07cff82937, type: 3}
-    name: Unlock Upgrade Tower II
-    desp: 'Unlock the second ''next upgrade tower'' for all towers where applicable. '
-    type: 19
-    groupID: 0
-    hideInInspector: 0
-    autoUnlockOnLevel: -1
-    autoUnlockOnWave: -1
-    cost: 1
-    costRsc:
-    - 0
-    - 0
-    minLevel: 0
-    minWave: 0
-    minPerkCount: 0
-    prereq: 13000000
-    repeatable: 0
-    effType: 1
-    newTowerPID: -1
-    newAbilityPID: -1
-    replaceTowerPID: -1
-    replaceAbilityPID: -1
-    applyToAll: 1
-    towerPIDList: 03000000
-    abilityPIDList: 
-    perkPIDList: 
-    effectPIDList: 
-    effect:
-      prefabID: -1
-      instanceID: -1
-      icon: {fileID: 0}
-      name: Item
-      desp: Item's description
-      ID: 0
-      srcType: 4
-      srcPrefabID: 0
-      fromSupport: 0
-      stack: 0
-      ignoreSource: 0
-      stackable: 0
-      duration: 1
-      durationRemain: 1
-      effType: 1
-      stun: 0
-      stats:
-        editTurret: 0
-        editAOE: 0
-        editMine: 0
-        buildDuration: 1
-        sellDuration: 1
-        expToNextUpgrade: 10
-        cost:
-        - 1
-        - 1
-        sellValue: []
-        hp: 1
-        sh: 1
-        shRegen: 1
-        shStagger: 1
-        hpRate: 1
-        shRate: 1
-        armorType: 0
-        damageType: 0
-        speed: 1
-        dodge: 1
-        dmgReduc: 1
-        critReduc: 1
-        hit: 1
-        damageMin: 1
-        damageMax: 1
-        attackRange: 1
-        aoeRange: 1
-        cooldown: 1
-        critChance: 1
-        critMultiplier: 1
-        effectOnHitChance: 1
-        overrideExistingEffect: 0
-        effectOnHitIDList: 
-        hit_AOE: 1
-        damageMin_AOE: 2
-        damageMax_AOE: 2
-        attackRange_AOE: 2
-        cooldown_AOE: 1
-        critChance_AOE: 0
-        critMultiplier_AOE: 0
-        effectOnHitChance_AOE: 1
-        overrideExistingEffect_AOE: 0
-        effectOnHitIDList_AOE: 
-        hit_Mine: 1
-        damageMin_Mine: 2
-        damageMax_Mine: 2
-        aoeRange_Mine: 0
-        cooldown_Mine: 1
-        critChance_Mine: 0
-        critMultiplier_Mine: 0
-        effectOnHitChance_Mine: 1
-        overrideExistingEffect_Mine: 0
-        effectOnHitIDList_Mine: 
-        attackRange_Support: 2
-        overrideExistingEffect_Support: 0
-        effectOnHitIDList_Support: 
-        cooldown_Rsc: 1
-        rscGain:
-        - 1
-        - 1
-      hitVisualEffect:
-        obj: {fileID: 0}
-        autoDestroy: 1
-        duration: 1.5
-      activeVisualEffect: {fileID: 0}
-    costMul: 1
-    gain: 0
-    gainList: []
-    unlockAllUpgrade: 0
-    towerUpgradeList: 01000000
     status: 0
     purchasedCount: 0
   copiedFromOldDB: 0
