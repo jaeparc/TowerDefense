@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TDTK;
 
 public class ComboTower : MonoBehaviour
 {
@@ -17,8 +18,11 @@ public class ComboTower : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-        /*if(GameObject.Find(other.name).transform.position == new Vector3(0,0,0)){
-            Debug.Log("COLIIIIIIIIIIIIIIIDER");
-        }*/
+        if(other.tag == gameObject.tag){
+            Debug.Log("damageMin b4:"+gameObject.GetComponent<UnitTower>().statsList[0].damageMin);
+            gameObject.GetComponent<UnitTower>().statsList[0].damageMin = 250;
+            gameObject.GetComponent<UnitTower>().statsList[0].damageMax = 250;
+            Debug.Log("damageMin after:"+gameObject.GetComponent<UnitTower>().statsList[0].damageMin);
+        }
     }
 }

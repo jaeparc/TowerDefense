@@ -510,6 +510,8 @@ namespace TDTK{
 			if(TowerManager.UseFreeFormMode()) buildPlatform.transform.parent=thisT;
 			Destroy(thisObj, animDuration);
 		}
+
+		
 	}
 
 }
