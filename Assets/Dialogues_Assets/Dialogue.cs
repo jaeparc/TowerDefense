@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Dialogue : MonoBehaviour
 {
@@ -47,8 +48,8 @@ public class Dialogue : MonoBehaviour
             index++;
             textComponent.text = string.Empty;
             StartCoroutine(typeLine());
-        } else {
-            gameObject.SetActive(false);
+        } else if(index == lines.Length-1){
+                    SceneManager.LoadScene("Juan");
         }
     }
 }

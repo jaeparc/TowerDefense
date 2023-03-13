@@ -38,7 +38,6 @@ MonoBehaviour:
       expToNextUpgrade: 10
       cost:
       - 1
-      - 1
       sellValue: []
       hp: 1
       sh: 1
@@ -88,7 +87,6 @@ MonoBehaviour:
       effectOnHitIDList_Support: 
       cooldown_Rsc: 1
       rscGain:
-      - 1
       - 1
     hitVisualEffect:
       obj: {fileID: 0}
@@ -694,7 +692,6 @@ MonoBehaviour:
       expToNextUpgrade: 10
       cost:
       - 1
-      - 1
       sellValue: []
       hp: 1
       sh: 1
@@ -744,7 +741,6 @@ MonoBehaviour:
       effectOnHitIDList_Support: 
       cooldown_Rsc: 1
       rscGain:
-      - 1
       - 1
     hitVisualEffect:
       obj: {fileID: 0}

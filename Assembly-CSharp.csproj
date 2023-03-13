@@ -74,6 +74,7 @@
      <Compile Include="Assets\TDTK\Scripts\Misc\RotateYAxis.cs" />
      <Compile Include="Assets\TDTK\Scripts\UI\UITowerSelect.cs" />
      <Compile Include="Assets\TDTK\Scripts\UI\UIClass.cs" />
+     <Compile Include="Assets\Dialogues_Assets\Dialogue.cs" />
      <Compile Include="Assets\TDTK\Scripts\UI\UIBuildButton.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\SpringCollider.cs" />
      <Compile Include="Assets\TDTK\Scripts\TowerManager.cs" />
@@ -141,7 +142,8 @@
      <Compile Include="Assets\TDTK\Scripts\DB\Ability_DB.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\TDTK\Scripts\AudioManager.cs" />
-     <Compile Include="Assets\Dialogues_Assets\Dialogue.cs" />
+     <Compile Include="Assets\menuController.cs" />
+     <Compile Include="Assets\ComboTower.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -853,11 +855,17 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
         <HintPath>C:\Users\tgarn\OneDrive\Documents\UnityProjets\TowerDefense\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Toonshader.Editor">
+        <HintPath>C:\Users\tgarn\OneDrive\Documents\UnityProjets\TowerDefense\Library\ScriptAssemblies\Unity.Toonshader.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
         <HintPath>C:\Users\tgarn\OneDrive\Documents\UnityProjets\TowerDefense\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>C:\Users\tgarn\OneDrive\Documents\UnityProjets\TowerDefense\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Toonshader">
+        <HintPath>C:\Users\tgarn\OneDrive\Documents\UnityProjets\TowerDefense\Library\ScriptAssemblies\Unity.Toonshader.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
         <HintPath>C:\Users\tgarn\OneDrive\Documents\UnityProjets\TowerDefense\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
@@ -867,12 +875,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
         <HintPath>C:\Users\tgarn\OneDrive\Documents\UnityProjets\TowerDefense\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Toonshader.Editor">
-        <HintPath>C:\Users\tgarn\OneDrive\Documents\UnityProjets\TowerDefense\Library\ScriptAssemblies\Unity.Toonshader.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Toonshader">
-        <HintPath>C:\Users\tgarn\OneDrive\Documents\UnityProjets\TowerDefense\Library\ScriptAssemblies\Unity.Toonshader.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
