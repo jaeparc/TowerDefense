@@ -392,6 +392,7 @@ GameObject:
   - component: {fileID: 444245030432756691}
   - component: {fileID: 3172899651221317198}
   - component: {fileID: 8430847244286640866}
+  - component: {fileID: 4574050654698505984}
   m_Layer: 28
   m_Name: Tower_Turret_MG
   m_TagString: turret
@@ -778,8 +779,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.2153077, y: 1, z: 4.523561}
-  m_Center: {x: -0.041934762, y: 0, z: 0.139794}
+  m_Size: {x: 5.2666407, y: 1, z: 2.1172729}
+  m_Center: {x: -0.016272323, y: 0, z: 0.04667657}
 --- !u!114 &3172899651221317198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -792,6 +793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a64a6e3a2ce3cd043b1c584df16fb1ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  connection: {fileID: 3511023856493608705, guid: 509de887feaafe74e844dfd4ae60c843, type: 3}
 --- !u!54 &8430847244286640866
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -808,6 +810,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &4574050654698505984
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831089129482660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8646735, y: 1, z: 5.415389}
+  m_Center: {x: 0.05422337, y: 0, z: 0.06095086}
 --- !u!1 &1866691443232130
 GameObject:
   m_ObjectHideFlags: 0
