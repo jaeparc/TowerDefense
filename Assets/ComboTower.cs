@@ -13,6 +13,7 @@ public class ComboTower : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(gameObject.GetComponent<UnitTower>().prefabID);
 
     }
 
@@ -24,12 +25,10 @@ public class ComboTower : MonoBehaviour
         }
         dmg = gameObject.GetComponent<UnitTower>().statsList[0].damageMin;
     }
-
-    
     
     void OnTriggerStay(Collider other){
-        if(other.tag == gameObject.tag && built && other.GetComponent<ComboTower>().built && statsUpdated == false){
-            if(statsUpdated == false){
+        if(other.GetComponent<UnitTower>() != null){
+            if(other.GetComponent<UnitTower>().prefabID == gameObject.GetComponent<UnitTower>().prefabID && built && other.GetComponent<ComboTower>().built && statsUpdated == false){
                 Connecteur(other);
                 setDmgStat(dmgStart*coefCombo);
                 statsUpdated = true;

@@ -85,6 +85,7 @@
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Universal render pipeline\UnityChan\Scripts\CameraController.cs" />
      <Compile Include="Assets\ComboTower.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\AutoBlink.cs" />
+     <Compile Include="Assets\comboManagerScript.cs" />
      <Compile Include="Assets\TDTK\Scripts\DB_Obsolete\RscDB.cs" />
      <Compile Include="Assets\TDTK\Scripts\DB_Obsolete\TowerDB.cs" />
      <Compile Include="Assets\TDTK\Scripts\UI\UIMessage.cs" />
@@ -122,6 +123,7 @@
      <Compile Include="Assets\TDTK\Scripts\UI\UIPauseScreen.cs" />
      <Compile Include="Assets\TDTK\Scripts\SpawnGenerator.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\FaceUpdate.cs" />
+     <Compile Include="Assets\connectorController.cs" />
      <Compile Include="Assets\TDTK\Scripts\PerkManager.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
      <Compile Include="Assets\TDTK\Scripts\UStats.cs" />
@@ -145,8 +147,6 @@
      <Compile Include="Assets\TDTK\Scripts\DB\Ability_DB.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\TDTK\Scripts\AudioManager.cs" />
-     <Compile Include="Assets\connectorController.cs" />
-     <Compile Include="Assets\comboManagerScript.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
