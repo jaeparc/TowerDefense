@@ -404,10 +404,8 @@ MonoBehaviour:
     expToNextUpgrade: 10
     cost:
     - 30
-    - 0
     sellValue:
     - 30
-    - 0
     hp: 10
     sh: 0
     shRegen: 0
@@ -457,7 +455,6 @@ MonoBehaviour:
     cooldown_Rsc: 1
     rscGain:
     - 1
-    - 0
   effectImmunityList: 
   attackTargetList: []
   shootObject: {fileID: 0}

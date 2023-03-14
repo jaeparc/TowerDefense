@@ -349,7 +349,7 @@ MonoBehaviour:
     effectOnHitChance_Mine: 1
     overrideExistingEffect_Mine: 0
     effectOnHitIDList_Mine: 
-    attackRange_Support: 2
+    attackRange_Support: 4
     overrideExistingEffect_Support: 0
     effectOnHitIDList_Support: 0700000002000000
     cooldown_Rsc: 1
