@@ -794,6 +794,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connection: {fileID: 3511023856493608705, guid: 509de887feaafe74e844dfd4ae60c843, type: 3}
+  newDmgMin: 50
+  newDmgMax: 50
 --- !u!54 &8430847244286640866
 Rigidbody:
   m_ObjectHideFlags: 0
