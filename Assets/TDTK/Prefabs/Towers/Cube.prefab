@@ -154,7 +154,7 @@ MonoBehaviour:
     hit: 1
     damageMin: 200
     damageMax: 200
-    attackRange: 2
+    attackRange: 5
     aoeRange: 0
     cooldown: 3
     critChance: 0
