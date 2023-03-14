@@ -6,6 +6,7 @@ using TDTK;
 public class ComboTower : MonoBehaviour
 {
     public GameObject connection;
+    public float dmgMin, dmgMax;
     private GameObject connectionExist;
 
     // Start is called before the first frame update
@@ -36,18 +37,16 @@ public class ComboTower : MonoBehaviour
                 if(gameObject.transform.position.z > other.transform.position.z){
                     setupConnection = new Vector3(0,0,-0.5f);
                     rota = Quaternion.Euler(90,0,0);
-                    Debug.Log("OH");
                 } else if(gameObject.transform.position.z < other.transform.position.z){
                     setupConnection = new Vector3(0,0,0.5f);
                     rota = Quaternion.Euler(90,0,0);
-                    Debug.Log("OH");
                 }
                 setupConnection+=gameObject.transform.position;
                 connectionExist = Instantiate(connection,setupConnection,rota);
             }
             Debug.Log("damageMin b4:"+gameObject.GetComponent<UnitTower>().statsList[0].damageMin);
-            gameObject.GetComponent<UnitTower>().statsList[0].damageMin = 250;
-            gameObject.GetComponent<UnitTower>().statsList[0].damageMax = 250;
+            gameObject.GetComponent<UnitTower>().statsList[0].damageMin = dmgMin;
+            gameObject.GetComponent<UnitTower>().statsList[0].damageMax = dmgMax;
             Debug.Log("damageMin after:"+gameObject.GetComponent<UnitTower>().statsList[0].damageMin);
         }
     }
