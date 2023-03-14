@@ -169,8 +169,7 @@ namespace TDTK{
 			AnimPlayConstruct();
 			
 			TDTK.OnTowerConstructing(this);
-			Debug.Log("Une tourelle a été placée");
-			Debug.Log(buildDuration);
+			gameObject.GetComponent<ComboTower>().built = true;
 		}
 		
 		public void Sell(){

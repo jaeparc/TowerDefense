@@ -5,10 +5,10 @@ using TDTK;
 
 public class ComboTower : MonoBehaviour
 {
-    public GameObject connection;
-    public float newDmgMin, newDmgMax;
-    private float oldDmgMin, oldDmgMax;
-    bool isCombo = false;
+    public GameObject connection, comboManagerVar;
+    public float dmgStart, coefCombo, dmg;
+    public bool statsUpdated = false;
+    public bool built = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +19,56 @@ public class ComboTower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isCombo){
-            updateDmgStat(newDmgMax);
-        } else {
-            updateDmgStat(oldDmgMin);
+        if(built == false){
+            dmgStart = gameObject.GetComponent<UnitTower>().statsList[0].damageMin;
+        }
+        dmg = gameObject.GetComponent<UnitTower>().statsList[0].damageMin;
+    }
+
+    
+    
+    void OnTriggerStay(Collider other){
+        if(other.tag == gameObject.tag && built && other.GetComponent<ComboTower>().built && statsUpdated == false){
+            if(statsUpdated == false){
+                Connecteur(other);
+                setDmgStat(dmgStart*coefCombo);
+                statsUpdated = true;
+                int x = 0;
+                bool tower2combo = false;
+                GameObject comboManagerExist = GameObject.Find("comboManager(Clone)");
+                if(comboManagerExist != null){
+                    for(int i = 0; i < comboManagerExist.GetComponent<comboManagerScript>().combos.GetLength(0); i++){
+                        for(int n = 0; n < comboManagerExist.GetComponent<comboManagerScript>().combos.GetLength(1); n++){
+                            if(comboManagerExist.GetComponent<comboManagerScript>().combos[i,n] == other.gameObject){
+                                tower2combo = true;
+                                x = i;
+                            } else if(n == 0 && comboManagerExist.GetComponent<comboManagerScript>().combos[i,n] == null){
+                                x = i;
+                            }
+                        }
+                    }
+                    if(tower2combo == false){
+                        comboManagerExist.GetComponent<comboManagerScript>().combos[x,0] = gameObject;
+                        comboManagerExist.GetComponent<comboManagerScript>().combos[x,1] = other.gameObject;
+                    } else {
+                        if(comboManagerExist.GetComponent<comboManagerScript>().combos[x,2] == null){
+                            comboManagerExist.GetComponent<comboManagerScript>().combos[x,2] = gameObject;
+                        } else {
+                            Debug.Log("Limite atteinte!");
+                        }
+                    }
+                } else {
+                    Instantiate(comboManagerVar,new Vector3(0,0,0),Quaternion.Euler(0,0,0));
+                }
+            }
+        }
+    }
+
+    void OnTriggerExit(Collider other){
+        if(other.tag == gameObject.tag && built && other.GetComponent<ComboTower>().built && statsUpdated){
+            destroyConnecteurs(gameObject,other.gameObject);
+            setDmgStat(dmgStart);
+            statsUpdated = false;
         }
     }
 
@@ -45,39 +91,24 @@ public class ComboTower : MonoBehaviour
                 rota = Quaternion.Euler(90,0,0);
             }
             setupConnection+=gameObject.transform.position;
-            Instantiate(connection,setupConnection,rota);
+            GameObject connector = Instantiate(connection,setupConnection,rota);
+            connector.GetComponent<connectorController>().tour1 = gameObject;
+            connector.GetComponent<connectorController>().tour2 = other.gameObject;
         }
     }
 
-    void updateDmgStat(float dmg){
+    public void destroyConnecteurs(GameObject tower1, GameObject tower2){
+        for(int i = 0; i < GameObject.FindGameObjectsWithTag("connector").Length; i++){
+            GameObject connecteurTour1 = GameObject.FindGameObjectsWithTag("connector")[i].GetComponent<connectorController>().tour1;
+            GameObject connecteurTour2 = GameObject.FindGameObjectsWithTag("connector")[i].GetComponent<connectorController>().tour2;
+            if(connecteurTour1 == tower1 && connecteurTour2 == tower2){
+                Destroy(GameObject.FindGameObjectsWithTag("connector")[i]);
+            }
+        }
+    }
+
+    public void setDmgStat(float dmg){
         gameObject.GetComponent<UnitTower>().statsList[0].damageMin = dmg;
         gameObject.GetComponent<UnitTower>().statsList[0].damageMax = dmg;
-    }
-    
-    void OnTriggerEnter(Collider other){
-        if(other.tag == gameObject.tag){
-            Connecteur(other);
-            oldDmgMin = gameObject.GetComponent<UnitTower>().statsList[0].damageMin;
-            oldDmgMax = gameObject.GetComponent<UnitTower>().statsList[0].damageMax;
-            isCombo = true;
-        }
-    }
-
-    /*void OnTriggerStay(Collider other){
-        if(other.tag == gameObject.tag){
-            Debug.Log("damageMin b4:"+gameObject.GetComponent<UnitTower>().statsList[0].damageMin);
-            updateDmgStat(newDmgMax);
-            Debug.Log("damageMin after:"+gameObject.GetComponent<UnitTower>().statsList[0].damageMin);
-        }
-    }*/
-
-    void OnTriggerExit(Collider other){
-        if(other.tag == gameObject.tag){
-            //Destroy(GameObject.Find("connection"));
-            //Destroy(GameObject.Find("connection(Clone)"));
-            Debug.Log("damageMin b4:"+gameObject.GetComponent<UnitTower>().statsList[0].damageMin);
-            updateDmgStat(oldDmgMax);
-            Debug.Log("damageMin after:"+gameObject.GetComponent<UnitTower>().statsList[0].damageMin);
-        }
     }
 }
