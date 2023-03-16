@@ -393,6 +393,7 @@ GameObject:
   - component: {fileID: 3172899651221317198}
   - component: {fileID: 8430847244286640866}
   - component: {fileID: 4574050654698505984}
+  - component: {fileID: -1141270956973899777}
   m_Layer: 28
   m_Name: Tower_Turret_MG
   m_TagString: turret
@@ -829,6 +830,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5281852, y: 1, z: 4.189302}
   m_Center: {x: -0.0385929, y: 0, z: 0.016012192}
+--- !u!114 &-1141270956973899777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831089129482660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa8a81072580694c87d21daee688657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energyoliaBase: 30
+  energyolia: 30
+  dalleBase: {fileID: 3348514349618748254, guid: aca7b9e8979ed9345bec723f7901c6b3, type: 3}
+  timerStarted: 0
 --- !u!1 &1866691443232130
 GameObject:
   m_ObjectHideFlags: 0
