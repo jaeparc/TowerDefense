@@ -28,35 +28,49 @@ public class ComboTower : MonoBehaviour
     void OnTriggerStay(Collider other){
         if(other.GetComponent<UnitTower>() != null){
             if(other.GetComponent<UnitTower>().prefabID == gameObject.GetComponent<UnitTower>().prefabID && built && other.GetComponent<ComboTower>().built && statsUpdated == false){
-                Connecteur(other);
-                setDmgStat(dmgStart*coefCombo);
-                statsUpdated = true;
-                int x = 0;
+                int x = -1;
                 bool tower2combo = false;
                 GameObject comboManagerExist = GameObject.Find("comboManager(Clone)");
+
                 if(comboManagerExist != null){
-                    for(int i = 0; i < comboManagerExist.GetComponent<comboManagerScript>().combos.GetLength(0); i++){
-                        for(int n = 0; n < comboManagerExist.GetComponent<comboManagerScript>().combos.GetLength(1); n++){
-                            if(comboManagerExist.GetComponent<comboManagerScript>().combos[i,n] == other.gameObject){
+                    comboManagerScript comboManager = comboManagerExist.GetComponent<comboManagerScript>();
+                    for(int i = 0; i < comboManager.combos.GetLength(0); i++){
+                        for(int n = 0; n < comboManager.combos.GetLength(1); n++){
+                            if(comboManager.combos[i,n] == other.gameObject){
                                 tower2combo = true;
                                 x = i;
-                            } else if(n == 0 && comboManagerExist.GetComponent<comboManagerScript>().combos[i,n] == null){
+                                break;
+                            } else if(n == 0 && comboManager.combos[i,n] == null){
                                 x = i;
+                                break;
                             }
                         }
+                        if(x != -1)
+                            break;
                     }
                     if(tower2combo == false){
-                        comboManagerExist.GetComponent<comboManagerScript>().combos[x,0] = gameObject;
-                        comboManagerExist.GetComponent<comboManagerScript>().combos[x,1] = other.gameObject;
+                        comboManager.combos[x,0] = gameObject;
+                        comboManager.combos[x,1] = other.gameObject;
+                        Connecteur(other);
+                        setDmgStat(dmgStart*coefCombo);
+                        statsUpdated = true;
                     } else {
-                        if(comboManagerExist.GetComponent<comboManagerScript>().combos[x,2] == null){
-                            comboManagerExist.GetComponent<comboManagerScript>().combos[x,2] = gameObject;
+                        if(comboManager.combos[x,2] == null && comboManager.combos[x,1] != gameObject){
+                            comboManager.combos[x,2] = gameObject;
+                            Connecteur(other);
+                            setDmgStat(dmgStart*coefCombo);
+                            Debug.Log("Combo fini! X="+x);
+                            Debug.Log("X="+x+";1="+comboManager.combos[x,0].GetComponent<UnitTower>().instanceID+";2="+comboManager.combos[x,1].GetComponent<UnitTower>().instanceID+";3="+comboManager.combos[x,2].GetComponent<UnitTower>().instanceID);
+                            statsUpdated = true;
                         } else {
                             Debug.Log("Limite atteinte!");
                         }
                     }
                 } else {
                     Instantiate(comboManagerVar,new Vector3(0,0,0),Quaternion.Euler(0,0,0));
+                    Connecteur(other);
+                    setDmgStat(dmgStart*coefCombo);
+                    statsUpdated = true;
                 }
             }
         }

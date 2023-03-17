@@ -34,6 +34,8 @@ namespace TDTK{
 		private UnitTower sTower;
 		
 		public UIButton buttonSell;
+
+		public UIButton buttonReload;
 		
 		private static UITowerSelect instance;
 		
@@ -56,7 +58,9 @@ namespace TDTK{
 				
 				upgradeButtons[i].rectT.SetSiblingIndex(i);
 			}
-			
+			buttonReload.Init();
+			buttonReload.button.onClick.AddListener(() => OnReloadButton());
+
 			buttonSell.Init();
 			buttonSell.button.onClick.AddListener(() => OnSellButton());
 			if(!UIControl.InTouchMode()) buttonSell.SetCallback(OnHoverSellButton, OnExitSellButton);
@@ -77,6 +81,14 @@ namespace TDTK{
 		public void OnExitUpgradeButton(GameObject butObj){
 			UITooltip.Hide();
 		}
+
+		public void OnReloadButton(){
+			EnergyTower sEnergyTower = sTower.GetComponent<EnergyTower>();
+			if(sEnergyTower != null){
+				sEnergyTower.restartEnergy();
+			}
+		}
+
 		public void OnUpgradeButton(int idx){
 			if(!showing) return;
 			

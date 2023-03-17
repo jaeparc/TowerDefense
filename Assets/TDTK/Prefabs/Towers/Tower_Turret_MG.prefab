@@ -844,6 +844,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energyoliaBase: 30
   energyolia: 30
+  colorBase: {r: 0, g: 0, b: 0, a: 0}
+  intensity: 1
   dalleBase: {fileID: 3348514349618748254, guid: aca7b9e8979ed9345bec723f7901c6b3, type: 3}
   timerStarted: 0
 --- !u!1 &1866691443232130
