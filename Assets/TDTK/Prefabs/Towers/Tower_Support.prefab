@@ -241,6 +241,9 @@ GameObject:
   - component: {fileID: 4003013869014910}
   - component: {fileID: 114424032017952368}
   - component: {fileID: 135242732748120234}
+  - component: {fileID: -974553874073765801}
+  - component: {fileID: -8056252197089625939}
+  - component: {fileID: 2106783942047197854}
   m_Layer: 28
   m_Name: Tower_Support
   m_TagString: Untagged
@@ -349,7 +352,7 @@ MonoBehaviour:
     effectOnHitChance_Mine: 1
     overrideExistingEffect_Mine: 0
     effectOnHitIDList_Mine: 
-    attackRange_Support: 4
+    attackRange_Support: 2
     overrideExistingEffect_Support: 0
     effectOnHitIDList_Support: 0700000002000000
     cooldown_Rsc: 1
@@ -612,3 +615,48 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &-974553874073765801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940423741694192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64a6e3a2ce3cd043b1c584df16fb1ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connection: {fileID: 3511023856493608705, guid: 509de887feaafe74e844dfd4ae60c843, type: 3}
+  comboManagerVar: {fileID: 2933828478487559558, guid: 2b12251703a3ef14fb23d38356925862, type: 3}
+  dmgStart: 0
+  coefCombo: 1.5
+  dmg: 0
+  statsUpdated: 0
+  built: 0
+--- !u!65 &-8056252197089625939
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940423741694192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 1, z: 0.7004151}
+  m_Center: {x: 0, y: 0, z: 0.14979357}
+--- !u!65 &2106783942047197854
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940423741694192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.60343665, y: 1, z: 4}
+  m_Center: {x: 0.1982817, y: 0, z: 0}

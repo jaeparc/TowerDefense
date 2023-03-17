@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 63971788569846284}
   - component: {fileID: 6647488685120935286}
   - component: {fileID: 5977979389612224730}
+  - component: {fileID: 6893356229652629077}
+  - component: {fileID: -7740663897837440268}
+  - component: {fileID: -8529440446983198407}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -93,11 +96,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635276651279970191}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 6.2895775}
+  m_Center: {x: 0, y: 0, z: -0.1567763}
 --- !u!114 &5977979389612224730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,7 +157,7 @@ MonoBehaviour:
     hit: 1
     damageMin: 200
     damageMax: 200
-    attackRange: 5
+    attackRange: 4
     aoeRange: 0
     cooldown: 3
     critChance: 0
@@ -431,3 +434,51 @@ MonoBehaviour:
   nodeID: 0
   unlockUpgradeViaPerk: 0
   upgradeTowerList: []
+--- !u!114 &6893356229652629077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635276651279970191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64a6e3a2ce3cd043b1c584df16fb1ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connection: {fileID: 3511023856493608705, guid: 509de887feaafe74e844dfd4ae60c843, type: 3}
+  comboManagerVar: {fileID: 2933828478487559558, guid: 2b12251703a3ef14fb23d38356925862, type: 3}
+  dmgStart: 0
+  coefCombo: 1.5
+  dmg: 0
+  statsUpdated: 0
+  built: 0
+--- !u!54 &-7740663897837440268
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635276651279970191}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &-8529440446983198407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635276651279970191}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.8136232, y: 1, z: 1.1499975}
+  m_Center: {x: 0.10365681, y: 0, z: -0.074999146}
