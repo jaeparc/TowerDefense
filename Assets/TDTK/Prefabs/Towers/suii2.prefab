@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 9098878847875599562}
   - component: {fileID: 8281668567511874303}
   - component: {fileID: -5277309432695215692}
+  - component: {fileID: -148192266019813369}
+  - component: {fileID: 6482286634850969700}
+  - component: {fileID: 6015824375498438694}
   m_Layer: 0
   m_Name: suii2
   m_TagString: Untagged
@@ -93,11 +96,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7885447350994718849}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.061399, y: 0.9999999, z: 0.9999999}
+  m_Center: {x: -0.0625107, y: 0, z: 0}
 --- !u!114 &-5277309432695215692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,7 +157,7 @@ MonoBehaviour:
     hit: 1
     damageMin: 15
     damageMax: 15
-    attackRange: 6
+    attackRange: 3
     aoeRange: 0
     cooldown: 0.7
     critChance: 0
@@ -431,3 +434,51 @@ MonoBehaviour:
   nodeID: 0
   unlockUpgradeViaPerk: 0
   upgradeTowerList: []
+--- !u!65 &-148192266019813369
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7885447350994718849}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9999999, y: 0.9999999, z: 3.9419694}
+  m_Center: {x: 0, y: 0, z: -0.029145712}
+--- !u!114 &6482286634850969700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7885447350994718849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64a6e3a2ce3cd043b1c584df16fb1ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connection: {fileID: 3511023856493608705, guid: 509de887feaafe74e844dfd4ae60c843, type: 3}
+  comboManagerVar: {fileID: 2933828478487559558, guid: 2b12251703a3ef14fb23d38356925862, type: 3}
+  dmgStart: 0
+  coefCombo: 1.5
+  dmg: 0
+  statsUpdated: 0
+  built: 0
+--- !u!54 &6015824375498438694
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7885447350994718849}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
