@@ -65,9 +65,8 @@ public class EnergyTower : MonoBehaviour
     }
 
     void OnMouseEnter(){
-        //startColor = GetComponent<Renderer>().material.color;
-        //GetComponent<Renderer>().material.color = Color.blue;
-        displayNameActive = true;
+        if(gameObject.GetComponent<ComboTower>().built)
+            displayNameActive = true;
     }
 
     void OnMouseExit(){
@@ -78,7 +77,8 @@ public class EnergyTower : MonoBehaviour
     public void DisplayStats(){
         if(displayNameActive == true){
             Vector3 mousePos = Input.mousePosition;
-            GUI.Box(new Rect(mousePos.x,mousePos.y,150,25),"Energie : "+gameObject.GetComponent<EnergyTower>().energyolia);
+            Debug.Log(mousePos);
+            GUI.Box(new Rect(Input.mousePosition.x,Screen.height-Input.mousePosition.y-50,150,50),gameObject.GetComponent<UnitTower>().unitName+"\r\n Energie : "+gameObject.GetComponent<EnergyTower>().energyolia);
         }
     }
 }

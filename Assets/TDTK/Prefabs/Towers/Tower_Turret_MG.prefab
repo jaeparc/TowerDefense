@@ -291,7 +291,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 02644797d6d7d9e41b29e39eccd1fd61, type: 2}
+  - {fileID: 2100000, guid: 36defd376f44298409cb826748b24665, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -848,6 +848,7 @@ MonoBehaviour:
   intensity: 1
   dalleBase: {fileID: 3348514349618748254, guid: aca7b9e8979ed9345bec723f7901c6b3, type: 3}
   timerStarted: 0
+  GameSkin: {fileID: 0}
 --- !u!1 &1866691443232130
 GameObject:
   m_ObjectHideFlags: 0
