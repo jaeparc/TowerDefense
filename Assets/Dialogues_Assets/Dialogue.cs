@@ -21,14 +21,8 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0)){
-            if(textComponent.text == lines[index]){
-                nextLine();
-            } else {
-                StopAllCoroutines();
-                textComponent.text = lines[index];
-            }
-        }
+        gestionLines();
+        gestionPersos();
     }
 
     void startDialogue(){
@@ -50,6 +44,32 @@ public class Dialogue : MonoBehaviour
             StartCoroutine(typeLine());
         } else if(index == lines.Length-1){
                     SceneManager.LoadScene("Juan");
+        }
+    }
+
+    void gestionLines(){
+        if(Input.GetMouseButtonDown(0)){
+            if(textComponent.text == lines[index]){
+                nextLine();
+            } else {
+                StopAllCoroutines();
+                textComponent.text = lines[index];
+            }
+        }
+    }
+
+    void gestionPersos(){
+        SpriteRenderer xipetotec = GameObject.Find("xipetotec").GetComponent<SpriteRenderer>();
+        switch(index){
+            case 0:
+                xipetotec.color = new Color(0,0,0,0);
+                break;
+            case 1:
+                xipetotec.color = new Color(0,0,0,255);
+                break;
+            case 4:
+                xipetotec.color = new Color(255,255,255,255);
+                break;
         }
     }
 }
