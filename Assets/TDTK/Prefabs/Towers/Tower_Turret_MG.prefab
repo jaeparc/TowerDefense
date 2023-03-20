@@ -847,7 +847,7 @@ MonoBehaviour:
   intensity: 1
   cost: 0
   colorBase: {r: 0, g: 0, b: 0, a: 0}
-  dalleBase: {fileID: 3348514349618748254, guid: aca7b9e8979ed9345bec723f7901c6b3, type: 3}
+  dalleBase: {fileID: 2306494477479586032, guid: 73395063d2d26e0408cb942fc9bc245c, type: 3}
   VFXdisparition: {fileID: 1965343156803978, guid: aa8d6482d70a23445b4b2a928ed1b845, type: 3}
   timerStarted: 0
   GameSkin: {fileID: 0}
