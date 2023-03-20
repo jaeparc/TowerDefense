@@ -156,7 +156,7 @@ namespace TDTK {
 		}
 		public static void MainMenu(){
 			Debug.Log("load main menu");
-			SceneManager.LoadScene(instance.mainMenuName);
+			SceneManager.LoadScene("menu_principal");
 			Time.timeScale=1;
 		}
 		

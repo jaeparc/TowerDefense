@@ -17,4 +17,19 @@ public class comboManagerScript : MonoBehaviour
     {
         
     }
+
+    public GameObject[] getCombo(GameObject tour){
+        for(int i = 0; i < combos.GetLength(0); i++){
+            for(int n = 0; n < combos.GetLength(1); n++){
+                if(combos[i,n] == tour){
+                    GameObject[] rowToReturn = new GameObject[combos.GetLength(1)];
+                    for(int m = 0; m < combos.GetLength(1); m++){
+                        rowToReturn[m] = combos[i,m];
+                    }
+                    return rowToReturn;
+                }
+            }
+        }
+        return null;
+    }
 }

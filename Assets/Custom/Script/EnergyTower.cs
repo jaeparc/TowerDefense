@@ -5,10 +5,8 @@ using TDTK;
 
 public class EnergyTower : MonoBehaviour
 {
-    public float energyoliaBase;
-    public float energyolia;
+    public float energyolia, energyoliaBase, intensity = 1, cost;
     public Color colorBase;
-    public float intensity = 1;
     public GameObject dalleBase;
     public bool timerStarted = false;
 
@@ -54,7 +52,19 @@ public class EnergyTower : MonoBehaviour
     }
 
     public void restartEnergy(){
-        energyolia = energyoliaBase;
+        if(GameObject.Find("comboManager(Clone)") != null){
+            GameObject[] combo = GameObject.Find("comboManager(Clone)").GetComponent<comboManagerScript>().getCombo(gameObject);
+            if(combo != null){
+                for(int i = 0; i < combo.Length; i++){
+                    if(combo[i] != null)
+                        combo[i].GetComponent<EnergyTower>().energyolia = combo[i].GetComponent<EnergyTower>().energyoliaBase;
+                }
+            } else {
+                energyolia = energyoliaBase;
+            }
+        } else {
+            energyolia = energyoliaBase;
+        }
     }
 
 

@@ -86,6 +86,7 @@
      <Compile Include="Assets\Custom\Script\ComboTower.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\AutoBlink.cs" />
      <Compile Include="Assets\Custom\Script\comboManagerScript.cs" />
+     <Compile Include="Assets\testsc.cs" />
      <Compile Include="Assets\TDTK\Scripts\DB_Obsolete\RscDB.cs" />
      <Compile Include="Assets\TDTK\Scripts\DB_Obsolete\TowerDB.cs" />
      <Compile Include="Assets\TDTK\Scripts\UI\UIMessage.cs" />
@@ -148,7 +149,6 @@
      <Compile Include="Assets\TDTK\Scripts\DB\Ability_DB.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\TDTK\Scripts\AudioManager.cs" />
-     <Compile Include="Assets\testsc.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

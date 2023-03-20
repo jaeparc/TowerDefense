@@ -24,4 +24,8 @@ public class menuController : MonoBehaviour
     public void PlayBtn(){
         SceneManager.LoadScene("cinematique_debut");
     }
+
+    public void QuitBtn(){
+        Application.Quit();
+    }
 }
