@@ -875,6 +875,30 @@
       <Project>{f07abb17-ada1-e4dc-09ce-1d3a3635465b}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="CFXRRuntime.csproj">
+      <Project>{c8065152-3578-d667-551a-de8e2bcdea7e}</Project>
+      <Name>CFXRRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXREditor.csproj">
+      <Project>{4cbf5627-70cf-c3d2-95cd-50758196924f}</Project>
+      <Name>CFXREditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
+      <Project>{2c7fa5b1-6944-300e-2945-a2710c5d1e54}</Project>
+      <Name>ToonyColorsPro.Demo.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRDemo.csproj">
+      <Project>{22fd9e47-e2a1-5823-a287-b12ad161fc22}</Project>
+      <Name>CFXRDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="KinoBloom.Runtime.csproj">
+      <Project>{52e8f6e8-2ab1-0bec-bbc2-a2da85c7c99e}</Project>
+      <Name>KinoBloom.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXR.WelcomeScreen.csproj">
+      <Project>{8c0ecf32-a34c-6a98-8bb7-4fe1534b8fd5}</Project>
+      <Name>CFXR.WelcomeScreen</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

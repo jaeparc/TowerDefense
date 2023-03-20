@@ -6,7 +6,6 @@ using UnityEngine;
 namespace TDTK{
 
 	public class UnitCreep : Unit {
-
 		public override _UnitType GetUnitType(){ return _UnitType.Creep; }
 		public override bool IsCreep(){ return true; }
 		public override UnitCreep GetCreep(){ return this; }
@@ -685,7 +684,6 @@ namespace TDTK{
 		
 		public override void Destroyed(bool spawnEffDestroyed=true, bool destroyedByAttack=true){
 			hp=0;
-			
 			path.OnCreepExit(this);
 			
 			if(spawnEffDestroyed){

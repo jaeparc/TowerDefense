@@ -217,7 +217,7 @@ namespace TDTK{
 					hpRate=ApplyShieldDamage(-hpRate * Time.fixedDeltaTime);
 					if(hpRate!=0){
 						hp -= hpRate;
-						if(hp<=0){ Destroyed(); return; }
+						if(hp<=0){ Debug.Log("MORT");Destroyed(); return; }
 					}
 				}
 				

@@ -7,7 +7,7 @@ public class EnergyTower : MonoBehaviour
 {
     public float energyolia, energyoliaBase, intensity = 1, cost;
     public Color colorBase;
-    public GameObject dalleBase;
+    public GameObject dalleBase, VFXdisparition;
     public bool timerStarted = false;
 
     //VAR AFFICHAGE STATS
@@ -35,6 +35,7 @@ public class EnergyTower : MonoBehaviour
         }
 
         if(energyolia <= 0){
+            Instantiate(VFXdisparition,transform.position,transform.rotation);
             Instantiate(dalleBase,transform.position,Quaternion.Euler(90,0,0));
             Destroy(gameObject);
         }
@@ -86,8 +87,6 @@ public class EnergyTower : MonoBehaviour
 
     public void DisplayStats(){
         if(displayNameActive == true){
-            Vector3 mousePos = Input.mousePosition;
-            Debug.Log(mousePos);
             GUI.Box(new Rect(Input.mousePosition.x,Screen.height-Input.mousePosition.y-50,150,50),gameObject.GetComponent<UnitTower>().unitName+"\r\n Energie : "+gameObject.GetComponent<EnergyTower>().energyolia);
         }
     }
