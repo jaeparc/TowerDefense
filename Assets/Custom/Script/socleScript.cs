@@ -18,7 +18,7 @@ public class socleScript : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-        if(other.GetComponent<EnergyTower>() != null && other.GetComponent<EnergyTower>().destroying == false){
+        if(other.GetComponent<EnergyTower>() != null && other.GetComponent<EnergyTower>().destroying == false && other.GetComponent<ComboTower>().built){
             Destroy(gameObject);
         }
     }
