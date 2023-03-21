@@ -8,7 +8,8 @@ public class EnergyTower : MonoBehaviour
     public float energyolia, energyoliaBase, intensity = 1, cost;
     public Color colorBase;
     public GameObject dalleBase, VFXdisparition;
-    public bool timerStarted = false, destroying = false;
+    public bool timerStarted = false, rembourse = false;
+    public string type;
 
     //VAR AFFICHAGE STATS
     public GUISkin GameSkin;
@@ -35,9 +36,8 @@ public class EnergyTower : MonoBehaviour
         }
 
         if(energyolia <= 0){
-            destroying = true;
+            Instantiate(dalleBase,transform.position,Quaternion.Euler(-90,0,0)).GetComponent<socleScript>().type = type;
             Instantiate(VFXdisparition,transform.position,transform.rotation);
-            Instantiate(dalleBase,transform.position,Quaternion.Euler(-90,0,0));
             Destroy(gameObject);
         }
     }
@@ -50,6 +50,13 @@ public class EnergyTower : MonoBehaviour
                 //transform.GetChild(1).GetChild(0).GetComponent<Renderer>().material.SetColor("_EmissionColor",Color.Lerp(Color.black,colorBase,intensity));
                 yield return new WaitForSeconds(1);
             }
+        }
+    }
+
+    void OnTriggerStay(Collider other){
+        if(other.name == "socle(Clone)" && gameObject.GetComponent<ComboTower>().built && other.GetComponent<socleScript>().type == type && !rembourse){
+            GameObject.Find("GameControl").GetComponent<RscManager>()._GainRsc(new List<float>{gameObject.GetComponent<UnitTower>().GetCost()[0]*0.25f});
+            rembourse = true;
         }
     }
 
