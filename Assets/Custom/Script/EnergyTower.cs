@@ -8,7 +8,7 @@ public class EnergyTower : MonoBehaviour
     public float energyolia, energyoliaBase, intensity = 1, cost;
     public Color colorBase;
     public GameObject dalleBase, VFXdisparition;
-    public bool timerStarted = false;
+    public bool timerStarted = false, destroying = false;
 
     //VAR AFFICHAGE STATS
     public GUISkin GameSkin;
@@ -35,8 +35,9 @@ public class EnergyTower : MonoBehaviour
         }
 
         if(energyolia <= 0){
+            destroying = true;
             Instantiate(VFXdisparition,transform.position,transform.rotation);
-            Instantiate(dalleBase,transform.position,Quaternion.Euler(90,0,0));
+            Instantiate(dalleBase,transform.position,Quaternion.Euler(-90,0,0));
             Destroy(gameObject);
         }
     }
@@ -46,7 +47,7 @@ public class EnergyTower : MonoBehaviour
             while(energyolia > 0){
                 energyolia -= 1;
                 intensity = energyolia/energyoliaBase;
-                transform.GetChild(1).GetChild(0).GetComponent<Renderer>().material.SetColor("_EmissionColor",Color.Lerp(Color.black,colorBase,intensity));
+                //transform.GetChild(1).GetChild(0).GetComponent<Renderer>().material.SetColor("_EmissionColor",Color.Lerp(Color.black,colorBase,intensity));
                 yield return new WaitForSeconds(1);
             }
         }
@@ -60,11 +61,14 @@ public class EnergyTower : MonoBehaviour
                     if(combo[i] != null)
                         combo[i].GetComponent<EnergyTower>().energyolia = combo[i].GetComponent<EnergyTower>().energyoliaBase;
                 }
+                GameObject.Find("GameControl").GetComponent<RscManager>()._SpendRsc(new List<float> {cost});
             } else {
                 energyolia = energyoliaBase;
+                GameObject.Find("GameControl").GetComponent<RscManager>()._SpendRsc(new List<float> {cost});
             }
         } else {
             energyolia = energyoliaBase;
+            GameObject.Find("GameControl").GetComponent<RscManager>()._SpendRsc(new List<float> {cost});
         }
     }
 
