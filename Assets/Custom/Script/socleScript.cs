@@ -5,6 +5,8 @@ using TDTK;
 
 public class socleScript : MonoBehaviour
 {
+    public string type;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,11 +17,5 @@ public class socleScript : MonoBehaviour
     void Update()
     {
         
-    }
-
-    void OnTriggerEnter(Collider other){
-        if(other.GetComponent<EnergyTower>() != null && other.GetComponent<EnergyTower>().destroying == false && other.GetComponent<ComboTower>().built){
-            Destroy(gameObject);
-        }
     }
 }

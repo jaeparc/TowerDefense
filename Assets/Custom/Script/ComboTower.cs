@@ -14,6 +14,7 @@ public class ComboTower : MonoBehaviour
     void Start()
     {
         Debug.Log(gameObject.GetComponent<UnitTower>().prefabID);
+        Debug.Log(gameObject.GetComponent<UnitTower>().GetCost()[0].ToString("f0"));
     }
 
     // Update is called once per frame

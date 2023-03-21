@@ -851,6 +851,7 @@ MonoBehaviour:
   VFXdisparition: {fileID: 1965343156803978, guid: aa8d6482d70a23445b4b2a928ed1b845, type: 3}
   timerStarted: 0
   destroying: 0
+  type: all
   GameSkin: {fileID: 0}
 --- !u!1 &1866691443232130
 GameObject:
