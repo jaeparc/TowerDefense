@@ -276,6 +276,7 @@ GameObject:
   - component: {fileID: 3176013880009661867}
   - component: {fileID: 8800971432015127513}
   - component: {fileID: 1161171618106098699}
+  - component: {fileID: -5049570960143507303}
   m_Layer: 28
   m_Name: Tower_Turret_Laser
   m_TagString: turret
@@ -711,6 +712,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-5049570960143507303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559356812443584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa8a81072580694c87d21daee688657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energyolia: 30
+  energyoliaBase: 30
+  intensity: 1
+  cost: 30
+  colorBase: {r: 0, g: 0, b: 0, a: 0}
+  dalleBase: {fileID: 0}
+  VFXdisparition: {fileID: 0}
+  timerStarted: 0
+  destroying: 0
+  GameSkin: {fileID: 0}
 --- !u!1 &1605572641556376
 GameObject:
   m_ObjectHideFlags: 0

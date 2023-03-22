@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: -5350057510560830379}
   - component: {fileID: 544512733767586313}
   - component: {fileID: -941128075056282652}
+  - component: {fileID: 6127172322337554386}
   m_Layer: 28
   m_Name: Tower_Turret_Cannon
   m_TagString: turret
@@ -689,6 +690,28 @@ MonoBehaviour:
   dmg: 0
   statsUpdated: 0
   built: 0
+--- !u!114 &6127172322337554386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239107217020288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa8a81072580694c87d21daee688657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energyolia: 30
+  energyoliaBase: 30
+  intensity: 1
+  cost: 30
+  colorBase: {r: 0, g: 0, b: 0, a: 0}
+  dalleBase: {fileID: 0}
+  VFXdisparition: {fileID: 0}
+  timerStarted: 0
+  destroying: 0
+  GameSkin: {fileID: 0}
 --- !u!1 &1432990021579718
 GameObject:
   m_ObjectHideFlags: 0

@@ -241,10 +241,8 @@ MonoBehaviour:
     expToNextUpgrade: 10
     cost:
     - 10
-    - 0
     sellValue:
     - 10
-    - 0
     hp: 5
     sh: 0
     shRegen: 0
