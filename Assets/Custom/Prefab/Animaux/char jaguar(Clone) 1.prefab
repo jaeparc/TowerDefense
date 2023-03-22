@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 2224892552320156705}
   - component: {fileID: 2224892552320156718}
   m_Layer: 0
-  m_Name: char jaguar.045
+  m_Name: roue_argauche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1597,7 +1597,7 @@ GameObject:
   - component: {fileID: 2224892552992445172}
   - component: {fileID: 2224892552992445173}
   m_Layer: 0
-  m_Name: char jaguar.050
+  m_Name: roue_ardroite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2144,7 +2144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b923ee3b811fac246b524e79082f0eb6, type: 2}
+  - {fileID: 2100000, guid: 8996a2664d69e734ba5ff6d58587be50, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2476,7 +2476,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b923ee3b811fac246b524e79082f0eb6, type: 2}
+  - {fileID: 2100000, guid: 8996a2664d69e734ba5ff6d58587be50, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2593,7 +2593,7 @@ GameObject:
   - component: {fileID: 2224892553365030693}
   - component: {fileID: 2224892553365030690}
   m_Layer: 0
-  m_Name: char jaguar.005
+  m_Name: roue_avgauche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4419,7 +4419,7 @@ GameObject:
   - component: {fileID: 2224892554210654470}
   - component: {fileID: 2224892554210654471}
   m_Layer: 0
-  m_Name: char jaguar.053
+  m_Name: roue_avdroite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

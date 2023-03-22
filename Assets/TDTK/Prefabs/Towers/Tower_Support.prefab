@@ -661,5 +661,6 @@ MonoBehaviour:
   dalleBase: {fileID: 0}
   VFXdisparition: {fileID: 0}
   timerStarted: 0
-  destroying: 0
+  rembourse: 0
+  type: 
   GameSkin: {fileID: 0}

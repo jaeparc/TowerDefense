@@ -621,5 +621,6 @@ MonoBehaviour:
   dalleBase: {fileID: 2306494477479586032, guid: 73395063d2d26e0408cb942fc9bc245c, type: 3}
   VFXdisparition: {fileID: 0}
   timerStarted: 0
-  destroying: 0
+  rembourse: 0
+  type: 
   GameSkin: {fileID: 0}
