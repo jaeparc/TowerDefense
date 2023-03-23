@@ -13,33 +13,23 @@ MonoBehaviour:
   m_Name: TowerDB
   m_EditorClassIdentifier: 
   objList:
-  - {fileID: 1831089129482660, guid: 232a41f67b6cc6e4bbcbd55d6664a3eb, type: 3}
-  - {fileID: 1239107217020288, guid: 83408afc61d1bb54eb8a281d0e366c99, type: 3}
-  - {fileID: 1559356812443584, guid: 2d7555128cdf3e248af53a16f449ef86, type: 3}
-  - {fileID: 1486071284530726, guid: 3f0be5a8c13ba174ea75fa50fe15fb44, type: 3}
-  - {fileID: 1940423741694192, guid: bfb02c1cfad601042bd343620d28e1ef, type: 3}
-  - {fileID: 1940423741694192, guid: 0f3e3bcb818ed2e44aa9c634151cd2d7, type: 3}
-  - {fileID: 1136647811518820, guid: b3600a2efb36e044b834ccc3abf9f886, type: 3}
-  - {fileID: 1239107217020288, guid: bf71c92a2333dd847b76d90dcdebb3cc, type: 3}
-  - {fileID: 1239107217020288, guid: 9296eb95e6ad99c4aaa9046a333c5792, type: 3}
-  - {fileID: 635276651279970191, guid: a05457b261630084cb2c061d6c31eb51, type: 3}
-  - {fileID: 7885447350994718849, guid: 58c5f5226d690f5409c95b3d3ce19188, type: 3}
-  - {fileID: 7948281365494033688, guid: 2720431f5b0513a429779bdfd37b30c7, type: 3}
-  - {fileID: 2618501818272663144, guid: 1d716d13989f1cc49abb38d98c4bae3f, type: 3}
-  - {fileID: 245915475490942499, guid: 3f1d090557ad29c45af2e5427e8a54a3, type: 3}
+  - {fileID: 1802330060686805119, guid: fa66929cc624bd8498e1921aba4a82d0, type: 3}
+  - {fileID: 7948281365494033688, guid: 4ac0df8d1f202fa4fb6c0d67724b363b, type: 3}
+  - {fileID: 9140113119639841499, guid: 60e58b453bb6cdf42b4e2b004742e7b3, type: 3}
+  - {fileID: 5512467180034117966, guid: f9d3ff65c626ccf48871a881095bfb22, type: 3}
+  - {fileID: 2113410125024916535, guid: c44c758d8a8576842bc09afaa0d46ef0, type: 3}
+  - {fileID: 9015122804618880523, guid: 7ffb9cdcbcf945747ae2fa787d8a0999, type: 3}
+  - {fileID: 7007086125237674206, guid: c84c8091f1b1dfe40a04b68bff03ac4b, type: 3}
+  - {fileID: 6459181996902637950, guid: 5f30ea15f92051c479d9c0ed58c1df62, type: 3}
+  - {fileID: 5824091246892128545, guid: ed64d79342c86e74ebdb3f6e6943b6c7, type: 3}
   towerList:
-  - {fileID: 114825332541157422, guid: 232a41f67b6cc6e4bbcbd55d6664a3eb, type: 3}
-  - {fileID: 114541810645508154, guid: 83408afc61d1bb54eb8a281d0e366c99, type: 3}
-  - {fileID: 114928476342519558, guid: 2d7555128cdf3e248af53a16f449ef86, type: 3}
-  - {fileID: 114132534924388918, guid: 3f0be5a8c13ba174ea75fa50fe15fb44, type: 3}
-  - {fileID: 114424032017952368, guid: bfb02c1cfad601042bd343620d28e1ef, type: 3}
-  - {fileID: 114424032017952368, guid: 0f3e3bcb818ed2e44aa9c634151cd2d7, type: 3}
-  - {fileID: 114544440111874162, guid: b3600a2efb36e044b834ccc3abf9f886, type: 3}
-  - {fileID: 114541810645508154, guid: bf71c92a2333dd847b76d90dcdebb3cc, type: 3}
-  - {fileID: 114541810645508154, guid: 9296eb95e6ad99c4aaa9046a333c5792, type: 3}
-  - {fileID: 5977979389612224730, guid: a05457b261630084cb2c061d6c31eb51, type: 3}
-  - {fileID: -5277309432695215692, guid: 58c5f5226d690f5409c95b3d3ce19188, type: 3}
-  - {fileID: 2146385084801071095, guid: 2720431f5b0513a429779bdfd37b30c7, type: 3}
-  - {fileID: -1759560701416312541, guid: 1d716d13989f1cc49abb38d98c4bae3f, type: 3}
-  - {fileID: -7217216580804383869, guid: 3f1d090557ad29c45af2e5427e8a54a3, type: 3}
+  - {fileID: 9028571051184657640, guid: fa66929cc624bd8498e1921aba4a82d0, type: 3}
+  - {fileID: 2146385084801071095, guid: 4ac0df8d1f202fa4fb6c0d67724b363b, type: 3}
+  - {fileID: 4853408994809380786, guid: 60e58b453bb6cdf42b4e2b004742e7b3, type: 3}
+  - {fileID: 1871149763430206476, guid: f9d3ff65c626ccf48871a881095bfb22, type: 3}
+  - {fileID: 2729405640071600490, guid: c44c758d8a8576842bc09afaa0d46ef0, type: 3}
+  - {fileID: 1837402592914309890, guid: 7ffb9cdcbcf945747ae2fa787d8a0999, type: 3}
+  - {fileID: 2354516168793261, guid: c84c8091f1b1dfe40a04b68bff03ac4b, type: 3}
+  - {fileID: 6623970557997486553, guid: 5f30ea15f92051c479d9c0ed58c1df62, type: 3}
+  - {fileID: 4973689716267400961, guid: ed64d79342c86e74ebdb3f6e6943b6c7, type: 3}
   copiedFromOldDB: 0

@@ -3325,13 +3325,13 @@ MonoBehaviour:
   resetTargetOnAttack: 0
   prefabID: -1
   instanceID: -1
-  unitName: 
-  icon: {fileID: 0}
+  unitName: Mortier niveau 2
+  icon: {fileID: 21300000, guid: 8d32c7392a5171d41befea1f778993e4, type: 3}
   desp: unit description
   canBeAttacked: 1
   canBeTargeted: 1
   unitRadius: 0.25
-  targetPoint: {fileID: 0}
+  targetPoint: {fileID: 4732339150288431814}
   hp: 10
   sh: 0
   shStagger: 0
@@ -3341,14 +3341,16 @@ MonoBehaviour:
   cooldownRsc: 0
   level: 0
   statsList:
-  - editTurret: 0
+  - editTurret: 1
     editAOE: 0
     editMine: 0
-    buildDuration: 1
-    sellDuration: 1
+    buildDuration: 1.5
+    sellDuration: 0.5
     expToNextUpgrade: 10
-    cost: []
-    sellValue: []
+    cost:
+    - 300
+    sellValue:
+    - 350
     hp: 5
     sh: 0
     shRegen: 0.5
@@ -3362,11 +3364,11 @@ MonoBehaviour:
     dmgReduc: 0
     critReduc: 0
     hit: 1
-    damageMin: 2
-    damageMax: 2
-    attackRange: 2
-    aoeRange: 0
-    cooldown: 1
+    damageMin: 75
+    damageMax: 75
+    attackRange: 3.5
+    aoeRange: 2
+    cooldown: 2
     critChance: 0
     critMultiplier: 0
     effectOnHitChance: 1
@@ -3399,8 +3401,11 @@ MonoBehaviour:
     rscGain: []
   effectImmunityList: 
   attackTargetList: []
-  shootObject: {fileID: 0}
-  shootPoint: []
+  shootObject: {fileID: 114266115900946412, guid: cfbe6720ccbdd0947939be5cb4a41edc, type: 3}
+  shootPoint:
+  - {fileID: 4732339150288431814}
+  - {fileID: 5699869493101713882}
+  - {fileID: 5597845781367804759}
   shootPointSpacing: 0.2
   shootEffObj_AOE:
     obj: {fileID: 0}
@@ -3602,7 +3607,7 @@ MonoBehaviour:
   isSupport: 0
   isResource: 0
   isMine: 0
-  targetGroup: 0
+  targetGroup: 1
   activeBetweenWave: 0
   isPreview: 0
   prebuilt: 0

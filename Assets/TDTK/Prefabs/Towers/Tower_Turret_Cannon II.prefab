@@ -310,7 +310,7 @@ MonoBehaviour:
   attackTargetList: []
   shootObject: {fileID: 114266115900946412, guid: 09a463b997518ca4ba2b0574c697a0c1, type: 3}
   shootPoint:
-  - {fileID: 4550823980536178}
+  - {fileID: 0}
   shootPointSpacing: 0.2
   shootEffObj_AOE:
     obj: {fileID: 0}

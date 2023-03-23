@@ -16,7 +16,7 @@ MonoBehaviour:
   perkList:
   - prefabID: 0
     instanceID: -1
-    icon: {fileID: 21300002, guid: c1bf8f531a58e5a43a7677bc162c964a, type: 3}
+    icon: {fileID: 21300000, guid: ae6008013511ec3428b3fe9ed04373d0, type: 3}
     name: MG Tower Upgrade
     desp: MG Tower gain 25% chance to do critical damage
     type: 2

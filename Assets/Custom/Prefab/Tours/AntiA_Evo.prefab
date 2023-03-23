@@ -10903,15 +10903,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetTargetOnAttack: 0
-  prefabID: -1
+  prefabID: 1
   instanceID: -1
-  unitName: 
-  icon: {fileID: 0}
+  unitName: "Anti-a\xE9rien niveau 2"
+  icon: {fileID: 21300000, guid: 767ac4d4c1b94e64c9aa533afd78d7d2, type: 3}
   desp: unit description
   canBeAttacked: 1
   canBeTargeted: 1
   unitRadius: 0.25
-  targetPoint: {fileID: 0}
+  targetPoint: {fileID: 4864203375921345880}
   hp: 10
   sh: 0
   shStagger: 0
@@ -10921,14 +10921,16 @@ MonoBehaviour:
   cooldownRsc: 0
   level: 0
   statsList:
-  - editTurret: 0
+  - editTurret: 1
     editAOE: 0
     editMine: 0
-    buildDuration: 1
-    sellDuration: 1
+    buildDuration: 1.5
+    sellDuration: 0.5
     expToNextUpgrade: 10
-    cost: []
-    sellValue: []
+    cost:
+    - 300
+    sellValue:
+    - 450
     hp: 5
     sh: 0
     shRegen: 0.5
@@ -10942,9 +10944,9 @@ MonoBehaviour:
     dmgReduc: 0
     critReduc: 0
     hit: 1
-    damageMin: 2
-    damageMax: 2
-    attackRange: 2
+    damageMin: 25
+    damageMax: 25
+    attackRange: 3
     aoeRange: 0
     cooldown: 1
     critChance: 0
@@ -10980,7 +10982,12 @@ MonoBehaviour:
   effectImmunityList: 
   attackTargetList: []
   shootObject: {fileID: 0}
-  shootPoint: []
+  shootPoint:
+  - {fileID: 3080282252931043426}
+  - {fileID: 7336643652404296565}
+  - {fileID: 2272339028485686735}
+  - {fileID: 7454593371859517292}
+  - {fileID: 5284963181532061085}
   shootPointSpacing: 0.2
   shootEffObj_AOE:
     obj: {fileID: 0}
@@ -11002,7 +11009,7 @@ MonoBehaviour:
   aimSpeed: 20
   aimed: 0
   targetMode: 0
-  targetCountPerAttack: 1
+  targetCountPerAttack: 5
   useLOSTargeting: 0
   targetingFov: 360
   targetingDir: 0
@@ -11182,7 +11189,7 @@ MonoBehaviour:
   isSupport: 0
   isResource: 0
   isMine: 0
-  targetGroup: 0
+  targetGroup: 2
   activeBetweenWave: 0
   isPreview: 0
   prebuilt: 0

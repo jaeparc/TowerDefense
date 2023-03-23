@@ -2489,7 +2489,7 @@ MonoBehaviour:
   prefabID: 11
   instanceID: -1
   unitName: TourLaser2
-  icon: {fileID: 21300000, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
+  icon: {fileID: 21300000, guid: d82fce9bce8e98247bd75192e24c3756, type: 3}
   desp: unit description
   canBeAttacked: 1
   canBeTargeted: 1
@@ -2511,9 +2511,9 @@ MonoBehaviour:
     sellDuration: 0.5
     expToNextUpgrade: 10
     cost:
-    - 100
+    - 300
     sellValue:
-    - 250
+    - 450
     hp: 20
     sh: 0
     shRegen: 0.5
