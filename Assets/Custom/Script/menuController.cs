@@ -14,7 +14,7 @@ public class menuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(SceneManager.GetActiveScene().name == "ecran_titre"){
+        if(SceneManager.GetActiveScene().name == "ecran_titre" || SceneManager.GetActiveScene().name == "credits"){
             if(Input.anyKeyDown){
                 SceneManager.LoadScene("menu_principal");
             }
@@ -23,6 +23,10 @@ public class menuController : MonoBehaviour
 
     public void PlayBtn(){
         SceneManager.LoadScene("cinematique_debut");
+    }
+
+    public void CreditsBtn(){
+        SceneManager.LoadScene("credits");
     }
 
     public void QuitBtn(){

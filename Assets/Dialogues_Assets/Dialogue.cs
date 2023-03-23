@@ -60,6 +60,8 @@ public class Dialogue : MonoBehaviour
 
     void gestionPersos(){
         SpriteRenderer xipetotec = GameObject.Find("xipetotec").GetComponent<SpriteRenderer>();
+        SpriteRenderer tezcatlipoca = GameObject.Find("tezcatlipoca").GetComponent<SpriteRenderer>();
+        SpriteRenderer kid = GameObject.Find("enfant").GetComponent<SpriteRenderer>();
         switch(index){
             case 0:
                 xipetotec.color = new Color(0,0,0,0);
@@ -68,6 +70,16 @@ public class Dialogue : MonoBehaviour
                 xipetotec.color = new Color(0,0,0,255);
                 break;
             case 4:
+                xipetotec.color = new Color(255,255,255,255);
+                break;
+            case 13:
+                tezcatlipoca.color = new Color(255,255,255,125);
+                kid.color = new Color(255,255,255,0);
+                xipetotec.color = new Color(255,255,255,0);
+                break;
+            case 15:
+                tezcatlipoca.color = new Color(255,255,255,0);
+                kid.color = new Color(255,255,255,255);
                 xipetotec.color = new Color(255,255,255,255);
                 break;
         }
