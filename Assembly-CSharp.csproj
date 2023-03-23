@@ -109,7 +109,6 @@
      <Compile Include="Assets\Custom\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\SpringBone.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Universal render pipeline\UnityChan\Scripts\IdleChanger.cs" />
-     <Compile Include="Assets\planteurDePlantes.cs" />
      <Compile Include="Assets\TDTK\Scripts\DB_Obsolete\PerkDB.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\ImageEffects\Scripts\PostEffectsBase.cs" />
      <Compile Include="Assets\TDTK\Scripts\RscManager.cs" />
