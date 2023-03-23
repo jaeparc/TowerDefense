@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7948528913890749969}
   - component: {fileID: -7610919789459241909}
   m_Layer: 0
-  m_Name: Tour_dps_lvl_1
+  m_Name: Basique
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

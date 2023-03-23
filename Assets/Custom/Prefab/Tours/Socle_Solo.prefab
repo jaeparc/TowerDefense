@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6500751172614097911}
   - component: {fileID: 8677916164092688865}
   m_Layer: 0
-  m_Name: socle
+  m_Name: Socle_Solo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

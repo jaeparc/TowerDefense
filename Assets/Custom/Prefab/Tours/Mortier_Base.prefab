@@ -2008,7 +2008,7 @@ GameObject:
   - component: {fileID: 4371843483307386738}
   - component: {fileID: 5488348080923787507}
   m_Layer: 0
-  m_Name: Tour2Mortier
+  m_Name: Mortier_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

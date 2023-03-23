@@ -48,7 +48,10 @@ public class EnergyTower : MonoBehaviour
             while(energyolia > 0){
                 energyolia -= 1;
                 intensity = energyolia/energyoliaBase;
-                //transform.GetChild(1).GetChild(0).GetComponent<Renderer>().material.SetColor("_EmissionColor",Color.Lerp(Color.black,colorBase,intensity));
+                for(int i = 0; i < transform.childCount; i++){
+                    //if(transform.GetChild(i).tag == "Indicator")
+                        //transform.GetChild(i).GetComponent<Renderer>().material.SetColor("_EmissionColor",Color.Lerp(colorBase,Color.black,intensity));
+                }
                 yield return new WaitForSeconds(1);
             }
         }
