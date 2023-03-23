@@ -218,15 +218,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetTargetOnAttack: 0
-  prefabID: -1
+  prefabID: 12
   instanceID: -1
-  unitName: 
+  unitName: Tour Laser
   icon: {fileID: 0}
   desp: unit description
   canBeAttacked: 1
   canBeTargeted: 1
   unitRadius: 0.25
-  targetPoint: {fileID: 0}
+  targetPoint: {fileID: 5529755055441574912}
   hp: 10
   sh: 0
   shStagger: 0
@@ -236,16 +236,16 @@ MonoBehaviour:
   cooldownRsc: 0
   level: 0
   statsList:
-  - editTurret: 0
+  - editTurret: 1
     editAOE: 0
     editMine: 0
-    buildDuration: 1
-    sellDuration: 1
+    buildDuration: 1.5
+    sellDuration: 0.5
     expToNextUpgrade: 10
     cost:
-    - 0
+    - 200
     sellValue:
-    - 0
+    - 175
     hp: 5
     sh: 0
     shRegen: 0.5
@@ -259,11 +259,11 @@ MonoBehaviour:
     dmgReduc: 0
     critReduc: 0
     hit: 1
-    damageMin: 2
-    damageMax: 2
-    attackRange: 2
+    damageMin: 5
+    damageMax: 5
+    attackRange: 3
     aoeRange: 0
-    cooldown: 1
+    cooldown: 0.1
     critChance: 0
     critMultiplier: 0
     effectOnHitChance: 1
@@ -296,8 +296,9 @@ MonoBehaviour:
     rscGain: []
   effectImmunityList: 
   attackTargetList: []
-  shootObject: {fileID: 0}
-  shootPoint: []
+  shootObject: {fileID: 114917850592720432, guid: 9894ee1936d71e4409526f77dc26b2ec, type: 3}
+  shootPoint:
+  - {fileID: 5529755055441574912}
   shootPointSpacing: 0.2
   shootEffObj_AOE:
     obj: {fileID: 0}
@@ -537,7 +538,8 @@ MonoBehaviour:
   buildPlatform: {fileID: 0}
   nodeID: 0
   unlockUpgradeViaPerk: 0
-  upgradeTowerList: []
+  upgradeTowerList:
+  - {fileID: 4853408994809380786, guid: 60e58b453bb6cdf42b4e2b004742e7b3, type: 3}
 --- !u!54 &1755943776490745295
 Rigidbody:
   m_ObjectHideFlags: 0
