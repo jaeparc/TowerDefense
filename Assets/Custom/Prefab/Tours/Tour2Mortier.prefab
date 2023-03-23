@@ -2111,8 +2111,10 @@ MonoBehaviour:
     buildDuration: 1
     sellDuration: 1
     expToNextUpgrade: 10
-    cost: []
-    sellValue: []
+    cost:
+    - 0
+    sellValue:
+    - 0
     hp: 5
     sh: 0
     shRegen: 0.5

@@ -37,7 +37,8 @@ public class EnergyTower : MonoBehaviour
 
         if(energyolia <= 0){
             Instantiate(dalleBase,transform.position,Quaternion.Euler(-90,0,0)).GetComponent<socleScript>().type = type;
-            Instantiate(VFXdisparition,transform.position,transform.rotation);
+            if(VFXdisparition != null)
+                Instantiate(VFXdisparition,transform.position,transform.rotation);
             Destroy(gameObject);
         }
     }
