@@ -20,7 +20,7 @@ public class EnergyTower : MonoBehaviour
     void Start()
     {
         energyolia = energyoliaBase;
-        colorBase = transform.GetChild(1).GetChild(0).GetComponent<Renderer>().material.GetColor("_EmissionColor");
+        //colorBase = transform.GetChild(1).GetChild(0).GetComponent<Renderer>().material.GetColor("_EmissionColor");
     }
 
     // Update is called once per frame
@@ -66,13 +66,12 @@ public class EnergyTower : MonoBehaviour
             GameObject[] combo = GameObject.Find("comboManager(Clone)").GetComponent<comboManagerScript>().getCombo(gameObject);
             if(combo != null){
                 for(int i = 0; i < combo.Length; i++){
-                    if(combo[i] != null)
+                    if(combo[i] != null && GameObject.Find("GameControl").GetComponent<RscManager>()._SpendRsc(new List<float> {cost}))
                         combo[i].GetComponent<EnergyTower>().energyolia = combo[i].GetComponent<EnergyTower>().energyoliaBase;
                 }
-                GameObject.Find("GameControl").GetComponent<RscManager>()._SpendRsc(new List<float> {cost});
             } else {
-                energyolia = energyoliaBase;
-                GameObject.Find("GameControl").GetComponent<RscManager>()._SpendRsc(new List<float> {cost});
+                if(GameObject.Find("GameControl").GetComponent<RscManager>()._SpendRsc(new List<float> {cost}))
+                    energyolia = energyoliaBase;
             }
         } else {
             energyolia = energyoliaBase;

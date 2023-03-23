@@ -86,20 +86,20 @@ public class ComboTower : MonoBehaviour
     }
 
     void Connecteur(Collider other){
-        if(gameObject.transform.position.x == other.transform.position.x || gameObject.transform.position.z == other.transform.position.z){
+        // if(gameObject.transform.position.x.ToString("F2") == other.transform.position.x.ToString("F2") || gameObject.transform.position.z.ToString("F2") == other.transform.position.z.ToString("F2")){
             Vector3 setupConnection = new Vector3(0,0,0);
             Quaternion rota = Quaternion.Euler(0,0,0);
-            if(gameObject.transform.position.x > other.transform.position.x){//si la tour 2 est à gauche
+            if(gameObject.transform.position.x - other.transform.position.x > 0.2f ){//si la tour 2 est à gauche
                 setupConnection = new Vector3(-0.5f,0,0);
                 rota = Quaternion.Euler(0,0,90);
-            } else if(gameObject.transform.position.x < other.transform.position.x){
+            } else if(gameObject.transform.position.x - other.transform.position.x < -0.2f ){
                 setupConnection = new Vector3(0.5f,0,0);
                 rota = Quaternion.Euler(0,0,90);
             }
-            if(gameObject.transform.position.z > other.transform.position.z){
+            if(gameObject.transform.position.z - other.transform.position.z > 0.2f ){
                 setupConnection = new Vector3(0,0,-0.5f);
                 rota = Quaternion.Euler(90,0,0);
-            } else if(gameObject.transform.position.z < other.transform.position.z){
+            } else if(gameObject.transform.position.z - other.transform.position.z < -0.2f ){
                 setupConnection = new Vector3(0,0,0.5f);
                 rota = Quaternion.Euler(90,0,0);
             }
@@ -107,7 +107,7 @@ public class ComboTower : MonoBehaviour
             GameObject connector = Instantiate(connection,setupConnection,rota);
             connector.GetComponent<connectorController>().tour1 = gameObject;
             connector.GetComponent<connectorController>().tour2 = other.gameObject;
-        }
+        // }
     }
 
     public void destroyConnecteurs(GameObject tower1, GameObject tower2){
