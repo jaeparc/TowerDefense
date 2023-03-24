@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 7460169448377202575}
   m_Layer: 0
   m_Name: Cylinder.112
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 5067744837223780041}
   m_Layer: 0
   m_Name: Cylinder.017
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -957,7 +957,7 @@ GameObject:
   - component: {fileID: 90013604994570999}
   m_Layer: 0
   m_Name: Sphere.012
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1040,7 +1040,7 @@ GameObject:
   - component: {fileID: 5582303293173124959}
   m_Layer: 0
   m_Name: Cylinder.050
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1870,7 +1870,7 @@ GameObject:
   - component: {fileID: 5389677131823295989}
   m_Layer: 0
   m_Name: Cylinder.116
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3177,7 +3177,7 @@ GameObject:
   - component: {fileID: 8195494271104216688}
   m_Layer: 0
   m_Name: Cylinder.051
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3592,7 +3592,7 @@ GameObject:
   - component: {fileID: 5324932610249726249}
   m_Layer: 0
   m_Name: Plane.068
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4121,7 +4121,7 @@ GameObject:
   - component: {fileID: 1660139557608822392}
   m_Layer: 0
   m_Name: Plane.053
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5532,7 +5532,7 @@ GameObject:
   - component: {fileID: 778153815591671594}
   m_Layer: 0
   m_Name: Cylinder.086
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6393,7 +6393,7 @@ GameObject:
   - component: {fileID: 6201516633358346210}
   m_Layer: 0
   m_Name: Cylinder.037
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6642,7 +6642,7 @@ GameObject:
   - component: {fileID: 3698807466091477541}
   m_Layer: 0
   m_Name: Sphere.003
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6974,7 +6974,7 @@ GameObject:
   - component: {fileID: 229089069907564301}
   m_Layer: 0
   m_Name: Cylinder.055
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7140,7 +7140,7 @@ GameObject:
   - component: {fileID: 1493545664409776208}
   m_Layer: 0
   m_Name: Sphere.002
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7306,7 +7306,7 @@ GameObject:
   - component: {fileID: 8886725406427393959}
   m_Layer: 0
   m_Name: Cylinder.084
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7721,7 +7721,7 @@ GameObject:
   - component: {fileID: 2511972288002112434}
   m_Layer: 0
   m_Name: Sphere.004
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9858,7 +9858,7 @@ GameObject:
   - component: {fileID: 4641970602226248393}
   m_Layer: 0
   m_Name: Cylinder.083
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10024,7 +10024,7 @@ GameObject:
   - component: {fileID: 5042422945999090400}
   m_Layer: 0
   m_Name: Cylinder.117
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11943,7 +11943,7 @@ GameObject:
   - component: {fileID: 4092655752892797547}
   m_Layer: 0
   m_Name: Cylinder.149
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12275,7 +12275,7 @@ GameObject:
   - component: {fileID: 3471661154807440917}
   m_Layer: 0
   m_Name: Cylinder.057
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13613,7 +13613,7 @@ GameObject:
   - component: {fileID: 4967009996194535251}
   m_Layer: 0
   m_Name: Sphere.010
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14474,7 +14474,7 @@ GameObject:
   - component: {fileID: 2765821362892207571}
   m_Layer: 0
   m_Name: Sphere.008
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14972,7 +14972,7 @@ GameObject:
   - component: {fileID: 7119411233466122572}
   m_Layer: 0
   m_Name: Cylinder.080
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16995,7 +16995,7 @@ GameObject:
   - component: {fileID: 8020317259276084274}
   m_Layer: 0
   m_Name: Cylinder.145
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17576,7 +17576,7 @@ GameObject:
   - component: {fileID: 5431383428068721133}
   m_Layer: 0
   m_Name: Cylinder.118
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17908,7 +17908,7 @@ GameObject:
   - component: {fileID: 1910386340913979277}
   m_Layer: 0
   m_Name: Cylinder.146
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18437,7 +18437,7 @@ GameObject:
   - component: {fileID: 4801464970685870977}
   m_Layer: 0
   m_Name: Cylinder.085
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18769,7 +18769,7 @@ GameObject:
   - component: {fileID: 8765109134819397312}
   m_Layer: 0
   m_Name: Cylinder.035
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19101,7 +19101,7 @@ GameObject:
   - component: {fileID: 6252240153618428083}
   m_Layer: 0
   m_Name: Cylinder.054
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19184,7 +19184,7 @@ GameObject:
   - component: {fileID: 5847490580402098771}
   m_Layer: 0
   m_Name: Cylinder.018
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19267,7 +19267,7 @@ GameObject:
   - component: {fileID: 7318310531992651882}
   m_Layer: 0
   m_Name: Cylinder.082
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20540,7 +20540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5617731327205871897}
   m_Layer: 0
-  m_Name: TourDpsEvolution6
+  m_Name: Basique_Evo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21040,6 +21040,7 @@ Transform:
   - {fileID: 4084345886932941007}
   - {fileID: 960746673365814814}
   - {fileID: 8589117491156358274}
+  - {fileID: 7732170851341564719}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23473,7 +23474,7 @@ GameObject:
   - component: {fileID: 8392464758694021801}
   m_Layer: 0
   m_Name: Cylinder.038
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24469,7 +24470,7 @@ GameObject:
   - component: {fileID: 5180672771493166622}
   m_Layer: 0
   m_Name: Cylinder.144
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24635,7 +24636,7 @@ GameObject:
   - component: {fileID: 4307853562021493972}
   m_Layer: 0
   m_Name: Plane.067
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25050,7 +25051,7 @@ GameObject:
   - component: {fileID: 1276370058147403390}
   m_Layer: 0
   m_Name: Plane.070
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25465,7 +25466,7 @@ GameObject:
   - component: {fileID: 9139916922288908810}
   m_Layer: 0
   m_Name: Cylinder.056
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26855,7 +26856,7 @@ GameObject:
   - component: {fileID: 8353671943994585708}
   m_Layer: 0
   m_Name: Plane.069
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27768,7 +27769,7 @@ GameObject:
   - component: {fileID: 6438533401496008565}
   m_Layer: 0
   m_Name: Plane.071
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27851,7 +27852,7 @@ GameObject:
   - component: {fileID: 2421729603052666230}
   m_Layer: 0
   m_Name: Cylinder.148
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28847,7 +28848,7 @@ GameObject:
   - component: {fileID: 5400657798683238808}
   m_Layer: 0
   m_Name: Cylinder.119
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29511,7 +29512,7 @@ GameObject:
   - component: {fileID: 8552291646618560081}
   m_Layer: 0
   m_Name: Plane.052
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30123,7 +30124,7 @@ GameObject:
   - component: {fileID: 8176693868553997585}
   m_Layer: 0
   m_Name: Cylinder.081
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30320,7 +30321,7 @@ GameObject:
   - component: {fileID: 7064432375909119299}
   m_Layer: 0
   m_Name: Sphere.006
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30766,7 +30767,7 @@ GameObject:
   - component: {fileID: 6188543335503369039}
   m_Layer: 0
   m_Name: Cylinder.094
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33899,7 +33900,7 @@ GameObject:
   - component: {fileID: 6729828526660574831}
   m_Layer: 0
   m_Name: Cylinder.113
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34231,7 +34232,7 @@ GameObject:
   - component: {fileID: 7623920797304852973}
   m_Layer: 0
   m_Name: Cylinder.147
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35538,7 +35539,7 @@ GameObject:
   - component: {fileID: 2635692538981042993}
   m_Layer: 0
   m_Name: Cylinder.114
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35621,7 +35622,7 @@ GameObject:
   - component: {fileID: 5462618132947202074}
   m_Layer: 0
   m_Name: Cylinder.016
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35953,7 +35954,7 @@ GameObject:
   - component: {fileID: 4185699268396566159}
   m_Layer: 0
   m_Name: Sphere.001
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36451,7 +36452,7 @@ GameObject:
   - component: {fileID: 6867040962545349312}
   m_Layer: 0
   m_Name: Sphere.011
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38557,7 +38558,7 @@ GameObject:
   - component: {fileID: 1497130159550575975}
   m_Layer: 0
   m_Name: Cylinder.087
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38640,7 +38641,7 @@ GameObject:
   - component: {fileID: 9069862020224288489}
   m_Layer: 0
   m_Name: Sphere.007
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38889,7 +38890,7 @@ GameObject:
   - component: {fileID: 7993068446926398954}
   m_Layer: 0
   m_Name: Sphere.009
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38959,3 +38960,65 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &4613850138445973861
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5617731327205871897}
+    m_Modifications:
+    - target: {fileID: 2306494477479586032, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+      propertyPath: m_Name
+      value: SocleBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119165149238424138, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+      propertyPath: m_RootOrder
+      value: 482
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119165149238424138, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.031
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119165149238424138, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.017
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119165149238424138, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119165149238424138, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119165149238424138, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119165149238424138, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119165149238424138, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119165149238424138, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119165149238424138, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119165149238424138, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+--- !u!4 &7732170851341564719 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3119165149238424138, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
+  m_PrefabInstance: {fileID: 4613850138445973861}
+  m_PrefabAsset: {fileID: 0}
