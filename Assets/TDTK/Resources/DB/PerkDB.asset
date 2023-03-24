@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d93cf34dd554c9e47960397eb16fa56b, type: 3}
   m_Name: PerkDB
   m_EditorClassIdentifier: 
-  rscIcon: {fileID: 21300050, guid: d138993b3dd86764ba142a07cff82937, type: 3}
+  rscIcon: {fileID: 21300000, guid: 7ebb98575f65cc74f8a96b5c997ef161, type: 3}
   perkList:
   - prefabID: 0
     instanceID: -1

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f96514604bacca41a4ef8e605b4f699, type: 3}
   m_Name: AbilityDB
   m_EditorClassIdentifier: 
-  rscIcon: {fileID: 21300058, guid: d138993b3dd86764ba142a07cff82937, type: 3}
+  rscIcon: {fileID: 21300000, guid: 9de264ed0d8ac104dbd436e6f3233c65, type: 3}
   abilityList:
   - prefabID: 0
     instanceID: -1
