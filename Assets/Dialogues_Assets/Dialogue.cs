@@ -23,6 +23,13 @@ public class Dialogue : MonoBehaviour
     {
         gestionLines();
         gestionPersos();
+        skipCinematique();
+    }
+
+    void skipCinematique(){
+        if(Input.GetKey("space")){
+            SceneManager.LoadScene("ojvbzihb");
+        }
     }
 
     void startDialogue(){

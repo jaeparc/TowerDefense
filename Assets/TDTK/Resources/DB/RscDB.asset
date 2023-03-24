@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rscList:
   - name: Yolia
-    icon: {fileID: 21300060, guid: d138993b3dd86764ba142a07cff82937, type: 3}
+    icon: {fileID: 21300000, guid: d525c901a7cca9e4d87558b4e1a8afd1, type: 3}
     enableCarry: 1
   copiedFromOldDB: 0
