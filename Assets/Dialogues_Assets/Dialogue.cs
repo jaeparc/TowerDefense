@@ -43,7 +43,7 @@ public class Dialogue : MonoBehaviour
             textComponent.text = string.Empty;
             StartCoroutine(typeLine());
         } else if(index == lines.Length-1){
-                    SceneManager.LoadScene("Juan");
+                    SceneManager.LoadScene("ojvbzihb");
         }
     }
 
