@@ -11246,7 +11246,7 @@ MonoBehaviour:
   cost: 30
   colorBase: {r: 0, g: 0, b: 0, a: 0}
   BasecolorBase: {r: 0, g: 0, b: 0, a: 0}
-  dalleBase: {fileID: 2306494477479586032, guid: 73395063d2d26e0408cb942fc9bc245c, type: 3}
+  dalleBase: {fileID: 2306494477479586032, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}
   VFXdisparition: {fileID: 1965343156803978, guid: aa8d6482d70a23445b4b2a928ed1b845, type: 3}
   timerStarted: 0
   rembourse: 0
