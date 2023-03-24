@@ -418,7 +418,7 @@ MonoBehaviour:
   isSupport: 0
   isResource: 0
   isMine: 0
-  targetGroup: 1
+  targetGroup: 0
   activeBetweenWave: 0
   isPreview: 0
   prebuilt: 0

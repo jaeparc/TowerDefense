@@ -1691,7 +1691,7 @@ MonoBehaviour:
   path: {fileID: 0}
   wpIdx: 0
   subWpIdx: 0
-  flying: 0
+  flying: 1
   faceTravelingDir: 1
   snapToDir: 1
   rotateSpeed: 12
