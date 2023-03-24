@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 1988584550738255033}
   - component: {fileID: 3889232441990018174}
   m_Layer: 0
-  m_Name: TourLaser
+  m_Name: LaserAqua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
