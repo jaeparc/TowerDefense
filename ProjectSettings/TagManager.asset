@@ -6,6 +6,8 @@ TagManager:
   tags:
   - turret
   - connector
+  - Indicator
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -36,7 +38,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Build
   - 
   - 
   m_SortingLayers:
