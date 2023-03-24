@@ -3323,7 +3323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetTargetOnAttack: 0
-  prefabID: -1
+  prefabID: 48
   instanceID: -1
   unitName: Mortier niveau 2
   icon: {fileID: 21300000, guid: 8d32c7392a5171d41befea1f778993e4, type: 3}
