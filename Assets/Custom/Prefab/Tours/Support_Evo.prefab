@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: -793132143073373890}
   - component: {fileID: -2810735857741854004}
   m_Layer: 0
-  m_Name: tour_totem_lvl_2
+  m_Name: Support_Evo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -459,7 +459,7 @@ GameObject:
   - component: {fileID: 8508858044523500600}
   m_Layer: 0
   m_Name: Plane.017
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -507,7 +507,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 11e35e95f374079459fc413985ee6c26, type: 2}
+  - {fileID: 2100000, guid: b2599f55b558d2049b0bb661a680604f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -545,7 +545,7 @@ GameObject:
   - component: {fileID: 4309823047542817063}
   - component: {fileID: 6179796628816578043}
   m_Layer: 0
-  m_Name: Tour_3_crocodile (2)
+  m_Name: Baliste
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
