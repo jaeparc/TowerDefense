@@ -559,7 +559,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b3e12501e3b04c0488a75c69e7ee4db7, type: 2}
+  - {fileID: 2100000, guid: 8996a2664d69e734ba5ff6d58587be50, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1709,7 +1709,7 @@ MonoBehaviour:
     autoDestroy: 1
     duration: 1.5
   effectDestroyed:
-    obj: {fileID: 0}
+    obj: {fileID: 1462327970484030, guid: f01c1eba69de19e44b04d8d651aaac37, type: 3}
     autoDestroy: 1
     duration: 1.5
   effectDestination:
@@ -2132,7 +2132,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b3e12501e3b04c0488a75c69e7ee4db7, type: 2}
+  - {fileID: 2100000, guid: 8996a2664d69e734ba5ff6d58587be50, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

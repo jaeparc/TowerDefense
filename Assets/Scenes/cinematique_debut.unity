@@ -229,7 +229,7 @@ MonoBehaviour:
   textComponent: {fileID: 1182777038}
   lines:
   - 'Child : Where am I?'
-  - 'Man : Werent you never told to knock before entering people''s house, young
+  - 'Man : Weren''t you never told to knock before entering people''s house, young
     man?'
   - 'Man : Yes, I am talking to you. Do you see anyone else here?'
   - "Child : Whe-where are you? Who are you? I don\u2019t want any trouble."
@@ -253,7 +253,7 @@ MonoBehaviour:
   - 'Child : So... Do you think you could help me, Mr. Xibe Tomec?'
   - "Xipe Totec : It\u2019s Xipe Totec! And only if you do an effort at least pronuncing
     my name right!"
-  - 'Xipe Totec : It would be the perfect occasion to have Tezcatlipotec leave the
+  - 'Xipe Totec : It would be the perfect occasion to have Tezcatlipoca leave the
     Divine Council so I will help you but Tezcatlipoca is powerful'
   - "Xipe Totec : He controls these creatures of stone you encountered earlier, they\u2019re
     named Xochitonal and it will not be easy to block them."
