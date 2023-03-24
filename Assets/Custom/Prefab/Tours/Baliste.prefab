@@ -945,7 +945,7 @@ MonoBehaviour:
   energyolia: 30
   energyoliaBase: 30
   intensity: 1
-  cost: 30
+  cost: 20
   colorBase: {r: 0, g: 0, b: 0, a: 0}
   BasecolorBase: {r: 0, g: 0, b: 0, a: 0}
   dalleBase: {fileID: 2306494477479586032, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}

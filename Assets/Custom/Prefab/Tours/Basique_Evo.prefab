@@ -21457,8 +21457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa8a81072580694c87d21daee688657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyolia: 30
-  energyoliaBase: 30
+  energyolia: 50
+  energyoliaBase: 50
   intensity: 1
   cost: 30
   colorBase: {r: 0, g: 0, b: 0, a: 0}
