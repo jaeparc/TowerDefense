@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetTargetOnAttack: 0
-  prefabID: 6
+  prefabID: -1
   instanceID: -1
   unitName: Tourelle de base
   icon: {fileID: 21300000, guid: ae6008013511ec3428b3fe9ed04373d0, type: 3}
@@ -602,10 +602,37 @@ MonoBehaviour:
   VFXdisparition: {fileID: 1965343156803978, guid: aa8d6482d70a23445b4b2a928ed1b845, type: 3}
   timerStarted: 0
   rembourse: 0
-  type: 
+  type: all
   courbe:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.08073292
+      outSlope: 0.08073292
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.17311108
+    - serializedVersion: 3
+      time: 0.7760177
+      value: 0.26004964
+      inSlope: 1.0540961
+      outSlope: 1.0540961
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.122296445
+      outWeight: 0.4381493
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 9.277641
+      outSlope: 9.277641
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.062074956
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -863,7 +890,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -5430114850912507678, guid: 557082f81627ae1429b685e2deab23f8, type: 3}
+  - {fileID: 2100000, guid: 11e35e95f374079459fc413985ee6c26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

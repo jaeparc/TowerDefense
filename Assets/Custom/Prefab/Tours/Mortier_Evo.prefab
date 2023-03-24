@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1607596358919032143}
   m_Layer: 0
   m_Name: Plane.101
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 8234666463136233030}
   m_Layer: 0
   m_Name: Cylinder.042
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1010,7 +1010,7 @@ GameObject:
   - component: {fileID: 5111500588693156921}
   m_Layer: 0
   m_Name: Cylinder.049
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5177,7 +5177,7 @@ GameObject:
   - component: {fileID: 6007421526987716189}
   m_Layer: 0
   m_Name: Cylinder.043
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6536,7 +6536,7 @@ GameObject:
   - component: {fileID: 6796652544816044868}
   m_Layer: 0
   m_Name: Canon
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9721,7 +9721,7 @@ GameObject:
   - component: {fileID: 1626331934986727627}
   m_Layer: 0
   m_Name: Cylinder.050
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11298,7 +11298,7 @@ GameObject:
   - component: {fileID: 749949293277754959}
   m_Layer: 0
   m_Name: Canon.001
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
