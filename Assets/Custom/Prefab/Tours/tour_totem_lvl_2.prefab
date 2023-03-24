@@ -93,8 +93,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2228982181222973647}
   - component: {fileID: 2388715578101010746}
-  - component: {fileID: 6672861837961095437}
-  - component: {fileID: 7861658860004945081}
   - component: {fileID: 5554861817318258724}
   - component: {fileID: -793132143073373890}
   - component: {fileID: -2810735857741854004}
@@ -461,55 +459,6 @@ MonoBehaviour:
   nodeID: 0
   unlockUpgradeViaPerk: 0
   upgradeTowerList: []
---- !u!114 &6672861837961095437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559723040362257013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efa8a81072580694c87d21daee688657, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  energyolia: 30
-  energyoliaBase: 30
-  intensity: 1
-  cost: 30
-  colorBase: {r: 0, g: 0, b: 0, a: 0}
-  BasecolorBase: {r: 0, g: 0, b: 0, a: 0}
-  dalleBase: {fileID: 2306494477479586032, guid: 73395063d2d26e0408cb942fc9bc245c, type: 3}
-  VFXdisparition: {fileID: 1965343156803978, guid: aa8d6482d70a23445b4b2a928ed1b845, type: 3}
-  timerStarted: 0
-  rembourse: 0
-  type: 
-  courbe:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  GameSkin: {fileID: 0}
---- !u!114 &7861658860004945081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559723040362257013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a64a6e3a2ce3cd043b1c584df16fb1ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  connection: {fileID: 3511023856493608705, guid: 509de887feaafe74e844dfd4ae60c843, type: 3}
-  comboManagerVar: {fileID: 2933828478487559558, guid: 2b12251703a3ef14fb23d38356925862, type: 3}
-  dmgStart: 0
-  coefCombo: 0
-  dmg: 0
-  statsUpdated: 0
-  built: 0
 --- !u!65 &5554861817318258724
 BoxCollider:
   m_ObjectHideFlags: 0
