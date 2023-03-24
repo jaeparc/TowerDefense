@@ -910,7 +910,7 @@ MonoBehaviour:
   nodeID: 0
   unlockUpgradeViaPerk: 0
   upgradeTowerList:
-  - {fileID: 8646153635293835601, guid: 3077228eb08067b49a9e94b3fc6db70c, type: 3}
+  - {fileID: 1089299092054445147, guid: 634cf4f5675a24347a0eec24d38cf02e, type: 3}
 --- !u!114 &5970294048926995498
 MonoBehaviour:
   m_ObjectHideFlags: 0
