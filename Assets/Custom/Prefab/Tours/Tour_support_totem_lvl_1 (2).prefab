@@ -709,7 +709,8 @@ MonoBehaviour:
   buildPlatform: {fileID: 0}
   nodeID: 0
   unlockUpgradeViaPerk: 0
-  upgradeTowerList: []
+  upgradeTowerList:
+  - {fileID: 2388715578101010746, guid: ee2d51e8aebc64b4ab72da1afe3eea1e, type: 3}
 --- !u!114 &-5533455904459058691
 MonoBehaviour:
   m_ObjectHideFlags: 0

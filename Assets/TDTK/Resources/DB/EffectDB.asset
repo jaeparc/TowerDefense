@@ -358,12 +358,11 @@ MonoBehaviour:
     stats:
       editTurret: 0
       editAOE: 0
-      editMine: 0
+      editMine: 1
       buildDuration: 0
       sellDuration: 0
       expToNextUpgrade: 10
       cost:
-      - 0
       - 0
       sellValue: []
       hp: 0
@@ -415,7 +414,6 @@ MonoBehaviour:
       cooldown_Rsc: 0
       rscGain:
       - 0
-      - 0
     hitVisualEffect:
       obj: {fileID: 0}
       autoDestroy: 1
@@ -445,7 +443,6 @@ MonoBehaviour:
       sellDuration: 0
       expToNextUpgrade: 10
       cost:
-      - 0
       - 0
       sellValue: []
       hp: 0
@@ -497,7 +494,6 @@ MonoBehaviour:
       cooldown_Rsc: 0
       rscGain:
       - 0
-      - 0
     hitVisualEffect:
       obj: {fileID: 0}
       autoDestroy: 1
@@ -527,7 +523,6 @@ MonoBehaviour:
       sellDuration: 1
       expToNextUpgrade: 10
       cost:
-      - 1
       - 1
       sellValue: []
       hp: 1
@@ -579,7 +574,6 @@ MonoBehaviour:
       cooldown_Rsc: 1
       rscGain:
       - 1
-      - 1
     hitVisualEffect:
       obj: {fileID: 0}
       autoDestroy: 1
@@ -609,7 +603,6 @@ MonoBehaviour:
       sellDuration: 1
       expToNextUpgrade: 10
       cost:
-      - 1
       - 1
       sellValue: []
       hp: 1
@@ -660,7 +653,6 @@ MonoBehaviour:
       effectOnHitIDList_Support: 
       cooldown_Rsc: 1
       rscGain:
-      - 1
       - 1
     hitVisualEffect:
       obj: {fileID: 0}
@@ -747,4 +739,84 @@ MonoBehaviour:
       autoDestroy: 1
       duration: 1.5
     activeVisualEffect: {fileID: 4441788593414716, guid: 262e841c96607cc40950b6af5b4310cd, type: 3}
+  - prefabID: 9
+    instanceID: -1
+    icon: {fileID: 0}
+    name: Item
+    desp: Item's description
+    ID: 0
+    srcType: 4
+    srcPrefabID: 0
+    fromSupport: 0
+    stack: 1
+    ignoreSource: 0
+    stackable: 1
+    duration: 1
+    durationRemain: 1
+    effType: 0
+    stun: 0
+    stats:
+      editTurret: 1
+      editAOE: 1
+      editMine: 0
+      buildDuration: 0
+      sellDuration: 0
+      expToNextUpgrade: 10
+      cost:
+      - 0
+      sellValue: []
+      hp: 0
+      sh: 0
+      shRegen: 1
+      shStagger: 1
+      hpRate: 0
+      shRate: 0
+      armorType: 0
+      damageType: 0
+      speed: 0
+      dodge: 0
+      dmgReduc: 0
+      critReduc: 0
+      hit: 0
+      damageMin: 0
+      damageMax: 0
+      attackRange: 0
+      aoeRange: 0
+      cooldown: 0
+      critChance: 0.75
+      critMultiplier: 0
+      effectOnHitChance: 0
+      overrideExistingEffect: 0
+      effectOnHitIDList: 
+      hit_AOE: 0
+      damageMin_AOE: 0
+      damageMax_AOE: 0
+      attackRange_AOE: 0
+      cooldown_AOE: 0
+      critChance_AOE: 0.75
+      critMultiplier_AOE: 0
+      effectOnHitChance_AOE: 0
+      overrideExistingEffect_AOE: 0
+      effectOnHitIDList_AOE: 
+      hit_Mine: 1
+      damageMin_Mine: 1
+      damageMax_Mine: 1
+      aoeRange_Mine: 1
+      cooldown_Mine: 1
+      critChance_Mine: 1
+      critMultiplier_Mine: 1
+      effectOnHitChance_Mine: 1
+      overrideExistingEffect_Mine: 0
+      effectOnHitIDList_Mine: 
+      attackRange_Support: 0
+      overrideExistingEffect_Support: 0
+      effectOnHitIDList_Support: 
+      cooldown_Rsc: 0
+      rscGain:
+      - 0
+    hitVisualEffect:
+      obj: {fileID: 0}
+      autoDestroy: 1
+      duration: 1.5
+    activeVisualEffect: {fileID: 4108868961469662, guid: 0d6eab617ad0a334c8696f458cb2eb27, type: 3}
   copiedFromOldDB: 0
