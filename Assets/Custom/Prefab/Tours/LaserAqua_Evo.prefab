@@ -2494,7 +2494,7 @@ MonoBehaviour:
   canBeAttacked: 1
   canBeTargeted: 1
   unitRadius: 0.25
-  targetPoint: {fileID: 0}
+  targetPoint: {fileID: 6640664656390536131}
   hp: 10
   sh: 0
   shStagger: 0
