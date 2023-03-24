@@ -620,11 +620,45 @@ MonoBehaviour:
   intensity: 1
   cost: 50
   colorBase: {r: 0, g: 0, b: 0, a: 0}
+  BasecolorBase: {r: 0, g: 0, b: 0, a: 0}
   dalleBase: {fileID: 2306494477479586032, guid: 73395063d2d26e0408cb942fc9bc245c, type: 3}
   VFXdisparition: {fileID: 1965343156803978, guid: aa8d6482d70a23445b4b2a928ed1b845, type: 3}
   timerStarted: 0
   rembourse: 0
   type: all
+  courbe:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.08073292
+      outSlope: 0.08073292
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.17311108
+    - serializedVersion: 3
+      time: 0.66200405
+      value: 0.26004964
+      inSlope: 1.0540961
+      outSlope: 1.0540961
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.122296445
+      outWeight: 0.4381493
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 3.2704046
+      outSlope: 3.2704046
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.109948434
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   GameSkin: {fileID: 0}
 --- !u!1 &8553868035708502823
 GameObject:

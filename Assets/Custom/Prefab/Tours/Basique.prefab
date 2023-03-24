@@ -397,11 +397,18 @@ MonoBehaviour:
   intensity: 1
   cost: 30
   colorBase: {r: 0, g: 0, b: 0, a: 0}
+  BasecolorBase: {r: 0, g: 0, b: 0, a: 0}
   dalleBase: {fileID: 2306494477479586032, guid: 73395063d2d26e0408cb942fc9bc245c, type: 3}
   VFXdisparition: {fileID: 1965343156803978, guid: aa8d6482d70a23445b4b2a928ed1b845, type: 3}
   timerStarted: 0
   rembourse: 0
   type: all
+  courbe:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   GameSkin: {fileID: 0}
 --- !u!114 &7032397631542703366
 MonoBehaviour:
