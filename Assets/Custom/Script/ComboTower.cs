@@ -78,10 +78,12 @@ public class ComboTower : MonoBehaviour
     }
 
     void OnTriggerExit(Collider other){
-        if(other.tag == gameObject.tag && built && other.GetComponent<ComboTower>().built && statsUpdated){
-            destroyConnecteurs(gameObject,other.gameObject);
-            setDmgStat(dmgStart);
-            statsUpdated = false;
+        if(other.tag == gameObject.tag && built && other.GetComponent<ComboTower>() != null && statsUpdated){
+            if(other.GetComponent<ComboTower>().built){
+                destroyConnecteurs(gameObject,other.gameObject);
+                setDmgStat(dmgStart);
+                statsUpdated = false;
+            }
         }
     }
 
