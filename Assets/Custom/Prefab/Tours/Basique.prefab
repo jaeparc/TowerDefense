@@ -282,8 +282,8 @@ MonoBehaviour:
     dmgReduc: 0
     critReduc: 0
     hit: 1
-    damageMin: 25
-    damageMax: 25
+    damageMin: 30
+    damageMax: 30
     attackRange: 2.5
     aoeRange: 0
     cooldown: 0.7
@@ -562,7 +562,7 @@ MonoBehaviour:
   nodeID: 0
   unlockUpgradeViaPerk: 0
   upgradeTowerList:
-  - {fileID: 4973689716267400961, guid: ed64d79342c86e74ebdb3f6e6943b6c7, type: 3}
+  - {fileID: 8646153635293835601, guid: 3077228eb08067b49a9e94b3fc6db70c, type: 3}
 --- !u!114 &4568808314263361901
 MonoBehaviour:
   m_ObjectHideFlags: 0

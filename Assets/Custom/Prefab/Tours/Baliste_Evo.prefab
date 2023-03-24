@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetTargetOnAttack: 0
-  prefabID: -1
+  prefabID: 69
   instanceID: -1
   unitName: Baliste niveau 2
   icon: {fileID: 21300000, guid: 66a2715a4e0e1e14e9403c6d66c2a36b, type: 3}
