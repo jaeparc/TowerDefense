@@ -21109,7 +21109,7 @@ MonoBehaviour:
   instanceID: -1
   unitName: Tour de base niveau 2
   icon: {fileID: 21300000, guid: ae6008013511ec3428b3fe9ed04373d0, type: 3}
-  desp: unit description
+  desp: ' Damages : 71 HP/sec; Energy : 50'
   canBeAttacked: 1
   canBeTargeted: 1
   unitRadius: 0.25

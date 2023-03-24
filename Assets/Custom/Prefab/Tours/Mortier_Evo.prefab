@@ -3327,7 +3327,7 @@ MonoBehaviour:
   instanceID: -1
   unitName: Mortier niveau 2
   icon: {fileID: 21300000, guid: 8d32c7392a5171d41befea1f778993e4, type: 3}
-  desp: unit description
+  desp: ' Damages : 38 HP/sec; Energy : 50'
   canBeAttacked: 1
   canBeTargeted: 1
   unitRadius: 0.25

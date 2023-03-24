@@ -145,7 +145,7 @@ MonoBehaviour:
   instanceID: -1
   unitName: Totem niveau 2
   icon: {fileID: 21300000, guid: 84b88bb2db4843f4ab034e2c402e44a0, type: 3}
-  desp: unit description
+  desp: More bonus range + critical hit
   canBeAttacked: 1
   canBeTargeted: 1
   unitRadius: 0.25

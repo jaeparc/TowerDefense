@@ -6257,7 +6257,7 @@ MonoBehaviour:
   instanceID: -1
   unitName: "Anti-a\xE9rien"
   icon: {fileID: 21300000, guid: 767ac4d4c1b94e64c9aa533afd78d7d2, type: 3}
-  desp: unit description
+  desp: ' Damages : 29 HP/sec; Energy : 30'
   canBeAttacked: 1
   canBeTargeted: 1
   unitRadius: 0.25
