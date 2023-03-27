@@ -75,10 +75,11 @@
      <Compile Include="Assets\TDTK\Scripts\Misc\OscillateRotate.cs" />
      <Compile Include="Assets\TDTK\Scripts\SceneObject\PathIndicator.cs" />
      <Compile Include="Assets\Custom\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
+     <Compile Include="Assets\UIcreep.cs" />
      <Compile Include="Assets\TDTK\Scripts\Misc\RotateYAxis.cs" />
      <Compile Include="Assets\TDTK\Scripts\UI\UITowerSelect.cs" />
      <Compile Include="Assets\TDTK\Scripts\UI\UIClass.cs" />
-     <Compile Include="Assets\Dialogues_Assets\Dialogue.cs" />
+     <Compile Include="Assets\Custom\Dialogues_Assets\Dialogue.cs" />
      <Compile Include="Assets\TDTK\Scripts\UI\UIBuildButton.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\SpringCollider.cs" />
      <Compile Include="Assets\TDTK\Scripts\TowerManager.cs" />
@@ -104,6 +105,7 @@
      <Compile Include="Assets\TDTK\Scripts\Utility\ObjectPoolManager.cs" />
      <Compile Include="Assets\TDTK\Scripts\DB\DamageTable_DB.cs" />
      <Compile Include="Assets\TDTK\Scripts\TowerBuffSpot.cs" />
+     <Compile Include="Assets\animationMenus.cs" />
      <Compile Include="Assets\Custom\Script\EnergyTower.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\SetShadowResolution.cs" />
      <Compile Include="Assets\Custom\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
@@ -160,8 +162,6 @@
      <Compile Include="Assets\TDTK\Scripts\DB\Ability_DB.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\TDTK\Scripts\AudioManager.cs" />
-     <Compile Include="Assets\UIcreep.cs" />
-     <Compile Include="Assets\animationMenus.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Custom\JMO Assets\Cartoon FX (legacy)\Shaders\CFX3 Multiply Color.shader" />

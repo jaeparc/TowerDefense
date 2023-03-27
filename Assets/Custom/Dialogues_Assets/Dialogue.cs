@@ -92,20 +92,28 @@ public class Dialogue : MonoBehaviour
                 xipetotec.color = new Color(0,0,0,0);
                 break;
             case 1:
-                xipetotec.color = new Color(0,0,0,255);
+                if(xipetotec.color.a < 1)
+                    xipetotec.color = new Color(0,0,0,xipetotec.color.a+2*Time.deltaTime);
                 break;
             case 4:
-                xipetotec.color = new Color(255,255,255,255);
+                if(xipetotec.color.r < 1)
+                    xipetotec.color = new Color(xipetotec.color.r+2*Time.deltaTime,xipetotec.color.g+2*Time.deltaTime,xipetotec.color.b+2*Time.deltaTime,255);
                 break;
             case 13:
-                tezcatlipoca.color = new Color(255,255,255,125);
-                kid.color = new Color(255,255,255,0);
-                xipetotec.color = new Color(255,255,255,0);
+                if(tezcatlipoca.color.a < 1)
+                    tezcatlipoca.color = new Color(255,255,255,tezcatlipoca.color.a+2*Time.deltaTime);
+                if(kid.color.r > 0.5)
+                    kid.color = new Color(kid.color.r-2*Time.deltaTime,kid.color.g-2*Time.deltaTime,kid.color.b-2*Time.deltaTime,255);
+                if(xipetotec.color.r > 0.5)
+                    xipetotec.color = new Color(xipetotec.color.r-2*Time.deltaTime,xipetotec.color.g-2*Time.deltaTime,xipetotec.color.b-2*Time.deltaTime,255);
                 break;
             case 15:
-                tezcatlipoca.color = new Color(255,255,255,0);
-                kid.color = new Color(255,255,255,255);
-                xipetotec.color = new Color(255,255,255,255);
+                if(tezcatlipoca.color.a > 0)
+                    tezcatlipoca.color = new Color(255,255,255,tezcatlipoca.color.a-2*Time.deltaTime);
+                if(kid.color.r < 1)
+                    kid.color = new Color(kid.color.r+2*Time.deltaTime,kid.color.g+2*Time.deltaTime,kid.color.b+2*Time.deltaTime,255);
+                if(xipetotec.color.r < 1)
+                    xipetotec.color = new Color(xipetotec.color.r+2*Time.deltaTime,xipetotec.color.g+2*Time.deltaTime,xipetotec.color.b+2*Time.deltaTime,255);
                 break;
         }
     }
