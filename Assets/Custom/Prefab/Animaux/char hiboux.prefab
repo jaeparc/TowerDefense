@@ -1338,6 +1338,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4245682447574704064}
   - component: {fileID: 2910204641620357120}
+  - component: {fileID: 6746016210855190590}
+  - component: {fileID: -6647300741181308146}
   m_Layer: 0
   m_Name: char hiboux
   m_TagString: Untagged
@@ -1411,7 +1413,7 @@ MonoBehaviour:
   resetTargetOnAttack: 0
   prefabID: 12
   instanceID: -1
-  unitName: HIBOUX_DEF
+  unitName: HIBOUX
   icon: {fileID: 0}
   desp: unit description
   canBeAttacked: 1
@@ -1739,6 +1741,33 @@ MonoBehaviour:
     mulSpd: 0.5
     mulExp: 0.5
     mulRsc: 0.5
+--- !u!114 &6746016210855190590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575964883973129594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4ec686d2910e94d88cf1c0021e354a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameSkin: {fileID: 0}
+  DisplayNameActive: 0
+--- !u!65 &-6647300741181308146
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575964883973129594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.40068406, y: 0.4535718, z: 1}
+  m_Center: {x: -0.005822867, y: 0.32332397, z: 0}
 --- !u!1 &4172512669270558082
 GameObject:
   m_ObjectHideFlags: 0

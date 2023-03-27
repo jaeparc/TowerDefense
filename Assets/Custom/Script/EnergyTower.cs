@@ -17,6 +17,9 @@ public class EnergyTower : MonoBehaviour
     private Color startColor;
     private bool displayNameActive = false;
 
+    //VAR AFFICHAGE WARNING
+    public Texture warningSprite;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +56,7 @@ public class EnergyTower : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
 
     IEnumerator BaisseEnergy()
     {
@@ -116,6 +120,7 @@ public class EnergyTower : MonoBehaviour
     {
         GUI.skin = GameSkin;
         DisplayStats();
+        DisplayWarning();
     }
 
     void OnMouseEnter()
@@ -135,6 +140,17 @@ public class EnergyTower : MonoBehaviour
         if (displayNameActive == true)
         {
             GUI.Box(new Rect(Input.mousePosition.x, Screen.height - Input.mousePosition.y - 50, 150, 50), gameObject.GetComponent<UnitTower>().unitName + "\r\n Energie : " + gameObject.GetComponent<EnergyTower>().energyolia);
+        }
+    }
+
+    //AFFICHAGE AVERTISSEMENT QUAND L'ENERGIE < 10
+    public void DisplayWarning(){
+        if(energyolia < 10){   
+            Vector3 screenPos = Camera.main.WorldToScreenPoint(this.transform.position);
+            GUI.Box(new Rect(screenPos.x - 30, Screen.height - screenPos.y - 100, 50, 50),warningSprite);
+            if(GUI.Button (new Rect(screenPos.x - 30,Screen.height - screenPos.y - 100,50,50), "", GUIStyle.none)){
+                restartEnergy();
+            }
         }
     }
 }

@@ -5198,6 +5198,8 @@ GameObject:
   - component: {fileID: 8946524642266775657}
   - component: {fileID: 1652740122872269122}
   - component: {fileID: 8366954028933785548}
+  - component: {fileID: -2791578426663167630}
+  - component: {fileID: 2245674243272947124}
   m_Layer: 0
   m_Name: char singe 1 (1)
   m_TagString: Untagged
@@ -5304,7 +5306,7 @@ MonoBehaviour:
   resetTargetOnAttack: 0
   prefabID: 16
   instanceID: -1
-  unitName: SINGE_DEF
+  unitName: SINGE
   icon: {fileID: 0}
   desp: unit description
   canBeAttacked: 1
@@ -5649,6 +5651,33 @@ MonoBehaviour:
   axe_argauche: {fileID: 725660221647729142}
   axe_ardroit: {fileID: 7585259057670726329}
   speed: 500
+--- !u!114 &-2791578426663167630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8602896109496916691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4ec686d2910e94d88cf1c0021e354a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameSkin: {fileID: 0}
+  DisplayNameActive: 0
+--- !u!65 &2245674243272947124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8602896109496916691}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.608002, y: 0.38578397, z: 0.48421323}
+  m_Center: {x: 0.016333193, y: 0.16383395, z: 0.015629888}
 --- !u!1 &8707076137562646115
 GameObject:
   m_ObjectHideFlags: 0

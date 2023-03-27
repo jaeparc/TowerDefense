@@ -10116,6 +10116,8 @@ GameObject:
   - component: {fileID: 3572647651343400034}
   - component: {fileID: -3167012588243986380}
   - component: {fileID: 5712733567919524431}
+  - component: {fileID: 8054660365753683905}
+  - component: {fileID: 7411397774451820526}
   m_Layer: 0
   m_Name: char tortue (1)
   m_TagString: Untagged
@@ -10420,7 +10422,7 @@ MonoBehaviour:
   resetTargetOnAttack: 0
   prefabID: 17
   instanceID: -1
-  unitName: TORTUE_DEF
+  unitName: TORTUE
   icon: {fileID: 0}
   desp: unit description
   canBeAttacked: 1
@@ -10765,6 +10767,33 @@ MonoBehaviour:
   axe_argauche: {fileID: 4019618020369335722}
   axe_ardroit: {fileID: 4434212890133476348}
   speed: 500
+--- !u!114 &8054660365753683905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4242189297698252504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4ec686d2910e94d88cf1c0021e354a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameSkin: {fileID: 0}
+  DisplayNameActive: 0
+--- !u!65 &7411397774451820526
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4242189297698252504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8021882, y: 0.41480675, z: 0.6414661}
+  m_Center: {x: 0.037089735, y: 0.16896425, z: 0.043271333}
 --- !u!1 &4295818642925515544
 GameObject:
   m_ObjectHideFlags: 0

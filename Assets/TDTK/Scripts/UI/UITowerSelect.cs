@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 using TDTK;
 
+using TMPro;
+
 namespace TDTK{
 
 	public class UITowerSelect : UIScreen {
@@ -36,6 +38,8 @@ namespace TDTK{
 		public UIButton buttonSell;
 
 		public UIButton buttonReload;
+
+		public TextMeshProUGUI energyrestante;
 		
 		private static UITowerSelect instance;
 		
@@ -223,6 +227,7 @@ namespace TDTK{
 			
 			targetDirObj.SetActive(sTower.IsTurret() && sTower.UseDirectionalTargeting() && allowTargetDirSwitch);
 			sliderTargetDir.value=sTower.targetingDir;
+
 		}
 
 		private bool isConstructing;
@@ -231,6 +236,7 @@ namespace TDTK{
 				isConstructing=false;
 				CheckDisplayUpgradeSellButton();
 			}
+			energyrestante.text = "Energie restante : "+sTower.GetComponent<EnergyTower>().energyolia;
 		}
 
 		void CheckDisplayUpgradeSellButton(){

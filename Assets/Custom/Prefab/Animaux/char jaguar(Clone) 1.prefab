@@ -457,6 +457,8 @@ GameObject:
   - component: {fileID: 2224892552481921292}
   - component: {fileID: -3364108055641247020}
   - component: {fileID: -7344553730552777585}
+  - component: {fileID: -4927390716928856235}
+  - component: {fileID: 9212862648763136710}
   m_Layer: 0
   m_Name: char jaguar(Clone) 1
   m_TagString: Untagged
@@ -558,7 +560,7 @@ MonoBehaviour:
   resetTargetOnAttack: 0
   prefabID: 13
   instanceID: -1
-  unitName: JAGUAR_DEF
+  unitName: JAGUAR
   icon: {fileID: 0}
   desp: unit description
   canBeAttacked: 1
@@ -903,6 +905,33 @@ MonoBehaviour:
   axe_argauche: {fileID: 7618664107635327444}
   axe_ardroit: {fileID: 8254992333430450802}
   speed: 500
+--- !u!114 &-4927390716928856235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2224892552481921293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4ec686d2910e94d88cf1c0021e354a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameSkin: {fileID: 0}
+  DisplayNameActive: 0
+--- !u!65 &9212862648763136710
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2224892552481921293}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5579796, y: 0.31086558, z: 0.55449903}
+  m_Center: {x: -0.0017402172, y: 0.080050915, z: -0.006960988}
 --- !u!1 &2224892552526217890
 GameObject:
   m_ObjectHideFlags: 0

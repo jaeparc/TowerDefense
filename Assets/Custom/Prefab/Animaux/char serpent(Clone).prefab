@@ -2832,6 +2832,8 @@ GameObject:
   m_Component:
   - component: {fileID: 792372655493104673}
   - component: {fileID: 456549062724058065}
+  - component: {fileID: 2060647997107293465}
+  - component: {fileID: 1866503808684174288}
   m_Layer: 0
   m_Name: char serpent(Clone)
   m_TagString: Untagged
@@ -2910,7 +2912,7 @@ MonoBehaviour:
   resetTargetOnAttack: 0
   prefabID: 15
   instanceID: -1
-  unitName: SERPENT_DEF
+  unitName: SERPENT
   icon: {fileID: 0}
   desp: unit description
   canBeAttacked: 1
@@ -3238,6 +3240,33 @@ MonoBehaviour:
     mulSpd: 0.5
     mulExp: 0.5
     mulRsc: 0.5
+--- !u!114 &2060647997107293465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6925661679382156766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4ec686d2910e94d88cf1c0021e354a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameSkin: {fileID: 0}
+  DisplayNameActive: 0
+--- !u!65 &1866503808684174288
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6925661679382156766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.50271463, y: 0.45809543, z: 0.61418027}
+  m_Center: {x: 0.006375432, y: 0.37297684, z: 0.008077592}
 --- !u!1 &7194856662450620547
 GameObject:
   m_ObjectHideFlags: 0

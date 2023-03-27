@@ -245,7 +245,7 @@ MonoBehaviour:
   instanceID: -1
   unitName: Tourelle de base
   icon: {fileID: 21300000, guid: ae6008013511ec3428b3fe9ed04373d0, type: 3}
-  desp: ' Damages : 43 HP/sec; Energy : 30'
+  desp: ' Damages : 43 HP/sec;                                   Base energy : 30'
   canBeAttacked: 1
   canBeTargeted: 1
   unitRadius: 0.25
@@ -639,6 +639,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   GameSkin: {fileID: 0}
+  warningSprite: {fileID: 2800000, guid: 71643d88f3d0ede4f8c8fe5bb769a458, type: 3}
 --- !u!65 &6598902955939943415
 BoxCollider:
   m_ObjectHideFlags: 0

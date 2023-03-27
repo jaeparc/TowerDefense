@@ -5499,6 +5499,8 @@ GameObject:
   - component: {fileID: 8570743790474014131}
   - component: {fileID: -4740328970106357617}
   - component: {fileID: -6909572533674500960}
+  - component: {fileID: 2777980107208299712}
+  - component: {fileID: 4280918285799029128}
   m_Layer: 0
   m_Name: char poisson 1(Clone)
   m_TagString: Untagged
@@ -5661,7 +5663,7 @@ MonoBehaviour:
   resetTargetOnAttack: 0
   prefabID: 14
   instanceID: -1
-  unitName: POISSON_DEF
+  unitName: POISSON
   icon: {fileID: 0}
   desp: unit description
   canBeAttacked: 1
@@ -6006,6 +6008,33 @@ MonoBehaviour:
   axe_argauche: {fileID: 1289203832220032495}
   axe_ardroit: {fileID: 751205433365507004}
   speed: 500
+--- !u!114 &2777980107208299712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5139935042473983125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4ec686d2910e94d88cf1c0021e354a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameSkin: {fileID: 0}
+  DisplayNameActive: 0
+--- !u!65 &4280918285799029128
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5139935042473983125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.68136674, y: 0.34310803, z: 0.5559826}
+  m_Center: {x: 0.026851088, y: 0.08141579, z: -0.017077446}
 --- !u!1 &5146031423204114040
 GameObject:
   m_ObjectHideFlags: 0

@@ -54,12 +54,17 @@ public class ComboTower : MonoBehaviour
                         comboManager.combos[x,1] = other.gameObject;
                         Connecteur(other);
                         setDmgStat(dmgStart*coefCombo);
+                        gameObject.GetComponent<EnergyTower>().energyolia = gameObject.GetComponent<EnergyTower>().energyoliaBase;
+                        other.gameObject.GetComponent<EnergyTower>().energyolia = other.gameObject.GetComponent<EnergyTower>().energyoliaBase;
                         statsUpdated = true;
                     } else {
                         if(comboManager.combos[x,2] == null && comboManager.combos[x,1] != gameObject){
                             comboManager.combos[x,2] = gameObject;
                             Connecteur(other);
                             setDmgStat(dmgStart*coefCombo);
+                            comboManager.combos[x,0].GetComponent<EnergyTower>().energyolia = comboManager.combos[x,0].GetComponent<EnergyTower>().energyoliaBase;
+                            comboManager.combos[x,1].GetComponent<EnergyTower>().energyolia = comboManager.combos[x,1].GetComponent<EnergyTower>().energyoliaBase;
+                            comboManager.combos[x,2].GetComponent<EnergyTower>().energyolia = comboManager.combos[x,2].GetComponent<EnergyTower>().energyoliaBase;
                             Debug.Log("Combo fini! X="+x);
                             Debug.Log("X="+x+";1="+comboManager.combos[x,0].GetComponent<UnitTower>().instanceID+";2="+comboManager.combos[x,1].GetComponent<UnitTower>().instanceID+";3="+comboManager.combos[x,2].GetComponent<UnitTower>().instanceID);
                             statsUpdated = true;

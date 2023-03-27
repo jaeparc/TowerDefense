@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,8 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public string [] lines;
     public float textSpeed;
+    public GameObject fade;
+    bool transitioning;
 
     private int index;
     // Start is called before the first frame update
@@ -28,7 +31,14 @@ public class Dialogue : MonoBehaviour
 
     void skipCinematique(){
         if(Input.GetKey("space")){
-            SceneManager.LoadScene("ojvbzihb");
+            if(!transitioning)
+                transitioning = true;
+        }
+        if(transitioning){
+            if(fade.GetComponent<Image>().color.a < 1)
+                fade.GetComponent<Image>().color = new Color(0,0,0,fade.GetComponent<Image>().color.a+2*Time.deltaTime);
+            else
+                SceneManager.LoadScene("ojvbzihb");
         }
     }
 
@@ -50,12 +60,20 @@ public class Dialogue : MonoBehaviour
             textComponent.text = string.Empty;
             StartCoroutine(typeLine());
         } else if(index == lines.Length-1){
+            if(!transitioning)
+                transitioning = true;
+            if(transitioning){
+                if(fade.GetComponent<Image>().color.a < 1)
+                    fade.GetComponent<Image>().color = new Color(0,0,0,fade.GetComponent<Image>().color.a+2*Time.deltaTime);
+                else
                     SceneManager.LoadScene("ojvbzihb");
+            }
         }
+        
     }
 
     void gestionLines(){
-        if(Input.GetMouseButtonDown(0)){
+        if(Input.GetMouseButtonDown(0) || Input.GetKey("return")){
             if(textComponent.text == lines[index]){
                 nextLine();
             } else {
