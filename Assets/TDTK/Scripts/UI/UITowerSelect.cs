@@ -40,6 +40,8 @@ namespace TDTK{
 		public UIButton buttonReload;
 
 		public TextMeshProUGUI energyrestante;
+
+		public TextMeshProUGUI coutEnergy;
 		
 		private static UITowerSelect instance;
 		
@@ -236,6 +238,7 @@ namespace TDTK{
 				isConstructing=false;
 				CheckDisplayUpgradeSellButton();
 			}
+			coutEnergy.text = ""+sTower.GetComponent<EnergyTower>().cost;
 			energyrestante.text = "Energie restante : "+sTower.GetComponent<EnergyTower>().energyolia;
 		}
 
