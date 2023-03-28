@@ -381,8 +381,8 @@ MonoBehaviour:
       attackRange: 1
       aoeRange: 1
       cooldown: 1
-      critChance: 0.5
-      critMultiplier: 1
+      critChance: 1
+      critMultiplier: 1.25
       effectOnHitChance: 0
       overrideExistingEffect: 0
       effectOnHitIDList: 
