@@ -244,7 +244,7 @@ MonoBehaviour:
   prefabID: 85
   instanceID: -1
   unitName: Tourelle de base
-  icon: {fileID: 21300000, guid: ae6008013511ec3428b3fe9ed04373d0, type: 3}
+  icon: {fileID: 21300000, guid: 245dbce43731bbc45abe46f86a20ea54, type: 3}
   desp: ' Damages : 43 HP/sec;                                   Base energy : 30'
   canBeAttacked: 1
   canBeTargeted: 1

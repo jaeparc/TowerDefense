@@ -99,7 +99,7 @@ MonoBehaviour:
     hideInInspector: 0
   - prefabID: 1
     instanceID: -1
-    icon: {fileID: 21300022, guid: d138993b3dd86764ba142a07cff82937, type: 3}
+    icon: {fileID: 21300000, guid: fc43b275ed95cc54bab2152e8c770462, type: 3}
     name: Strike
     desp: Damage the target and all surounding units.
     requireTargetSelection: 1
@@ -269,7 +269,7 @@ MonoBehaviour:
     hideInInspector: 0
   - prefabID: 4
     instanceID: -1
-    icon: {fileID: 21300024, guid: d138993b3dd86764ba142a07cff82937, type: 3}
+    icon: {fileID: 21300000, guid: 259f132fddcdd1a40be578c42dcb01dd, type: 3}
     name: Stun
     desp: Stun all targets within the effective range
     requireTargetSelection: 1

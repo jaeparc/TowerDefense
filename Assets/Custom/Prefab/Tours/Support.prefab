@@ -392,7 +392,7 @@ MonoBehaviour:
   prefabID: 13
   instanceID: -1
   unitName: Totem
-  icon: {fileID: 21300000, guid: 84b88bb2db4843f4ab034e2c402e44a0, type: 3}
+  icon: {fileID: 21300000, guid: fde5bc49bc3579845afac7927fe05e32, type: 3}
   desp: Bonus range + critical hit
   canBeAttacked: 1
   canBeTargeted: 1

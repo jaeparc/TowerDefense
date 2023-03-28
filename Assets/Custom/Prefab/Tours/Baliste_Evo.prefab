@@ -140,7 +140,7 @@ MonoBehaviour:
   prefabID: 69
   instanceID: -1
   unitName: Baliste niveau 2
-  icon: {fileID: 21300000, guid: 66a2715a4e0e1e14e9403c6d66c2a36b, type: 3}
+  icon: {fileID: 21300000, guid: 7d0786c1d9c9b9441b7b00108b7d0d4e, type: 3}
   desp: ' Damages : 84 HP/sec; Energy : 50'
   canBeAttacked: 1
   canBeTargeted: 1
