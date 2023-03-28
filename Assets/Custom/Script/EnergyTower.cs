@@ -64,14 +64,16 @@ public class EnergyTower : MonoBehaviour
         {
             while (energyolia > 0)
             {
-                energyolia--;
-                intensity = energyolia / energyoliaBase;
-                for (int i = 0; i < transform.childCount; i++)
-                {
-                    Debug.Log(courbe.Evaluate(intensity));
-                    if (transform.GetChild(i).tag == "Indicator"){
-                        transform.GetChild(i).GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.Lerp(Color.black,colorBase, courbe.Evaluate(intensity)));
-                        transform.GetChild(i).GetComponent<Renderer>().material.SetColor("_BaseColor", Color.Lerp(Color.black,BasecolorBase, intensity));
+                if(SpawnManager.GetTimeToNextWave() == -1){
+                    energyolia--;
+                    intensity = energyolia / energyoliaBase;
+                    for (int i = 0; i < transform.childCount; i++)
+                    {
+                        Debug.Log(courbe.Evaluate(intensity));
+                        if (transform.GetChild(i).tag == "Indicator"){
+                            transform.GetChild(i).GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.Lerp(Color.black,colorBase, courbe.Evaluate(intensity)));
+                            transform.GetChild(i).GetComponent<Renderer>().material.SetColor("_BaseColor", Color.Lerp(Color.black,BasecolorBase, intensity));
+                        }
                     }
                 }
                 yield return new WaitForSeconds(1);

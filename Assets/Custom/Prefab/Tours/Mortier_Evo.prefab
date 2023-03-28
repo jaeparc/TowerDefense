@@ -3722,7 +3722,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   GameSkin: {fileID: 0}
-  warningSprite: {fileID: 2800000, guid: 71643d88f3d0ede4f8c8fe5bb769a458, type: 3}
+  warningSprite: {fileID: 2800000, guid: 1856ad4987b1fa24889235dc444de50e, type: 3}
 --- !u!1 &2126085134001722597
 GameObject:
   m_ObjectHideFlags: 0
