@@ -21130,9 +21130,9 @@ MonoBehaviour:
     sellDuration: 0.5
     expToNextUpgrade: 10
     cost:
-    - 200
+    - 100
     sellValue:
-    - 250
+    - 150
     hp: 5
     sh: 0
     shRegen: 0.5
@@ -21150,7 +21150,7 @@ MonoBehaviour:
     damageMax: 50
     attackRange: 2.5
     aoeRange: 0
-    cooldown: 0.7
+    cooldown: 0.55
     critChance: 0
     critMultiplier: 0
     effectOnHitChance: 1
@@ -21460,7 +21460,7 @@ MonoBehaviour:
   energyolia: 50
   energyoliaBase: 50
   intensity: 1
-  cost: 30
+  cost: 50
   colorBase: {r: 0, g: 0, b: 0, a: 0}
   BasecolorBase: {r: 0, g: 0, b: 0, a: 0}
   dalleBase: {fileID: 2306494477479586032, guid: 3dba59fecb42fd84984fbd4eac0ee4d6, type: 3}

@@ -578,7 +578,7 @@ MonoBehaviour:
   connection: {fileID: 3511023856493608705, guid: 509de887feaafe74e844dfd4ae60c843, type: 3}
   comboManagerVar: {fileID: 2933828478487559558, guid: 2b12251703a3ef14fb23d38356925862, type: 3}
   dmgStart: 0
-  coefCombo: 1.5
+  coefCombo: 1.2
   dmg: 0
   statsUpdated: 0
   built: 0
