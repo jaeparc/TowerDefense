@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/cinematique_debut.unity
     guid: 623e7e843499ff748a316a0abc5168e4
   - enabled: 1
+    path: Assets/Scenes/Tutoriel.unity
+    guid: b1bef05a7ee3f924190a65109213dd5c
+  - enabled: 1
     path: Assets/Scenes/Scene 1.unity
     guid: 5120fd7fd7c5d27499dc28ee748c9238
   m_configObjects: {}
