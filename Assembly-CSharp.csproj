@@ -162,8 +162,12 @@
      <Compile Include="Assets\TDTK\Scripts\DB\Ability_DB.cs" />
      <Compile Include="Assets\Samples\Unity Toon Shader\0.9.0-preview\Legacy render pipeline\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\TDTK\Scripts\AudioManager.cs" />
+<<<<<<< Updated upstream
      <Compile Include="Assets\tutoriel.cs" />
      <Compile Include="Assets\tutoController.cs" />
+=======
+     <Compile Include="Assets\SoundManager.cs" />
+>>>>>>> Stashed changes
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Custom\JMO Assets\Cartoon FX (legacy)\Shaders\CFX3 Multiply Color.shader" />

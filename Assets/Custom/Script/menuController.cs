@@ -12,6 +12,8 @@ public class menuController : MonoBehaviour
     public GameObject fade;
     public bool transitioningOut = false;
     private bool[] descendant = {false,false,false};
+    private string nextScene;
+    [SerializeField] public AudioClip clip;
 
     // Start is called before the first frame update
     void Start()
@@ -25,52 +27,73 @@ public class menuController : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "ecran_titre" || SceneManager.GetActiveScene().name == "credits"){
             if(Input.anyKeyDown && !transitioningOut){
                 transitioningOut = true;
-            }
-            if(transitioningOut){
-                if(fade.GetComponent<Image>().color.a < 1)
-                    fade.GetComponent<Image>().color = new Color(0,0,0,fade.GetComponent<Image>().color.a+2*Time.deltaTime);
-                else
-                    SceneManager.LoadScene("menu_principal");
+                PlayTHEsound();
             }
         }
         if(SceneManager.GetActiveScene().name == "menu_principal")
             Select();
+        if(transitioningOut)
+            transition(nextScene);
+    }
 
+    public void transition(string nextScene){
+        fade.SetActive(true);
+        if(fade.GetComponent<Image>().color.a < 1)
+            fade.GetComponent<Image>().color = new Color(0,0,0,fade.GetComponent<Image>().color.a+2*Time.deltaTime);
+        else{
+            if(SceneManager.GetActiveScene().name == "ecran_titre" || SceneManager.GetActiveScene().name == "credits")
+                SceneManager.LoadScene("menu_principal");
+            if(SceneManager.GetActiveScene().name == "menu_principal"){
+                SceneManager.LoadScene(nextScene);
+            }
+        }
+    }
+
+    public void PlayTHEsound(){
+        SoundManager.Instance.playSound(clip);
     }
 
     public void PlayBtn(){
-        SceneManager.LoadScene("cinematique_debut");
+        transitioningOut = true;
+        nextScene = "cinematique_debut";
     }
 
     public void CreditsBtn(){
-        SceneManager.LoadScene("credits");
+        transitioningOut = true;
+        nextScene = "credits";
     }
 
     public void QuitBtn(){
         Application.Quit();
     }
 
+
     public void Select(){
         if(Input.GetKeyDown("return")){
             switch(indexButton){
                 case 0:
+                    PlayTHEsound();
                     PlayBtn();
                     break;
                 case 1:
+                    PlayTHEsound();
                     CreditsBtn();
                     break;
                 case 2:
+                    PlayTHEsound();
                     QuitBtn();
                     break;
             }
         }
         if(Input.GetKeyDown("down")){
+            PlayTHEsound();
             if(indexButton != 2){
                 indexButton++;
             } else if(indexButton == 2){
                 indexButton = 0;
             }
         } else if(Input.GetKeyDown("up")){
+            PlayTHEsound();
             if(indexButton != 0){
                 indexButton--;
             } else if(indexButton == 0){

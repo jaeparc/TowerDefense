@@ -16,6 +16,7 @@ public class tutoriel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SoundManager.Instance.stopMusic();
         index = -1;
         subtitle.text = "";
         instructions.text = "Avant de commencer à jouer, les principes du jeu vont vous être expliqués afin que vous ne soyez pas perdus. \r\n \r\n Utilisez les flêches afin d'avancer.";

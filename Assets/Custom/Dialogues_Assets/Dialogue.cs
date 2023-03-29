@@ -11,22 +11,40 @@ public class Dialogue : MonoBehaviour
     public string [] lines;
     public float textSpeed;
     public GameObject fade;
-    bool transitioning;
+    bool transitioning, transitioningIn, dialogueStarted;
+    public AudioClip gosseQuiCourt, ambianceTemple;
 
     private int index;
     // Start is called before the first frame update
     void Start()
     {
         textComponent.text = string.Empty;
-        startDialogue();
+        SoundManager.Instance.playSound(gosseQuiCourt);
+        SoundManager.Instance.playMusic(ambianceTemple);
     }
 
     // Update is called once per frame
     void Update()
     {
-        gestionLines();
-        gestionPersos();
-        skipCinematique();
+        if(!dialogueStarted && Input.anyKeyDown && !SoundManager.Instance.isEffectPlaying()){
+            transitioningIn = true;
+            startDialogue();
+            dialogueStarted = true;
+        }
+        if(transitioningIn){
+            if(fade.GetComponent<Image>().color.a > 0){
+                fade.GetComponent<Image>().color = new Color(0,0,0,fade.GetComponent<Image>().color.a-2*Time.deltaTime);
+                fade.GetComponentInChildren<TextMeshProUGUI>().alpha -= 2*Time.deltaTime;
+            }
+            else{
+                transitioningIn = false;
+            }
+        }
+        if(dialogueStarted){
+            gestionLines();
+            gestionPersos();
+            skipCinematique();
+        }
     }
 
     void skipCinematique(){
