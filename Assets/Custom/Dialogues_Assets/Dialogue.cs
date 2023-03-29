@@ -38,7 +38,7 @@ public class Dialogue : MonoBehaviour
             if(fade.GetComponent<Image>().color.a < 1)
                 fade.GetComponent<Image>().color = new Color(0,0,0,fade.GetComponent<Image>().color.a+2*Time.deltaTime);
             else
-                SceneManager.LoadScene("Scene 1");
+                SceneManager.LoadScene("Tutoriel");
         }
     }
 
@@ -66,7 +66,7 @@ public class Dialogue : MonoBehaviour
                 if(fade.GetComponent<Image>().color.a < 1)
                     fade.GetComponent<Image>().color = new Color(0,0,0,fade.GetComponent<Image>().color.a+2*Time.deltaTime);
                 else
-                    SceneManager.LoadScene("Scene 1");
+                    SceneManager.LoadScene("Tutoriel");
             }
         }
         
