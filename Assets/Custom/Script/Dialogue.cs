@@ -47,7 +47,8 @@ public class Dialogue : MonoBehaviour
         if(dialogueStarted){
             gestionLines();
             gestionPersos();
-            skipCinematique();
+            if(!transitioningIn)
+                skipCinematique();
         }
     }
 
