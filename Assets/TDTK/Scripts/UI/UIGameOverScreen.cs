@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 using TDTK;
 
@@ -16,6 +17,10 @@ namespace TDTK{
 		public UIButton buttonRestart;
 		public UIButton buttonMainMenu;
 		
+		public bool isFading;
+
+		public GameObject fade;
+
 		private static UIGameOverScreen instance;
 		
 		public override void Awake(){
@@ -34,6 +39,11 @@ namespace TDTK{
 			buttonMainMenu.Init();		buttonMainMenu.button.onClick.AddListener(() => OnMenuButton());
 			
 			thisObj.SetActive(false);
+		}
+
+		void Update(){
+			if(isFading)
+				fading(lbGameOverMsg.text);
 		}
 		
 		
@@ -60,7 +70,21 @@ namespace TDTK{
 			UIControl.BlurFadeIn();
 			
 			base._Show();
+			if(!playerWon){
+				isFading = true;
+			}
 		}
+
+		public void fading(string winorloss){
+			fade.SetActive(true);
+			if(fade.GetComponent<Image>().color.a < 1)
+				fade.GetComponent<Image>().color = new Color(0,0,0,fade.GetComponent<Image>().color.a+2*Time.deltaTime);
+			else if(winorloss == "Level Completed")
+				SceneManager.LoadScene("cinematique_victoire");
+			else if(winorloss == "Game Over")
+				SceneManager.LoadScene("cinematique_fin");
+		}
+
 		public static void Hide(){ 
 			UIControl.BlurFadeOut();
 			
