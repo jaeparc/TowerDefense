@@ -70,7 +70,7 @@ namespace TDTK{
 			UIControl.BlurFadeIn();
 			
 			base._Show();
-			if(!playerWon){
+			if(!playerWon || playerWon){
 				isFading = true;
 			}
 		}
@@ -79,8 +79,9 @@ namespace TDTK{
 			fade.SetActive(true);
 			if(fade.GetComponent<Image>().color.a < 1)
 				fade.GetComponent<Image>().color = new Color(0,0,0,fade.GetComponent<Image>().color.a+2*Time.deltaTime);
-			else if(winorloss == "Level Completed")
+			else if(winorloss == "Level Completed"){
 				SceneManager.LoadScene("cinematique_victoire");
+			}
 			else if(winorloss == "Game Over")
 				SceneManager.LoadScene("cinematique_fin");
 		}

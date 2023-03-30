@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cinematique_fin.unity
     guid: 47c4738bda2ab7d419c323aeb74e9592
+  - enabled: 1
+    path: Assets/Scenes/cinematique_victoire.unity
+    guid: 0cb3f29bcc3966b48bf1cc2764d62441
   m_configObjects: {}

@@ -10,7 +10,7 @@ public class menuController : MonoBehaviour
     public int indexButton = 0;
     public TextMeshProUGUI[] boutons;
     public GameObject fade;
-    public bool transitioningOut = false;
+    public bool transitioningOut = false, transitioningIn = true;
     private bool[] descendant = {false,false,false};
     private string nextScene;
     [SerializeField] public AudioClip clip;
@@ -25,7 +25,13 @@ public class menuController : MonoBehaviour
     void Update()
     {
         if(SceneManager.GetActiveScene().name == "ecran_titre" || SceneManager.GetActiveScene().name == "credits"){
-            if(Input.anyKeyDown && !transitioningOut){
+            if(transitioningIn){
+                if(fade.GetComponent<Image>().color.a > 0)
+                    fade.GetComponent<Image>().color = new Color(0,0,0,fade.GetComponent<Image>().color.a-2*Time.deltaTime);
+                else
+                    transitioningIn = false;
+            }
+            if(Input.anyKeyDown && !transitioningOut && !transitioningIn){
                 transitioningOut = true;
                 PlayTHEsound();
             }
