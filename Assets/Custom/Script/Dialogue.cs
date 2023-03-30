@@ -201,17 +201,17 @@ public class Dialogue : MonoBehaviour
                         fade.GetComponent<Image>().color = new Color(0,0,0,fade.GetComponent<Image>().color.a+2*Time.deltaTime);
                     }
                     if(fade.GetComponent<Image>().color.a >= 1 && fade.GetComponentInChildren<TextMeshProUGUI>().alpha < 1){
-                        fade.GetComponentInChildren<TextMeshProUGUI>().text = "After coming back to his village, the kid was given a special nickname. \r\n \r\n He was called \r\n the Sacred Child.";
+                        fade.GetComponentInChildren<TextMeshProUGUI>().text = "After coming back to his village, the kid was given a special nickname. \r\n \r\n He was called : \r\n the Sacred Child.";
                         fade.GetComponentInChildren<TextMeshProUGUI>().alpha += 2*Time.deltaTime;
                     }
                     break;
                 case 4:
-                    if(fade.GetComponentInChildren<TextMeshProUGUI>().alpha > 0)
+                    if(!end && fade.GetComponentInChildren<TextMeshProUGUI>().alpha > 0)
                         fade.GetComponentInChildren<TextMeshProUGUI>().alpha -= 2*Time.deltaTime;
                     if(fade.GetComponentInChildren<TextMeshProUGUI>().alpha <= 0)
                         fade.GetComponentInChildren<TextMeshProUGUI>().text = "Thank you for playing. \r\n \r\n Click anywhere to to go to the credits.";
                         end = true;
-                    if(end == true && fade.GetComponentInChildren<TextMeshProUGUI>().alpha < 1)
+                    if(end && fade.GetComponentInChildren<TextMeshProUGUI>().alpha < 1)
                         fade.GetComponentInChildren<TextMeshProUGUI>().alpha += 2*Time.deltaTime;
                     break;
             }

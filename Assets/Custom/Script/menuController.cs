@@ -8,9 +8,10 @@ using TMPro;
 public class menuController : MonoBehaviour
 {
     public int indexButton = 0;
+    public GameObject bonus, pieceD, pieceG;
     public TextMeshProUGUI[] boutons;
     public GameObject fade;
-    public bool transitioningOut = false, transitioningIn = true;
+    public bool transitioningOut = false, transitioningIn = true, playCligno, creditsCligno, quitCligno;
     private bool[] descendant = {false,false,false};
     private string nextScene;
     [SerializeField] public AudioClip clip;
@@ -36,10 +37,17 @@ public class menuController : MonoBehaviour
                 PlayTHEsound();
             }
         }
-        if(SceneManager.GetActiveScene().name == "menu_principal")
+        if(SceneManager.GetActiveScene().name == "menu_principal"){
             Select();
+            if(GameObject.Find("unlockBonus") != null){
+                if(GameObject.Find("unlockBonus").GetComponent<unlockBonus>().unlockBonusLevel)
+                    bonus.SetActive(true);
+            }
+        }
         if(transitioningOut)
             transition(nextScene);
+        animationButton();
+        
     }
 
     public void transition(string nextScene){
@@ -64,6 +72,11 @@ public class menuController : MonoBehaviour
         nextScene = "cinematique_debut";
     }
 
+    public void BonusBtn(){
+        transitioningOut = true;
+        nextScene = "Scene 2";
+    }
+
     public void CreditsBtn(){
         transitioningOut = true;
         nextScene = "credits";
@@ -73,6 +86,72 @@ public class menuController : MonoBehaviour
         Application.Quit();
     }
 
+    public void hoverPlay(){
+        pieceD.transform.position = GameObject.Find("play_pieceD").transform.position;
+        pieceG.transform.position = GameObject.Find("play_pieceG").transform.position;
+        playCligno = true;
+        creditsCligno = false;
+        quitCligno = false;
+    }
+
+    public void hoverCredits(){
+        pieceD.transform.position = GameObject.Find("credits_pieceD").transform.position;
+        pieceG.transform.position = GameObject.Find("credits_pieceG").transform.position;
+        creditsCligno = true;
+        playCligno = false;
+        quitCligno = false;
+    }
+
+    public void hoverQuit(){
+        pieceD.transform.position = GameObject.Find("quit_pieceD").transform.position;
+        pieceG.transform.position = GameObject.Find("quit_pieceG").transform.position;
+        quitCligno = true;
+        playCligno = false;
+        creditsCligno = false;
+    }
+
+    public void setMouse(){
+        indexButton = -1;
+    }
+
+    public void animationButton(){
+        if(playCligno){
+            if(descendant[0])
+                boutons[0].alpha -= 2*Time.deltaTime;
+            else if(!descendant[0])
+                boutons[0].alpha += 2*Time.deltaTime;
+            if(boutons[0].alpha <= 0 && descendant[0])
+                descendant[0] = false;
+            if(boutons[0].alpha >= 1 && !descendant[0])
+                descendant[0] = true;
+            boutons[1].alpha = 1;
+            boutons[2].alpha = 1;
+        }
+        if(creditsCligno){
+            if(descendant[1])
+                boutons[1].alpha -= 2*Time.deltaTime;
+            else if(!descendant[1])
+                boutons[1].alpha += 2*Time.deltaTime;
+            if(boutons[1].alpha <= 0 && descendant[1])
+                descendant[1] = false;
+            if(boutons[1].alpha >= 1 && !descendant[1])
+                descendant[1] = true;
+            boutons[0].alpha = 1;
+            boutons[2].alpha = 1;
+        }
+        if(quitCligno){
+            if(descendant[2])
+                boutons[2].alpha -= 2*Time.deltaTime;
+            else if(!descendant[2])
+                boutons[2].alpha += 2*Time.deltaTime;
+            if(boutons[2].alpha <= 0 && descendant[2])
+                descendant[2] = false;
+            if(boutons[2].alpha >= 1 && !descendant[2])
+                descendant[2] = true;
+            boutons[0].alpha = 1;
+            boutons[1].alpha = 1;
+        }
+    }
 
     public void Select(){
         if(Input.GetKeyDown("return")){
@@ -92,6 +171,8 @@ public class menuController : MonoBehaviour
             }
         }
         if(Input.GetKeyDown("down")){
+            if(indexButton == -1)
+                indexButton = 0;
             PlayTHEsound();
             if(indexButton != 2){
                 indexButton++;
@@ -99,6 +180,8 @@ public class menuController : MonoBehaviour
                 indexButton = 0;
             }
         } else if(Input.GetKeyDown("up")){
+            if(indexButton == -1)
+                indexButton = 0;
             PlayTHEsound();
             if(indexButton != 0){
                 indexButton--;
@@ -108,40 +191,13 @@ public class menuController : MonoBehaviour
         }
         switch(indexButton){
             case 0:
-                if(descendant[0])
-                    boutons[0].alpha -= 2*Time.deltaTime;
-                else if(!descendant[0])
-                    boutons[0].alpha += 2*Time.deltaTime;
-                if(boutons[0].alpha <= 0 && descendant[0])
-                    descendant[0] = false;
-                if(boutons[0].alpha >= 1 && !descendant[0])
-                    descendant[0] = true;
-                boutons[1].alpha = 1;
-                boutons[2].alpha = 1;
+                hoverPlay();
                 break;
             case 1:
-                if(descendant[1])
-                    boutons[1].alpha -= 2*Time.deltaTime;
-                else if(!descendant[1])
-                    boutons[1].alpha += 2*Time.deltaTime;
-                if(boutons[1].alpha <= 0 && descendant[1])
-                    descendant[1] = false;
-                if(boutons[1].alpha >= 1 && !descendant[1])
-                    descendant[1] = true;
-                boutons[0].alpha = 1;
-                boutons[2].alpha = 1;
+                hoverCredits();
                 break;
             case 2:
-                if(descendant[2])
-                    boutons[2].alpha -= 2*Time.deltaTime;
-                else if(!descendant[2])
-                    boutons[2].alpha += 2*Time.deltaTime;
-                if(boutons[2].alpha <= 0 && descendant[2])
-                    descendant[2] = false;
-                if(boutons[2].alpha >= 1 && !descendant[2])
-                    descendant[2] = true;
-                boutons[0].alpha = 1;
-                boutons[1].alpha = 1;
+                hoverQuit();
                 break;
         }
     }

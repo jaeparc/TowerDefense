@@ -10720,11 +10720,11 @@ MonoBehaviour:
     autoDestroy: 1
     duration: 1.5
   effectDestroyed:
-    obj: {fileID: 0}
+    obj: {fileID: 1462327970484030, guid: f01c1eba69de19e44b04d8d651aaac37, type: 3}
     autoDestroy: 1
     duration: 1.5
   effectDestination:
-    obj: {fileID: 0}
+    obj: {fileID: 100006, guid: 2a474af3f4c27be4e9bdce39cfe4315d, type: 3}
     autoDestroy: 1
     duration: 1.5
   soundSpawn: {fileID: 0}
